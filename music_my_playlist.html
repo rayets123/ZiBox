@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+	<meta charset='utf-8'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<title>ZiBox my playlists</title>
+	
+	<meta name="description" content="ZiBox">
+  <meta name="author" content="ZiBox">
+ 
+	<!-- Load CSS Compilled without JS -->
+	<noscript>
+		<link rel="stylesheet" href="css/_main.min.css">
+		<link rel="stylesheet" href="libs/bootstrap/bootstrap.css">
+	</noscript>
+
+	<!-- Fonts Loader from _fonts.css (HTML5 LocalStorage) -->
+	<script>!function(){function e(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function t(e){return window.localStorage&&localStorage.font_css_cache&&localStorage.font_css_cache_file===e}function n(){if(window.localStorage&&window.XMLHttpRequest)if(t(o))a(localStorage.font_css_cache);else{var n=new XMLHttpRequest;n.open("GET",o,!0),e(n,"load",function(){4===n.readyState&&(a(n.responseText),localStorage.font_css_cache=n.responseText,localStorage.font_css_cache_file=o)}),n.send()}else{var c=document.createElement("link");c.href=o,c.rel="stylesheet",c.type="text/css",document.getElementsByTagName("head")[0].appendChild(c),document.cookie="font_css_cache"}}function a(e){var t=document.createElement("style");t.innerHTML=e,document.getElementsByTagName("head")[0].appendChild(t)}var o="css/_fonts.min.css";window.localStorage&&localStorage.font_css_cache||document.cookie.indexOf("font_css_cache")>-1?n():e(window,"load",n)}();</script>
+
+	<!-- Load css -->
+<link rel="stylesheet" href="libs/bootstrap/bootstrap-3.3.6-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="libs/select2-4.0.2/select2-4.0.2/dist/css/select2.css">
+	<link href="css/main.css" rel="stylesheet"> 
+	<link href="css/player.css" rel="stylesheet">
+
+	<!-- STYLE for CHROM -->
+ 	<script type="text/javascript">
+		var detect=navigator.userAgent.toLowerCase();
+		if( (detect.indexOf('chrom')) !=-1)
+		{
+			document.write('<link rel="stylesheet" type="text/css" href="browsers/chrom.css"/>');
+		}
+		</script>
+</head>
+<body>
+	<div class="page_wrap no-footer clearfix">
+
+		<!-- START: page Header -->
+		<header id="header">
+			<div class="top_line default">
+				<div class="center">
+					<div class="logo left">
+						<a href="#">
+							<img class="logo_img" src="img/icons/header/logo_main.png" alt="logo">
+						</a>
+					</div>
+					<div class="menu right">
+						<ul>
+							<li>
+							<a href="#" class="search_box"><img src="img/icons/header/search.png" alt="search">
+							</a>
+							<label class="top_search">
+									<input type="text" name="search" placeholder="Search" onfocus="this.placeholder = ''" >
+								</label>
+							</li>
+							<li>
+								<div class="dropdown">
+									<button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+										<img class="profil_wrap" src="img/icons/section_albums/fifth.png" alt="person">
+										<img class="status" src="img/icons/header/online.png" alt="online" />
+										My profil
+										<img class="drop_arrow" src="img/icons/header/dropdown.png" alt="dropdown">
+									</button>
+									<ul class="dropdown-menu">
+										<li><a href="#">Edit profile</a></li>
+										<li><a href="#">Account Settings</a></li>
+										<li><a href="#">Archive</a></li>
+										<li class="devider"></li>
+										<li class="list_name">Zi Chat status:</li>
+										<li><a href="#"><img src="img/icons/header/online.png" alt="online" /> online</a></li>
+										<li><a href="#"><img src="img/icons/header/none.png" alt="not" /> do not disturb</a></li>
+										<li><a href="#"><img src="img/icons/header/away.png" alt="away" /> away</a></li>
+										<li><a href="#"><img src="img/icons/header/invisible.png" alt="invisible" /> invisible</a></li>
+									</ul>
+								</div>
+							</li>	
+							<li class="menu_links help"><a href="#">Help</a></li>
+							<li class="menu_links"><a href="#">Log out</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- //END: page Header -->
+
+		 <!-- START: main content area -->
+		<div class="content_container">
+		
+		<!-- START: Left column -->
+			<aside class="left_sidebar playlist_sidebar left">
+				<nav>
+					<ul class="left_menu chat_left_menu">
+						<li><a href="#">
+								<img src="img/icons/left-sidebar/bell1.png" alt="bell">
+								<span class="news">243</span>
+								My notifications
+							</a></li>
+						<li><a href="#">
+								<img src="img/icons/left-sidebar/mail.png" alt="bell">
+								Zi Chat
+							</a></li>
+						<li class="open_friends"><a href="#">
+								<img src="img/icons/left-sidebar/person.png" alt="person">
+								<span class="news">16</span>
+								My friends
+								</a>
+								<ul class="friends_toggle">
+									<li><a href="index.html">All friends</a></li>
+									<li><a href="#">Friends online</a></li>
+									<li><a href="#">Friend reqests</a></li>
+							</ul>
+						</li>
+						<li><a href="#">
+								<img src="img/icons/left-sidebar/2_person.png" alt="2_person">
+								<span class="news">16</span>
+								My groups
+							</a></li>
+						<li><a href="photos_main.html">
+								<img src="img/icons/left-sidebar/camera.png" alt="photos">
+								My photos
+							</a></li>
+						<li class="active-link"><a href="#">
+								<img src="img/icons/left-sidebar/note.png" alt="music">
+								My music
+							</a></li>
+						<li><a href="#">
+								<img src="img/icons/left-sidebar/video.png" alt="videos">
+								My videos
+							</a></li>
+						<li><a href="#">
+								<img src="img/icons/left-sidebar/playstation.png" alt="apps">
+								My apps
+							</a></li>
+						<li><a href="#">
+								<img src="img/icons/left-sidebar/hands.png" alt="trade">
+								My trade bazaar
+							</a></li>
+						<li><a href="#">
+								<img src="img/icons/left-sidebar/earth.png" alt="advanture">
+								My adventures
+							</a></li>
+						<li><a href="#">
+								<img src="img/icons/left-sidebar/calendar.png" alt="events">
+								My events
+							</a></li>
+						<li><a href="#">
+								<img src="img/icons/left-sidebar/diagram.png" alt="business">
+								My Business
+							</a></li>
+						<li><a href="#">
+								<img src="img/icons/left-sidebar/eye.png" alt="sneak a peak">
+								Sneak a Peak
+							</a></li>
+					</ul>
+				</nav>
+			</aside>
+		<!-- //END: Left column -->
+	
+		<!-- Right column -->
+		<aside class="right_sidebar right">
+			<a href="#" class="toggle-mnu"><span></span></a>
+			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="headingOne">
+						<h4 class="panel-title">
+							<a class="mnu_but collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+								Popular videos
+							</a>
+						</h4>
+					</div>
+					<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false">
+						<div class="panel-body">
+							<ul class="main_menu">
+								<li><a href="#">Lorem ipsum.</a></li>
+								<li><a href="#">Lorem ipsum.</a></li>
+								<li><a href="#">Lorem ipsum.</a></li>	
+								<li><a href="#">Lorem ipsum.</a></li>
+								<li><a href="#">Lorem ipsum.</a></li>
+								<li><a href="#">Lorem ipsum.</a></li>	
+								<li><a href="#">Lorem ipsum.</a></li>
+								<li><a href="#">Lorem ipsum.</a></li>
+								<li><a href="#">Lorem ipsum.</a></li>	
+								<li><a href="#">Lorem ipsum.</a></li>
+								<li><a href="#">Lorem ipsum.</a></li>
+								<li><a href="#">Lorem ipsum.</a></li>	
+								<li><a href="#">Lorem ipsum.</a></li>
+								<li><a href="#">Lorem ipsum.</a></li>
+								<li><a href="#">Lorem ipsum.</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingTwo">
+								<h4 class="panel-title">
+									<a class="mnu_but collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+										Nearest Events
+									</a>
+								</h4>
+							</div>
+							<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false">
+								<div class="panel-body">
+									<ul class="main_menu">
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>	
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingThree">
+								<h4 class="panel-title">
+									<a class="mnu_but collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+										Popular groups
+									</a>
+								</h4>
+							</div>
+							<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false">
+								<div class="panel-body">
+									<ul class="main_menu">
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>	
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingFoth">
+								<h4 class="panel-title">
+									<a class="mnu_but collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFoth" aria-expanded="false" aria-controls="collapseFoth">
+										Popular apps
+									</a>
+								</h4>
+							</div>
+							<div id="collapseFoth" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFoth" aria-expanded="false">
+								<div class="panel-body">
+									<ul class="main_menu">
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>	
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingFifth">
+								<h4 class="panel-title">
+									<a class="mnu_but collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFifth" aria-expanded="false" aria-controls="collapseFifth">
+										Trade bazaar
+									</a>
+								</h4>
+							</div>
+							<div id="collapseFifth" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFifth" aria-expanded="false">
+								<div class="panel-body">
+									<ul class="main_menu">
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>	
+									</ul>
+								</div>
+							</div>
+						</div>	
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingSixth">
+								<h4 class="panel-title">
+									<a class="mnu_but collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSixth" aria-expanded="false" aria-controls="collapseSixth">
+										Adventures
+									</a>
+								</h4>
+							</div>
+							<div id="collapseSixth" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSixth" aria-expanded="false">
+								<div class="panel-body">
+									<ul class="main_menu">
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>	
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingSeventh">
+								<h4 class="panel-title">
+									<a class="mnu_but collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeventh" aria-expanded="false" aria-controls="collapseSeventh">
+										Business
+									</a>
+								</h4>
+							</div>
+							<div id="collapseSeventh" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeventh" aria-expanded="false">
+								<div class="panel-body">
+									<ul class="main_menu">
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>	
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="friends_panel_main panel panel-default">
+							<div class="panel-heading" role="tab" id="headingEighth">
+								<h4 class="panel-title">
+									<a class="mnu_but arrow_nav collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEighth" aria-expanded="false" aria-controls="collapseEighth">
+									Friends online<img src="img/icons/header/dropdown.png" alt="dropdown">	
+									</a>
+								</h4>
+							</div>
+							<div id="collapseEighth" class="panel-collapse collapse friend_collapse" role="tabpanel" aria-labelledby="headingEighth" aria-expanded="false">
+								<div class="panel-body friends_panel">
+									<label class="search">
+										<input type="text" name="search" placeholder="Search in the list" onfocus="this.placeholder = ''" ><a href="#"><img src="img/icons/right-sidebar/search.png" alt="search"></a>
+									</label>											
+									<div id="carousel" class="carousel slide" data-interval="false">
+										<div class="carousel-inner">
+											<div class="item active">
+												<ul class="online">		
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>	
+												</ul>
+											</div>
+											<div class="item">
+												<ul class="online">		
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>
+												</ul>
+											</div>
+											<div class="item">
+												<ul class="online">		
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>
+												</ul>
+											</div>
+										</div>
+									<a class="left carousel-control friend_carousel" href="#carousel" data-slide="prev">
+										<img class="left" src="img/icons/right-sidebar/arrow-left.png" alt="left">
+										<span class="left">previous</span>
+									</a>
+									<a class="right carousel-control" href="#carousel" data-slide="next">
+										<span class="right">next</span>
+										<img class="right" src="img/icons/right-sidebar/arrow-right.png" alt="right">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</aside>
+		<!-- //END: Right column -->
+
+		<!-- START: Content section -->
+			<section class="main_container fixed_sides clearfix">
+
+				<!-- Content top navbar -->
+				<div class="audio_track">
+					<div class="nav_audio left">
+						<img src="img/icons/music/prev.png" alt="" />
+						<img src="img/icons/music/stop.png" alt="" />
+						<img class="pause" src="img/icons/music/play.png" alt="" />
+						<img src="img/icons/music/next.png" alt="" />
+					</div>
+					<div class="play_line left">
+						<h5><strong>Lorem Ipsum </strong><span>-</span> Doler sit amet, consectatur</h5>
+						<span class="time left">23:46</span>
+						<div class="current_line"></div>
+						<div class="load_line"></div>
+						<div class="all_line"></div>
+					</div>
+					<div class="sound left">
+						<img class="mute" src="img/icons/music/mute.png" alt="mute" />
+						<span class="sound_level">73%</span>
+						<div class="current_sound"></div>
+						<div class="current_line"></div>
+					</div>
+					<div class="dropdown left">
+						<button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+						<img class="drop_arrow" src="img/icons/music/down_green.png" alt="dropdown">
+						</button>
+						<ul class="dropdown-menu">
+							<li><a href="#">Repeat this track</a></li>
+							<li><a href="#">Mix audiotracks</a></li>
+							<li><a href="#">Show similar tracks</a></li>
+							<li><a href="#">Send to a friend</a></li>
+						</ul>
+					</div>
+					<div class="add_to_music right">
+						<img src="img/icons/music/add.png" alt="add" />
+					</div>
+				</div>
+
+				<!-- Content wrap-->
+				<div class="wrap_all wrap_playlist albums_tracks clearfix">
+					<div class="playlists left">
+						<div class="my_playlists left">
+							<div class="playlist left">
+								<div class="img_wrap left">
+									<a href="#"><img class="main_img" src="img/icons/section_albums_view/foth_img.jpg" alt="img"></a>
+								</div>
+								<div class="name_playlist left">
+									<a href="#"><h4>I love rock'n'roll</h4></a>
+								</div>
+								<div class="tracks_sum left"><span>124</span>tracks</div>
+								<div class="dropdown right">
+									<button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+										<img class="drop_arrow" src="img/icons/music/down_green.png" alt="dropdown">
+									</button>
+									<ul class="dropdown-menu">
+										<li><a href="#">Edit playlist</a></li>
+										<li><a href="#">Download playlist</a></li>
+										<li><a href="#">Get link</a></li>
+										<li><a href="#">Delete playlist</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="playlist left">
+								<div class="img_wrap left">
+									<a href="#"><img class="main_img" src="img/icons/section_albums_view/foth_img.jpg" alt="img"></a>
+								</div>
+								<div class="name_playlist left">
+									<a href="#"><h4>I love rock'n'roll</h4></a>
+								</div>
+								<div class="tracks_sum left"><span>124</span>tracks</div>
+								<div class="dropdown right">
+									<button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+										<img class="drop_arrow" src="img/icons/music/down_green.png" alt="dropdown">
+									</button>
+									<ul class="dropdown-menu">
+										<li><a href="#">Edit playlist</a></li>
+										<li><a href="#">Download playlist</a></li>
+										<li><a href="#">Get link</a></li>
+										<li><a href="#">Delete playlist</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="playlist left">
+								<div class="img_wrap left">
+									<a href="#"><img class="main_img" src="img/icons/section_albums_view/foth_img.jpg" alt="img"></a>
+								</div>
+								<div class="name_playlist left">
+									<a href="#"><h4>I love rock'n'roll</h4></a>
+								</div>
+								<div class="tracks_sum left"><span>124</span>tracks</div>
+								<div class="dropdown right">
+									<button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+										<img class="drop_arrow" src="img/icons/music/down_green.png" alt="dropdown">
+									</button>
+									<ul class="dropdown-menu">
+										<li><a href="#">Edit playlist</a></li>
+										<li><a href="#">Download playlist</a></li>
+										<li><a href="#">Get link</a></li>
+										<li><a href="#">Delete playlist</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="playlist left">
+								<div class="img_wrap left">
+									<a href="#"><img class="main_img" src="img/icons/section_albums_view/foth_img.jpg" alt="img"></a>
+								</div>
+								<div class="name_playlist left">
+									<a href="#"><h4>I love rock'n'roll</h4></a>
+								</div>
+								<div class="tracks_sum left"><span>124</span>tracks</div>
+								<div class="dropdown right">
+									<button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+										<img class="drop_arrow" src="img/icons/music/down_green.png" alt="dropdown">
+									</button>
+									<ul class="dropdown-menu">
+										<li><a href="#">Edit playlist</a></li>
+										<li><a href="#">Download playlist</a></li>
+										<li><a href="#">Get link</a></li>
+										<li><a href="#">Delete playlist</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="my_playlists recommend_playlists left">
+						<h5 class="title">recommended playlists</h5>
+							<div class="playlist left">
+								<div class="img_wrap left">
+									<a href="#"><img class="main_img" src="img/icons/section_albums_view/foth_img.jpg" alt="img"></a>
+								</div>
+								<div class="name_playlist left">
+									<a href="#"><h4>I love rock'n'roll</h4></a>
+								</div>
+								<div class="tracks_sum left"><span>124</span>tracks</div>
+								<div class="dropdown right">
+									<button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+										<img class="drop_arrow" src="img/icons/music/down_green.png" alt="dropdown">
+									</button>
+									<ul class="dropdown-menu">
+										<li><a href="#">Edit playlist</a></li>
+										<li><a href="#">Download playlist</a></li>
+										<li><a href="#">Get link</a></li>
+										<li><a href="#">Delete playlist</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="playlist left">
+								<div class="img_wrap left">
+									<a href="#"><img class="main_img" src="img/icons/section_albums_view/foth_img.jpg" alt="img"></a>
+								</div>
+								<div class="name_playlist left">
+									<a href="#"><h4>I love rock'n'roll</h4></a>
+								</div>
+								<div class="tracks_sum left"><span>124</span>tracks</div>
+								<div class="dropdown right">
+									<button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+										<img class="drop_arrow" src="img/icons/music/down_green.png" alt="dropdown">
+									</button>
+									<ul class="dropdown-menu">
+										<li><a href="#">Edit playlist</a></li>
+										<li><a href="#">Download playlist</a></li>
+										<li><a href="#">Get link</a></li>
+										<li><a href="#">Delete playlist</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="playlist left">
+								<div class="img_wrap left">
+									<a href="#"><img class="main_img" src="img/icons/section_albums_view/foth_img.jpg" alt="img"></a>
+								</div>
+								<div class="name_playlist left">
+									<a href="#"><h4>I love rock'n'roll</h4></a>
+								</div>
+								<div class="tracks_sum left"><span>124</span>tracks</div>
+								<div class="dropdown right">
+									<button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+										<img class="drop_arrow" src="img/icons/music/down_green.png" alt="dropdown">
+									</button>
+									<ul class="dropdown-menu">
+										<li><a href="#">Edit playlist</a></li>
+										<li><a href="#">Download playlist</a></li>
+										<li><a href="#">Get link</a></li>
+										<li><a href="#">Delete playlist</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="playlist left">
+								<div class="img_wrap left">
+									<a href="#"><img class="main_img" src="img/icons/section_albums_view/foth_img.jpg" alt="img"></a>
+								</div>
+								<div class="name_playlist left">
+									<a href="#"><h4>I love rock'n'roll</h4></a>
+								</div>
+								<div class="tracks_sum left"><span>124</span>tracks</div>
+								<div class="dropdown right">
+									<button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+										<img class="drop_arrow" src="img/icons/music/down_green.png" alt="dropdown">
+									</button>
+									<ul class="dropdown-menu">
+										<li><a href="#">Edit playlist</a></li>
+										<li><a href="#">Download playlist</a></li>
+										<li><a href="#">Get link</a></li>
+										<li><a href="#">Delete playlist</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="filter right">
+						 <div class="filter_inner">
+						 	 <a href="" class="add_music">ADD MUSIC <span class="add"></span></a>
+						 	 <a href="" class="create">CREATE PLAYLIST</a>
+						 	 <div class="search_track">
+						 	 		<input type="text" class="form-control left" placeholder="Search..." onfocus="this.placeholder = ''">
+						 	 	<span class="left">
+						 	 		<i class="glyphicon glyphicon-search"></i>
+						 	 	</span>
+						 	 </div>
+						 	 <ul class="audio_filter">
+						 	 	<li><img src="img/icons/music/green_right.png" alt="" class="activ" /><a href="#">My audiotracks</a><span class="quantity">1234</span></li>
+						 	 	<li  class="active_link"><img src="img/icons/music/green_right.png" alt="" class="activ" /><a href="my_playlist.html">Mu playlist</a><span class="quantity">34</span></li>
+						 	 	<li><img src="img/icons/music/green_right.png" alt="" class="activ" /><a href="#">Favorite audiotracks</a><img class="favorites" src="img/icons/music/big_star.png" alt="" /><span class="quantity">34</span></li>
+						 	 	<li><img src="img/icons/music/green_right.png" alt="" class="activ" /><a href="#">Friends' updates</a></li>
+						 	 	<li><img src="img/icons/music/green_right.png" alt="" class="activ" /><a href="my_music.html">Popular music</a></li>
+						 	 	<li><img src="img/icons/music/green_right.png" alt="" class="activ" /><a href="#">Recommended</a></li>
+						 	 </ul>
+						 	 <div class="music_genre clearfix">
+							 	 	<h5>Choose music genre:</h5>
+							 	 	<form action="#" method="post" class="clearfix">
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" id="checkboxSuccess" value="option1">
+												Alternative
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" id="checkboxSuccess" value="option1">
+												Blues
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" id="checkboxSuccess" value="option1">
+												Classical
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" id="checkboxSuccess" value="option1">
+												Country
+											</label>
+										</div>
+									</form>
+									<select>
+										<option value="1"></option>
+										<option value="2">Blues</option>
+										<option value="3">Classical</option>
+										<option value="4">Counry</option>
+										<option value="5">Easy listening</option>
+										<option value="6">Electronic</option>
+										<option value="7">Freeform</option>
+										<option value="8">Folk</option>
+										<option value="9">Hip-Hop</option>
+										<option value="10">Rock</option>
+									</select>
+						 	 </div>
+						 	 <div class="friends_audio clearfix">
+								<h5 class="mutual_tittle">Friend's audiotracks:</h5>
+									<ul>
+										<li>
+										<div class="checkbox">
+										<label>
+											<input type="checkbox" />
+											<span class="wrap_mutual"><img src="img//icons/friends/ava.png" alt="ava" />Anna Ivanova</span>
+											</label>
+										</div>
+										</li>
+										<li>
+										<div class="checkbox">
+										<label>
+											<input type="checkbox" />
+											<span class="wrap_mutual"><img src="img//icons/friends/ava.png" alt="ava" />Anna Ivanova</span>
+											</label>
+										</div>
+										</li>
+										<li>
+											<div class="checkbox">
+										<label>
+											<input type="checkbox" />
+											<span class="wrap_mutual"><img src="img//icons/friends/ava.png" alt="ava" />Anna Ivanova</span>
+											</label>
+										</div>
+										</li>
+										<li>
+											<div class="checkbox">
+										<label>
+											<input type="checkbox" />
+											<span class="wrap_mutual"><img src="img//icons/friends/ava.png" alt="ava" />Anna Ivanova</span>
+											</label>
+										</div>
+										</li>
+										<li>
+											<div class="checkbox">
+										<label>
+											<input type="checkbox" />
+											<span class="wrap_mutual"><img src="img//icons/friends/ava.png" alt="ava" />Anna Ivanova</span>
+											</label>
+										</div>
+										</li>
+										<li>
+											<div class="checkbox">
+										<label>
+											<input type="checkbox" />
+											<span class="wrap_mutual"><img src="img//icons/friends/ava.png" alt="ava" />Anna Ivanova</span>
+											</label>
+										</div>
+										</li>
+									</ul>
+								<input type="text" class="another_name" placeholder="Enter another name" onfocus="this.placeholder = ''"/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- //END: Content section-->
+		</div>
+		<!-- //END: main content area -->
+</div>
+
+	
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+ 
+
+<!-- Load Scripts -->
+<script src="libs/modernizr/modernizr.js"></script>
+<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+<script src="libs/audioplayer/mediaelement-and-player.min.js"></script>
+<script src="libs/bootstrap/bootstrap.min.js"></script>
+<script src="libs/dropzone/dropzone.js"></script>
+<script src="libs/Magnific-Popup/jquery.magnific-popup.min.js"></script>
+<script src="libs/nicescroll/jquery.nicescroll.min.js"></script>
+<script src="libs/PageScroll2id/PageScroll2id.min.js"></script>
+<script src="libs/plugins-scroll/plugins-scroll.js"></script>
+<script src="libs/owl/owl.carousel.min.js"></script>
+<script src="libs/audioplayer/mediaelement-and-player.min.js"></script>
+<script src="libs/select2-4.0.2/select2-4.0.2/dist/js/select2.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>

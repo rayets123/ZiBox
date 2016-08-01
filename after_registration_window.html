@@ -1,0 +1,132 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--[if lt IE 7 ]>
+<html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>
+<html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>
+<html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru" xml:lang="ru"> <!--<![endif]-->
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="csrf-param" content="_csrf">
+    <meta name="csrf-token" content="b0xla01NZDkhOhQOHg5WXgY2DVsDAVZ0LBkTEgMdNHhcOTAoL3pTfQ==">
+    <title>Zibox Login</title>
+
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-3.3.6-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="libs/select2-4.0.2/select2-4.0.2/dist/css/select2.css">
+	<link href="css/login.css" rel="stylesheet">
+
+
+	</head>
+
+<body>
+<!-- main -->
+<div class="main clearfix">
+
+    <!-- main_header -->
+    <nav class="header-navbar navbar navbar-inverse main-header">
+        <div class="container">               
+           <div class="navbar-collapse collapse" id="navbar">
+           <ul id="w1" class="navbar-nav nav main_menu"><li><a href="/index.php?r=site%2Fabout">About us</a></li>
+                <li><a href="/index.php?r=site%2Fadvertising">Advertising</a></li>
+                <li><a href="/index.php?r=site%2Fprivacy">Privacy</a></li>
+                <li><a href="/index.php?r=site%2Fterms">Terms of use</a></li>
+            </ul> 
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ENG <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li class="active"><a href="#">English</a></li>
+                            <li><a href="#">Russian</a></li>
+                            <li><a href="#">Italy</a></li>
+                            <li><a href="#">Germany</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right soc_top">
+                		<li class="facebook"><a href="#" title="Facebook" class="Facebook"><img src="img/icons/login/facebook_small.png" alt="Facebook"></a></li>
+                		<li class="google"><a href="#" title="Google+" class="Google+"><img src="img/icons/login/google_small.png" alt="Google+"></a></li>
+                		<li class="twiter"><a href="#" title="Twitter" class="Twitter"><img src="img/icons/login/twitter_small.png" alt="Twitter"></a></li>
+                </ul>
+
+                <!-- START navbar login form -->
+                
+                <form id="login-form" class="navbar-form navbar-right" action="/index.php?r=site%2Flogin" method="post">
+                	<input type="hidden" name="_csrf" value="b0xla01NZDkhOhQOHg5WXgY2DVsDAVZ0LBkTEgMdNHhcOTAoL3pTfQ==">
+                	<div class="form-group ">
+
+                		<input type="text" id="loginform-username" class="form-control action" name="LoginForm[username]" placeholder="Email Address" data-field="email" data-wrong-value="Email entered incorrect" data-empty-value="Do not enter"  onfocus="this.placeholder = ''">
+                		<p class="help-block help-login"></p>
+                	</div>
+                	<div class="form-group">
+                		<input type="password" id="loginform-password" class="form-control action" name="LoginForm[password]" placeholder="Password" data-field="password" data-wrong-value="Password entered incorrect" data-empty-value="Do not enter"  onfocus="this.placeholder = ''">
+                		<p class="help-block help-login"></p>
+                		<a class="navbar-link forgot" href="">Forgot your password?</a>
+                	</div>
+                	<div class="form-group">
+                		<button type="submit" id="submit_login" class="btn btn-orange text-uppercase" name="login-button"><b>Log in</b></button></div>
+
+                		
+
+                		</form>         
+                		  <!-- //END navbar login form -->
+
+            </div><!--/.navbar-collapse -->
+        </div>
+    </nav>
+    <!-- main_header end -->
+
+    <!-- main_content -->
+    <div class="main_content">
+        <div class="main_content_middle">
+            <div class="loginpage_signup_wrap after_registration">
+                <section class="logo">
+                    <a href="#"><img src="img/icons/login/logo.png" class="img-responsive center-block" alt="logo"></a>
+                </section>
+                <div class="loginpage_form">
+                    <div class="succes_msg">
+                        Signup succesful. We have sent you an email with details on activating your account.
+                    </div>
+
+                    <div class="col-xs-12 clearfix">
+                     <section class="soc">
+                        <p>Sign up in with:</p>
+                        <ul class="clearfix">
+                           <li class="facebook"><a href="#" title="Facebook" class="Facebook"><img src="img/icons/login/soc_facebook_2.png" alt="Facebook"></a></li>
+                           <li class="google"><a href="#" title="Google+" class="Google+"><img src="img/icons/login/soc_google_2.png" alt="Google+"></a></li>
+                           <li class="twiter"><a href="#" title="Twitter" class="Twitter"><img src="img/icons/login/soc_twitter_2.png" alt="Twitter"></a></li>
+                       </ul>
+                   </section>
+               </div>    
+           </div>
+       </div>
+   </div>
+</div>
+    <!-- main_content end -->
+
+  <!-- main_footer -->
+  <footer class="footer">
+  	<nav class="navbar">
+  		<div class="container">
+          <p class="navbar-text copyright">Copyright &copy; <a href="#" class="navbar-link">zibox.com</a>. All rights reserved.</p>
+  			</div>
+  		</nav>
+  	</footer>
+</div>
+<!-- main end -->
+<!-- Load Scripts -->
+<script src="libs/modernizr/modernizr.js"></script>
+<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+<script src="libs/bootstrap/bootstrap.min.js"></script>
+<script src="libs/select2-4.0.2/select2-4.0.2/dist/js/select2.min.js"></script>
+<script src="js/valid.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>
+

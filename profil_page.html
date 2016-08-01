@@ -1,0 +1,3282 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+	<meta charset='utf-8'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<title>ZiBox my profil</title>
+	
+	<meta name="description" content="ZOORONI">
+  <meta name="author" content="ZOORONI">
+ 
+		<!-- Load CSS Compilled without JS -->
+	<noscript>
+		<link rel="stylesheet" href="css/_main.min.css">
+		<link rel="stylesheet" href="libs/bootstrap/bootstrap.css">
+	</noscript>
+
+	<!-- Fonts Loader from _fonts.css (HTML5 LocalStorage) -->
+	<script>!function(){function e(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function t(e){return window.localStorage&&localStorage.font_css_cache&&localStorage.font_css_cache_file===e}function n(){if(window.localStorage&&window.XMLHttpRequest)if(t(o))a(localStorage.font_css_cache);else{var n=new XMLHttpRequest;n.open("GET",o,!0),e(n,"load",function(){4===n.readyState&&(a(n.responseText),localStorage.font_css_cache=n.responseText,localStorage.font_css_cache_file=o)}),n.send()}else{var c=document.createElement("link");c.href=o,c.rel="stylesheet",c.type="text/css",document.getElementsByTagName("head")[0].appendChild(c),document.cookie="font_css_cache"}}function a(e){var t=document.createElement("style");t.innerHTML=e,document.getElementsByTagName("head")[0].appendChild(t)}var o="css/_fonts.min.css";window.localStorage&&localStorage.font_css_cache||document.cookie.indexOf("font_css_cache")>-1?n():e(window,"load",n)}();</script>
+
+	<!-- Load css -->
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-3.3.6-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="libs/select2-4.0.2/select2-4.0.2/dist/css/select2.css">
+	<link href="css/main.css" rel="stylesheet"> 
+	<link href="css/player.css" rel="stylesheet">
+
+	<!-- favicons -->
+	<link rel="shortcut icon" sizes="32x32" href="img/favicon/favicon_ZiBox_32x32_v1-1.ico" type="image/x-icon">
+	<link rel="shortcut icon" sizes="64x64" href="img/favicon/favicon_ZiBox_64x64_v1-1.ico" type="image/x-icon">
+
+</head>
+<body>
+	<!-- start: popup photo -->
+	<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+	<button type="button" class="close close_popup" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		<div class="podrt_descr">
+			<button type="button" class="arrow_popup arrow_popup_left"></button>
+			<button type="button" class="arrow_popup arrow_popup_right"></button>
+			<div class="modal-box-content">
+				<div class="img_wrap left">
+					<img src="http://ic.maxabout.us/celebrities/other/atif-aslam/Atif_Aslam_301012_23.jpg" alt="Alt"/>
+					<!-- видео
+					<video poster="img/icons/my_profil/post_img.png" controls="controls">
+						<source src="video/Chris Daughtry-Supernatural.mp4.mp4" type='video/mp4' />
+					</video> -->
+				</div>
+
+				<div class="wrap_right_side clearfix">
+					<div class="album_description right">
+						<div class="top_description">
+							<a href="#" class="user"><img src="img/icons/Popup/ava.png" alt="ava" /></a>
+							<span class="user_name">Anna Ivanova</span>
+							<a href="#" class="album_name">My vacacion in Greece</a>
+							<span class="date">October 3, 2015</span>
+							<div class="dropdown right">
+								<button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+									<img class="drop_arrow" src="img/icons/section_albums_view/arrow.png" alt="dropdown">
+								</button>
+								<ul class="dropdown-menu">
+									<li><a href="#">Add location</a></li>
+									<li><a href="#">Add person</a></li>
+									<li><a href="#">Make profile picture</a></li>
+									<li><a href="#">Make cover photo</a></li>
+									<li><a href="#">Get link</a></li>
+									<li><a href="#">Delete photo</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="bottom_description">
+							<h5>The best vacation I’ve ever had! Lorem ipsum dolor sit a. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet.</h5>
+							<ul class="with_friend">
+								<li>With</li>
+								<li><a href="#" class="friend">Garet Bale,</a></li>
+								<li><a href="#" class="friend">James Rodrigues,</a></li>
+								<li><a href="#" class="friend">Tony Kross,</a></li>
+								<li><a href="#" class="friend">Karim Benzema,</a></li>
+								<li>in</li>
+								<li><a href="#" class="place">Athens,</a></li>
+								<li><a href="#" class="place">Greece.</a></li>
+							</ul>
+							<ul class="hashtag">
+								<li><a href="#">#loremsda</a></li>
+								<li><a href="#">#loremd</a></li>
+								<li><a href="#">#loremsdsdsd</a></li>
+								<li><a href="#">#loremsaa</a></li>
+								<li><a href="#">#loremsd</a></li>
+								<li><a href="#">#loremsd</a></li>
+							</ul>
+
+							<!-- пока нет в системе коментов 
+							<div class="comments">
+								<ul>
+									<li class="clearfix">
+										<a href="#" class="avatar left"><img class="" src="img/icons/section_albums_view/fifth.png" alt="ava" /></a>
+										<p><a href="#" class="txt_blue"><strong>Olive Guriod</strong></a> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fu, ducimus officiis excepturi </p>
+										<div class="answer right clearfix">
+											<span class="left data">14.09.2016</span>
+											<span class="left answer_word">Answer</span>
+											<span class="right comment_sum">134</span>
+											<a href="#" class="like_comment right"><img src="img/icons/section_albums/like.png" alt="like"></a>
+										</div>
+									</li>
+									<li class="clearfix">
+										<a href="#" class="avatar left"><img class="" src="img/icons/section_albums_view/fifth.png" alt="ava" /></a>
+										<p><a href="#" class="txt_blue"><strong>Olive Guriod</strong></a> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fu, ducimus officiis excepturi </p>
+										<div class="answer right clearfix">
+											<span class="left data">14.09.2016</span>
+											<span class="left answer_word">Answer</span>
+											<span class="right comment_sum">134</span>
+											<a href="#" class="like_comment right"><img src="img/icons/section_albums/like.png" alt="like"></a>
+										</div>
+									</li>
+									<li class="clearfix">
+										<a href="#" class="avatar left"><img class="" src="img/icons/section_albums_view/fifth.png" alt="ava" /></a>
+										<p><a href="#" class="txt_blue"><strong>Olive Guriod</strong></a> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fu, ducimus officiis excepturi </p>
+										<div class="answer right clearfix">
+											<span class="left data">14.09.2016</span>
+											<span class="left answer_word">Answer</span>
+											<span class="right comment_sum">134</span>
+											<a href="#" class="like_comment right"><img src="img/icons/section_albums/like.png" alt="like"></a>
+										</div>
+									</li>
+									<li class="clearfix">
+										<a href="#" class="avatar left"><img class="" src="img/icons/section_albums_view/fifth.png" alt="ava" /></a>
+										<p><a href="#" class="txt_blue"><strong>James Rodrigues</strong></a> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fu, ducimus officiis excepturi </p>
+										<div class="answer right clearfix">
+											<span class="left data">14.09.2016</span>
+											<span class="left answer_word">Answer</span>
+											<span class="right comment_sum">134</span>
+											<a href="#" class="like_comment right"><img src="img/icons/section_albums/like.png" alt="like"></a>
+										</div>
+									</li>
+								</ul>
+							</div> 
+							 -->
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end: popup-photo -->
+
+		
+
+	<div class="page_wrap clearfix">
+	<a href="#header" class="up">
+		<img src="img/icons/footer/up.png" alt="up"><span>Go top</span>
+	</a>
+	<!-- START: page Header -->
+		<header id="header">
+			<div class="top_line default">
+				<div class="center">
+					<div class="logo left">
+						<a href="#">
+							<img class="logo_img" src="img/icons/header/logo_main.png" alt="logo">
+						</a>
+					</div>
+					<div class="menu right">
+						<ul>
+							<li>
+							<a href="#" class="search_box"><img src="img/icons/header/search.png" alt="search">
+							</a>
+							<label class="top_search">
+									<input type="text" name="search" placeholder="Search" onfocus="this.placeholder = ''" >
+								</label>
+							</li>
+							<li>
+								<div class="dropdown">
+									<button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+										<img class="profil_wrap" src="img/icons/section_albums/fifth.png" alt="person">
+										<img class="status" src="img/icons/header/online.png" alt="online" />
+										My profile
+										<img class="drop_arrow" src="img/icons/header/dropdown.png" alt="dropdown">
+									</button>
+									<ul class="dropdown-menu">
+										<li><a href="#">Edit profile</a></li>
+										<li><a href="#">Account Settings</a></li>
+										<li><a href="#">Archive</a></li>
+										<li class="devider"></li>
+										<li class="list_name">Zi Chat status:</li>
+										<li><a href="#"><img src="img/icons/header/online.png" alt="online" /> online</a></li>
+										<li><a href="#"><img src="img/icons/header/none.png" alt="not" /> do not disturb</a></li>
+										<li><a href="#"><img src="img/icons/header/away.png" alt="away" /> away</a></li>
+										<li><a href="#"><img src="img/icons/header/invisible.png" alt="invisible" /> invisible</a></li>
+									</ul>
+								</div>
+							</li>	
+							<li class="menu_links help"><a href="#">Help</a></li>
+							<li class="menu_links"><a href="#">Log out</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- //END: page Header -->
+
+		<!-- START: Media nav left -->
+		<nav id="media-nav">
+			<ul class="media">
+				<li><button class="music player"><img src="img/icons/audioplayer/note-light.png" alt="music"></button></li>
+				<li><button class="music"><img src="img/icons/audioplayer/video-light.png" alt="video"></button></li>
+				<li><button class="music"><img src="img/icons/audioplayer/chat-light.png" alt="chat"></button></li>
+				<li ><button class="music"><img src="img/icons/audioplayer/bell-light.png" alt="bell"></button></li>
+			</ul>
+			<ul class="audio-list">
+				<li class="open-close"></li>
+				<li class="main_track audio-player">
+					<img src="img/icons/audioplayer/prev.png" alt="prev">
+					<img class="next_song" src="img/icons/audioplayer/next.png" alt="pause">
+					<a href="#"><h5 title="Lorem ipsum dolor sit amet, consectetur." class="play_title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, est.</h5></a>
+					<audio id="audio-player">
+						<source src="audio/Mind_Vortex_Alive.mp3" type="audio/mp3">
+						</audio>
+						<div class="dropdown left">
+							<button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+								<img src="img/icons/audioplayer/arrow.png" alt="dropdown">
+							</button>
+							<ul class="dropdown-menu">
+								<li><a href="#">Repeat this track</a></li>
+								<li><a href="#">Mix audiotracks</a></li>
+								<li><a href="#">Show similar tracks</a></li>
+								<li><a href="#">Send to a friend</a></li>
+							</ul>
+						</div>
+						<button class="audio_icons icon"><img src="img/icons/audioplayer/favorite.png" alt="favorite"></button>
+						<button class="audio_icons favorit"><img src="img/icons/audioplayer/icon.png" alt="icon"></button>
+						<button class="audio_icons download"><img src="img/icons/audioplayer/download.png" alt="download"></button>
+					</li>
+					<li class="container_music">
+						<ul class="play_list_all clearfix">
+								<li class="audio-player playlist_tracks">
+									<img src="img/icons/audioplayer/play.png" alt="play">
+									<a href="#"><h5 title="Lorem ipsum dolor sit amet, consectetur.">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, quaerat?</h5></a>
+									<span>00:00</span>
+									<audio>
+										<source src="audio/Mind_Vortex_Alive.mp3" type="audio/mp3">
+									</audio>
+								</li>
+								<li class="audio-player playlist_tracks">
+								<img src="img/icons/audioplayer/play.png" alt="play">
+								<a href="#"><h5 title="Lorem ipsum dolor sit amet, consectetur.">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, quaerat?</h5></a>
+								<span>00:00</span>
+									<audio>
+										<source src="audio/Mind_Vortex_Alive.mp3" type="audio/mp3">
+									</audio>
+								</li>
+								<li class="audio-player playlist_tracks">
+									<img src="img/icons/audioplayer/play.png" alt="play">
+									<a href="#"><h5 title="Lorem ipsum dolor sit amet, consectetur.">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, quaerat?</h5></a>
+									<span>00:00</span>
+									<audio>
+										<source src="audio/Mind_Vortex_Alive.mp3" type="audio/mp3">
+									</audio>
+								</li>
+								<li class="audio-player playlist_tracks">
+									<img src="img/icons/audioplayer/play.png" alt="play">
+									<a href="#"><h5 title="Lorem ipsum dolor sit amet, consectetur.">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, quaerat?</h5></a>
+									<span>00:00</span>
+									<audio>
+										<source src="audio/Mind_Vortex_Alive.mp3" type="audio/mp3">
+									</audio>
+								</li>
+								<li class="audio-player playlist_tracks">
+									<img src="img/icons/audioplayer/play.png" alt="play">
+									<a href="#"><h5 title="Lorem ipsum dolor sit amet, consectetur.">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, quaerat?</h5></a>
+									<span>00:00</span>
+									<audio>
+										<source src="audio/Mind_Vortex_Alive.mp3" type="audio/mp3">
+									</audio>
+								</li>
+								<li class="audio-player playlist_tracks">
+									<img src="img/icons/audioplayer/play.png" alt="play">
+									<a href="#"><h5 title="Lorem ipsum dolor sit amet, consectetur.">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, quaerat?</h5></a>
+									<span>00:00</span>
+									<audio>
+										<source src="audio/Mind_Vortex_Alive.mp3" type="audio/mp3">
+									</audio>
+								</li>
+								<li class="audio-player playlist_tracks">
+									<img src="img/icons/audioplayer/play.png" alt="play">
+									<a href="#"><h5 title="Lorem ipsum dolor sit amet, consectetur.">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, quaerat?</h5></a>
+									<span>00:00</span>
+									<audio>
+										<source src="audio/Mind_Vortex_Alive.mp3" type="audio/mp3">
+									</audio>
+								</li>
+								<li class="audio-player playlist_tracks">
+									<img src="img/icons/audioplayer/play.png" alt="play">
+									<a href="#"><h5 title="Lorem ipsum dolor sit amet, consectetur.">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, quaerat?</h5></a>
+									<span>00:00</span>
+									<audio>
+										<source src="audio/Mind_Vortex_Alive.mp3" type="audio/mp3">
+									</audio>
+								</li>
+								<li class="audio-player playlist_tracks">
+									<img src="img/icons/audioplayer/play.png" alt="play">
+									<a href="#"><h5 title="Lorem ipsum dolor sit amet, consectetur.">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, quaerat?</h5></a>
+									<span>00:00</span>
+									<audio>
+										<source src="audio/Mind_Vortex_Alive.mp3" type="audio/mp3">
+									</audio>
+								</li>
+								<li class="audio-player playlist_tracks">
+									<img src="img/icons/audioplayer/play.png" alt="play">
+									<a href="#"><h5 title="Lorem ipsum dolor sit amet, consectetur.">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, quaerat?</h5></a>
+									<span>00:00</span>
+									<audio>
+										<source src="audio/Mind_Vortex_Alive.mp3" type="audio/mp3">
+									</audio>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<!-- //END: Media nav left -->
+
+		<!-- START: main content area -->
+		<div class="content_container clearfix">
+			 <!-- START: Left column -->
+			<aside class="left_sidebar left">
+				<nav>
+					<ul class="left_menu">
+						<li><a href="#">
+								<img src="img/icons/left-sidebar/bell1.png" alt="bell">
+								<span class="news">243</span>
+								My notifications
+							</a></li>
+						<li><a href="#">
+								<img src="img/icons/left-sidebar/mail.png" alt="bell">
+								Zi Chat
+							</a></li>
+						<li class="open_friends"><a href="#">
+								<img src="img/icons/left-sidebar/person.png" alt="person">
+								<span class="news">16</span>
+								My friends
+								</a>
+								<ul class="friends_toggle">
+									<li><a href="index.html">All friends</a></li>
+									<li><a href="#">Friends online</a></li>
+									<li><a href="#">Friend reqests</a></li>
+							</ul>
+						</li>
+						<li><a href="#">
+								<img src="img/icons/left-sidebar/2_person.png" alt="2_person">
+								<span class="news">16</span>
+								My groups
+							</a></li>
+						<li><a href="photos_main.html">
+								<img src="img/icons/left-sidebar/camera.png" alt="photos">
+								My photos
+							</a></li>
+						<li><a href="#">
+								<img src="img/icons/left-sidebar/note.png" alt="music">
+								My music
+							</a></li>
+						<li><a href="#">
+								<img src="img/icons/left-sidebar/video.png" alt="videos">
+								My videos
+							</a></li>
+						<li><a href="#">
+								<img src="img/icons/left-sidebar/playstation.png" alt="apps">
+								My apps
+							</a></li>
+						<li><a href="#">
+								<img src="img/icons/left-sidebar/hands.png" alt="trade">
+								My trade bazaar
+							</a></li>
+						<li class="open_friends"><a href="#">
+								<img src="img/icons/left-sidebar/earth.png" alt="advanture">
+								My adventures
+							</a>
+							<ul class="friends_toggle">
+									<li><a href="">Adventure Books</a></li>
+									<li><a href="#">Adventure Logs</a></li>
+							</ul></li>
+						<li><a href="#">
+								<img src="img/icons/left-sidebar/calendar.png" alt="events">
+								My events
+							</a></li>
+						<li><a href="#">
+								<img src="img/icons/left-sidebar/diagram.png" alt="business">
+								My Business
+							</a></li>
+						<li><a href="#">
+								<img src="img/icons/left-sidebar/eye.png" alt="sneak a peak">
+								Sneak a Peak
+							</a></li>
+					</ul>
+				</nav>
+					<h3 class="message-title">Last messages</h3>
+					<ul class="messages">
+						<li><a href="#"><img src="img/icons/left-sidebar/first-message.svg" alt="messages"></a>Lorem ipsum dolor sit amet. 
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, aliquam.</li>
+						<li><a href="#"><img src="img/icons/left-sidebar/second-message.png" alt="messages"></a>Lorem ipsum dolor sit amet.</li>
+						<li><a href="#"><img src="img/icons/left-sidebar/third-message.png" alt="messages"></a>Lorem ipsum dolor sit amet.</li>
+						<li><a href="#"><img src="img/icons/left-sidebar/first-message.png" alt="messages"></a>Lorem ipsum dolor sit amet.</li>
+						<li><a href="#"><img src="img/icons/left-sidebar/first-message.svg" alt="messages"></a>Lorem ipsum dolor sit amet.</li>
+						<li><a href="#"><img src="img/icons/left-sidebar/first-message.svg" alt="messages"></a>Lorem ipsum dolor sit amet.</li>
+					</ul>
+			</aside>
+			<!-- //END: Left column -->
+
+			<!-- START: Content section -->
+			<section class="main_container left">
+
+				<!-- Content wrap-->
+				<div class="wrap_all">
+					<div class="col-xs-12">
+						<div class="row">
+							<div class="profil_heading clearfix">
+								<div class="col-xs-12">
+									<div class="row">
+										<div class="profil_image">
+											<div class="col-xs-12">
+												<div class="row">
+													<img src="img/icons/my_profil/top_img.png" alt="img">
+													<div class="edit_photo">
+														<a href="#">
+															<span>Edit photo</span>
+															<div class="edit_img">
+																<img src="img/icons/my_profil/edit_photo.png" alt="img">
+															</div>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="main_info clearfix">
+								<div class="col-xs-12">
+									<div class="row">
+										<div class="line_with_avatar clearfix">
+											<div class="col-xs-12">
+												<div class="row">
+													<div class="col-xs-4 wrap_ava">
+														<div class="avatar">
+															<img src="img/icons/my_profil/first_img.jpg" alt="img">
+														</div>
+														<div class="edit_avatar">
+															<a href="#"><img src="img/icons/my_profil/edit_avatar.png" alt="img"> <span>Edit profil/video</span></a>
+														</div>
+														<div class="play_profil">
+															<div class="play_img"><img src="img/icons/my_profil/play_profil.png" alt="img"></div>
+															<span>play profil</span>
+														</div>
+													</div>
+													<div class="col-xs-5">
+														<div class="row">
+															<span class="profil_name">ANNA IVANOVA</span>
+														</div>
+													</div>
+													<div class="col-xs-3">
+														<div class="status">
+															<div class="online">
+																<div class="device">
+																	<img src="img/icons/my_profil/apple.png" alt="img">
+																	<img src="img/icons/my_profil/mobil.png" alt="img">
+																</div>
+																<span>online</span>
+																<img src="img/icons/my_profil/online.png" alt="img">
+															</div>
+															<div class="away hidden">
+																<div class="device">
+																	<img src="img/icons/my_profil/apple.png" alt="img">
+																	<img src="img/icons/my_profil/mobil.png" alt="img">
+																</div>
+																<span>away</span>
+																<img src="img/icons/my_profil/away.png" alt="img">
+															</div>
+															<div class="distrub hidden">
+																<div class="device">
+																	<img src="img/icons/my_profil/apple.png" alt="img">
+																	<img src="img/icons/my_profil/mobil.png" alt="img">
+																</div>
+																<span>do not distrub</span>
+																<img src="img/icons/my_profil/none.png" alt="">
+															</div>
+															<div class="check hidden">
+																<span>last cheking 3 hours ago</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="profil_content clearfix">
+											<div class="col-xs-12">
+												<div class="row">
+													<div class="col-xs-4">
+														<div class="profil_buttons">
+															<div class="col-xs-12">
+																<a href="#" class="bg_green">
+																	<img src="img/icons/my_profil/edit_prifil.png" alt="img">
+																	edit profile</a>
+																</div>
+																<div class="col-xs-12">
+																	<a href="#" class="bg_orange">
+																		<img src="img/icons/my_profil/change.png" alt="">
+																		change password</a>
+																	</div>
+																	<div class="col-xs-12">
+																		<a href="#" class="bg_blue">
+																			<img src="img/icons/my_profil/account.png" alt="">
+																			account settings</a>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-xs-8">
+																	<div class="row">
+																		<div class="profil_info mr clearfix">
+																			<div class="col-xs-12">
+																				<div class="row">
+																					<div class="status_bar">
+																						<div class="col-xs-12">
+																							<div class="row">
+																								<div class="person_status clearfix">
+																									<div class="col-xs-2">
+																										<div class="row">
+																											<div class="col-xs-3">
+																												<img class="person_img" src="img/icons/my_profil/person.png" alt="img">
+																											</div>
+																											<div class="col-xs-7">
+																												<span class="txt_green person_txt">Personal status</span>
+																											</div>
+																										</div>
+																									</div>
+																									<div class="col-xs-10">
+																										<textarea class="status" disabled>Lorem ipsum dolor sit amet</textarea>
+																										<img class="edit_status" src="img/icons/my_profil/edit.png" alt="img"  data-toggle="tooltip" data-placement="top" title="Edit">
+																										<img class="save_edit" src="img/icons/my_profil/save_change.png" alt="img" data-toggle="tooltip" data-placement="top" title="Save">
+																									</div>
+																								</div>
+																								<div class="person_status clearfix">
+																									<div class="col-xs-2">
+																										<div class="row">
+																											<div class="col-xs-3">
+																												<img class="person_img" src="img/icons/my_profil/hends.png" alt="img">
+																											</div>
+																											<div class="col-xs-7">
+																												<span class="txt_blue person_txt">Trade status</span>
+																											</div>
+																										</div>
+																									</div>
+																									<div class="col-xs-10">
+																										<textarea class="status" disabled>Lorem ipsum dolor sit amet, consectetur</textarea>
+																										<img class="edit_status" src="img/icons/my_profil/edit.png" alt="img"  data-toggle="tooltip" data-placement="top" title="Edit">
+																										<img class="save_edit" src="img/icons/my_profil/save_change.png" alt="img" data-toggle="tooltip" data-placement="top" title="Save">
+																									</div>
+																								</div>
+																								<div class="person_status clearfix">
+																									<div class="col-xs-2">
+																										<div class="row">
+																											<div class="col-xs-3">
+																												<img class="person_img" src="img/icons/my_profil/advanture.png" alt="img">
+																											</div>
+																											<div class="col-xs-7">
+																												<span class="txt_orange person_txt">Adventure status</span>
+																											</div>
+																										</div>
+																									</div>
+																									<div class="col-xs-10">
+																										<textarea class="status" disabled>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor</textarea>
+																										<img class="edit_status" src="img/icons/my_profil/edit.png" alt="img"  data-toggle="tooltip" data-placement="top" title="Edit">
+																										<img class="save_edit" src="img/icons/my_profil/save_change.png" alt="img" data-toggle="tooltip" data-placement="top" title="Save">
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="col-xs-12">
+																				<div class="row">
+																					<div class="description_profil clearfix">
+																						<div class="col-xs-12 desc_item">
+																							<div class="col-xs-4">
+																								Birthday:
+																							</div>
+																							<div class="col-xs-8">
+																								September 7, 1996
+																							</div>
+																						</div>
+																						<div class="col-xs-12 desc_item">
+																							<div class="col-xs-4">
+																								Lives in:
+																							</div>
+																							<div class="col-xs-8">
+																								Kiev, Sevastopol
+																							</div>
+																						</div>
+																						<div class="col-xs-12 desc_item">
+																							<div class="col-xs-4">
+																								Works in:
+																							</div>
+																							<div class="col-xs-8">
+																								UAD
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="col-xs-12 show_more_info">
+																				<a href="#">Show more personal information	<img src="img/icons/my_profil/arrow.png" alt="img">	</a>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="wrap_tape clearfix">
+											<!--START: photos tape -->
+											<div class="col-xs-12">
+												<div class="row">
+													<div class="tape clearfix">
+														<div class="col-xs-12">
+															<div class="heading clearfix">
+																<div class="col-xs-12">
+																	<div class="row">
+																		<div class="col-xs-6">
+																			<div class="row">
+																				<a href="#"><img src="img/icons/my_profil/photo.png" alt="img">
+																					<span class="title_tape">photos</span></a>
+																				</div>
+																			</div>
+																			<div class="col-xs-6 right_txt">
+																				<div class="row">
+																					<span class="sum">345</span>
+																					<a class="sum_link" href="#">show all</a>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="tape_content top_tape clearfix">
+																	<div class="col-xs-12">
+																		<div class="row">
+																			<div class="popup-gallery">
+																				<div class="col-xs-2">
+																					<div class="row">
+																						<div class="item">
+																							<div class="img_wrap">
+																								<a href="#" class="popup_content"  data-toggle="modal" data-target=".bs-example-modal-lg"><img class="main_img" src="img/icons/section_albums/sixth.png" alt="img"></a>
+																							</div>
+																							<div class="hidden">
+																								<div class="podrt_descr">
+																								<button type="button" class="arrow_popup arrow_popup_left"></button>
+																								<button type="button" class="arrow_popup arrow_popup_right"></button>
+																									<div class="modal-box-content">
+																										<div class="img_wrap left">
+																											<img src="img/icons/section_albums/sixth.png" alt="Alt"/>
+																										</div>
+																										<!-- <div class="preview_hide">
+																											<a href="#" class="share"></a><span>134</span>
+																											<a href="#" class="like"></a><span>134</span>
+																											<a href="#" class="toggle-mnu3"><span></span></a>
+																										</div> -->
+																										<div class="wrap_right_side clearfix">
+																											<div class="album_description right">
+																												<div class="top_description">
+																													<a href="#" class="user"><img src="img/icons/Popup/ava.png" alt="ava" /></a>
+																													<span class="user_name">Anna Ivanova</span>
+																													<a href="#" class="album_name">My vacacion in Greece</a>
+																													<span class="date">October 3, 2015</span>
+																													<div class="dropdown right">
+																														<button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+																															<img class="drop_arrow" src="img/icons/section_albums_view/arrow.png" alt="dropdown">
+																														</button>
+																														<ul class="dropdown-menu">
+																															<li><a href="#">Add location</a></li>
+																															<li><a href="#">Add person</a></li>
+																															<li><a href="#">Make profile picture</a></li>
+																															<li><a href="#">Make cover photo</a></li>
+																															<li><a href="#">Get link</a></li>
+																															<li><a href="#">Delete photo</a></li>
+																														</ul>
+																													</div>
+																												</div>
+																												<div class="bottom_description">
+																													<h5>The best vacation I’ve ever had! Lorem ipsum dolor sit a. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate corrupti similique inventore dolor, accusamus illum eveniet quaerat iste ab tempora suscipit tempore perferendis laboriosam odit in dicta cupiditate quia nobis magni, debitis asperiores at autem. Harum adipisci ipsam consequuntur repellat, distinctio odit, sit, temporibus vero doloremque velit tenetur maxime magni.
+																													.</h5>
+																													<ul class="with_friend">
+																														<li>With</li>
+																														<li><a href="#" class="friend">Garet Bale,</a></li>
+																														<li><a href="#" class="friend">James Rodrigues,</a></li>
+																														<li><a href="#" class="friend">Tony Kross,</a></li>
+																														<li><a href="#" class="friend">Karim Benzema,</a></li>
+																														<li>in</li>
+																														<li><a href="#" class="place">Athens,</a></li>
+																														<li><a href="#" class="place">Greece.</a></li>
+																													</ul>
+																													<ul class="hashtag">
+																														<li><a href="#">#loremsda</a></li>
+																														<li><a href="#">#loremd</a></li>
+																														<li><a href="#">#loremsdsdsd</a></li>
+																														<li><a href="#">#loremsaa</a></li>
+																														<li><a href="#">#loremsd</a></li>
+																														<li><a href="#">#loremsd</a></li>
+
+																													</ul>
+																													<!-- <div class="wrap_arrow">
+																														<img class="open_description" src="img/icons/Popup/aroow_blue.png" alt="arrow" />
+																													</div> -->
+																												</div>
+																											</div>
+																											<!-- <div class="comments popup right">
+																												<ul>
+																													<li class="clearfix">
+																														<a href="#" class="avatar left"><img class="" src="img/icons/section_albums_view/fifth.png" alt="ava" /></a>
+																														<p><strong>Anna Ivanova</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fu, ducimus</p>
+																														<div class="answer right clearfix">
+																															<span class="left data">14.09.2016</span>
+																															<span class="left answer_word">Answer</span>
+																															<span class="right comment_sum">134</span>
+																															<a href="#" class="like_comment right"><img src="img/icons/section_albums/like.png" alt="like"></a>
+																														</div>
+																													</li>
+																													<li class="clearfix">
+																														<a href="#" class="avatar left"><img class="" src="img/icons/section_albums_view/fifth.png" alt="ava" /></a>
+																														<p><strong>Anna Ivanova</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fu, ducimus</p>
+																														<div class="answer right clearfix">
+																															<span class="left data">14.09.2016</span>
+																															<span class="left answer_word">Answer</span>
+																															<span class="right comment_sum">134</span>
+																															<a href="#" class="like_comment right"><img src="img/icons/section_albums/like.png" alt="like"></a>
+																														</div>
+																													</li>
+																													<li class="clearfix">
+																														<a href="#" class="avatar left"><img class="" src="img/icons/section_albums_view/fifth.png" alt="ava" /></a>
+																														<p><strong>Anna Ivanova</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fu, ducimus Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam nulla consectetur totam fugit adipisci sunt, debitis recusandae obcaecati cum eum!</p>
+																														<div class="answer right clearfix">
+																															<span class="left data">14.09.2016</span>
+																															<span class="left answer_word">Answer</span>
+																															<span class="right comment_sum">134</span>
+																															<a href="#" class="like_comment right"><img src="img/icons/section_albums/like.png" alt="like"></a>
+																														</div>
+																													</li>
+																													<li class="clearfix">
+																														<a href="#" class="avatar left"><img class="" src="img/icons/section_albums_view/fifth.png" alt="ava" /></a>
+																														<p><strong>Anna Ivanova</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fu, ducimus</p>
+																														<div class="answer right clearfix">
+																															<span class="left data">14.09.2016</span>
+																															<span class="left answer_word">Answer</span>
+																															<span class="right comment_sum">134</span>
+																															<a href="#" class="like_comment right"><img src="img/icons/section_albums/like.png" alt="like"></a>
+																														</div>
+																													</li>
+																												</ul>
+																												<textarea class="right chat_field" placeholder="Write a comment..." onfocus="this.placeholder = ''" ></textarea>
+																											</div> -->
+																										</div>
+																										<!-- <div class="owl-carousel popup_slider">
+																											<div class="item"><a href="#"><img src="img/icons/Popup/second_img.jpg" alt="" /></a></div>
+																											<div class="item"><a href="#"><img src="img/icons/Popup/third_img.jpg" alt="" /></a></div>
+																											<div class="item"><a href="#"><img src="img/icons/Popup/first_img.jpg" alt="" /></a></div>
+																											<div class="item"><a href="#"><img src="img/icons/Popup/second_img.jpg" alt="" /></a></div>
+																											<div class="item"><a href="#"><img src="img/icons/Popup/first_img.jpg" alt="" /></a></div>
+																											<div class="item"><a href="#"><img src="img/icons/Popup/foth_img.jpg" alt="" /></a></div>
+																											<div class="item"><a href="#"><img src="img/icons/Popup/third_img.jpg" alt="" /></a></div>
+																										</div> -->
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																				<div class="col-xs-2">
+																					<div class="row">
+																						<div class="item">
+																							<div class="img_wrap">
+																								<a href="#" class="popup_content" data-toggle="modal" data-target=".bs-example-modal-lg"><img class="main_img" src="img/icons/section_albums_view/second_img.jpg" alt="img"></a>
+																							</div>
+																							<div class="hidden">
+																								<div class="podrt_descr">
+																									<button type="button" class="arrow_popup arrow_popup_left"></button>
+																									<button type="button" class="arrow_popup arrow_popup_right"></button>
+																									<div class="modal-box-content">
+																										<div class="img_wrap left">
+																											<img src="img/icons/section_albums_view/second_img.jpg" alt="Alt"/>
+																										</div>
+																										<!-- <div class="preview_hide">
+																											<a href="#" class="share"></a><span>134</span>
+																											<a href="#" class="like"></a><span>134</span>
+																											<a href="#" class="toggle-mnu3"><span></span></a>
+																										</div> -->
+																										<div class="wrap_right_side clearfix">
+																											<div class="album_description right">
+																												<div class="top_description">
+																													<a href="#" class="user"><img src="img/icons/Popup/ava.png" alt="ava" /></a>
+																													<span class="user_name">Anna Ivanova</span>
+																													<a href="#" class="album_name">My vacacion in Greece</a>
+																													<span class="date">October 3, 2015</span>
+																													<div class="dropdown right">
+																														<button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+																															<img class="drop_arrow" src="img/icons/section_albums_view/arrow.png" alt="dropdown">
+																														</button>
+																														<ul class="dropdown-menu">
+																															<li><a href="#">Add location</a></li>
+																															<li><a href="#">Add person</a></li>
+																															<li><a href="#">Make profile picture</a></li>
+																															<li><a href="#">Make cover photo</a></li>
+																															<li><a href="#">Get link</a></li>
+																															<li><a href="#">Delete photo</a></li>
+																														</ul>
+																													</div>
+																												</div>
+																												<div class="bottom_description">
+																													<h5>The best vacation I’ve ever had! Lorem ipsum dolor sit a. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate corrupti similique inventore dolor, accusamus illum eveniet quaerat iste ab tempora suscipit tempore perferendis laboriosam odit in dicta cupiditate quia nobis magni, debitis asperiores at autem. Harum adipisci ipsam consequuntur repellat, distinctio odit, sit, temporibus vero doloremque velit tenetur maxime magni.</h5>
+																													<ul class="with_friend">
+																														<li>With</li>
+																														<li><a href="#" class="friend">Garet Bale,</a></li>
+																														<li><a href="#" class="friend">James Rodrigues,</a></li>
+																														<li><a href="#" class="friend">Tony Kross,</a></li>
+																														<li><a href="#" class="friend">Karim Benzema,</a></li>
+																														<li>in</li>
+																														<li><a href="#" class="place">Athens,</a></li>
+																														<li><a href="#" class="place">Greece.</a></li>
+																													</ul>
+																													<ul class="hashtag">
+																														<li><a href="#">#loremsda</a></li>
+																														<li><a href="#">#loremd</a></li>
+																														<li><a href="#">#loremsdsdsd</a></li>
+																														<li><a href="#">#loremsaa</a></li>
+																														<li><a href="#">#loremsd</a></li>
+																														<li><a href="#">#loremsd</a></li>
+
+																													</ul>
+																													<!-- <div class="wrap_arrow">
+																														<img class="open_description" src="img/icons/Popup/aroow_blue.png" alt="arrow" />
+																													</div> -->
+																												</div>
+																											</div>
+																											<!-- <div class="comments popup right">
+																												<ul>
+																													<li class="clearfix">
+																														<a href="#" class="avatar left"><img class="" src="img/icons/section_albums_view/fifth.png" alt="ava" /></a>
+																														<p><strong>Anna Ivanova</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fu, ducimus</p>
+																														<div class="answer right clearfix">
+																															<span class="left data">14.09.2016</span>
+																															<span class="left answer_word">Answer</span>
+																															<span class="right comment_sum">134</span>
+																															<a href="#" class="like_comment right"><img src="img/icons/section_albums/like.png" alt="like"></a>
+																														</div>
+																													</li>
+																													<li class="clearfix">
+																														<a href="#" class="avatar left"><img class="" src="img/icons/section_albums_view/fifth.png" alt="ava" /></a>
+																														<p><strong>Anna Ivanova</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fu, ducimus</p>
+																														<div class="answer right clearfix">
+																															<span class="left data">14.09.2016</span>
+																															<span class="left answer_word">Answer</span>
+																															<span class="right comment_sum">134</span>
+																															<a href="#" class="like_comment right"><img src="img/icons/section_albums/like.png" alt="like"></a>
+																														</div>
+																													</li>
+																													<li class="clearfix">
+																														<a href="#" class="avatar left"><img class="" src="img/icons/section_albums_view/fifth.png" alt="ava" /></a>
+																														<p><strong>Anna Ivanova</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fu, ducimus Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam nulla consectetur totam fugit adipisci sunt, debitis recusandae obcaecati cum eum!</p>
+																														<div class="answer right clearfix">
+																															<span class="left data">14.09.2016</span>
+																															<span class="left answer_word">Answer</span>
+																															<span class="right comment_sum">134</span>
+																															<a href="#" class="like_comment right"><img src="img/icons/section_albums/like.png" alt="like"></a>
+																														</div>
+																													</li>
+																													<li class="clearfix">
+																														<a href="#" class="avatar left"><img class="" src="img/icons/section_albums_view/fifth.png" alt="ava" /></a>
+																														<p><strong>Anna Ivanova</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fu, ducimus</p>
+																														<div class="answer right clearfix">
+																															<span class="left data">14.09.2016</span>
+																															<span class="left answer_word">Answer</span>
+																															<span class="right comment_sum">134</span>
+																															<a href="#" class="like_comment right"><img src="img/icons/section_albums/like.png" alt="like"></a>
+																														</div>
+																													</li>
+																												</ul>
+																												<textarea class="right chat_field" placeholder="Write a comment..." onfocus="this.placeholder = ''" ></textarea>
+																											</div> -->
+																										</div>
+																										<!-- <div class="owl-carousel popup_slider">
+																											<div class="item"><a href="#"><img src="img/icons/Popup/second_img.jpg" alt="" /></a></div>
+																											<div class="item"><a href="#"><img src="img/icons/Popup/third_img.jpg" alt="" /></a></div>
+																											<div class="item"><a href="#"><img src="img/icons/Popup/first_img.jpg" alt="" /></a></div>
+																											<div class="item"><a href="#"><img src="img/icons/Popup/second_img.jpg" alt="" /></a></div>
+																											<div class="item"><a href="#"><img src="img/icons/Popup/first_img.jpg" alt="" /></a></div>
+																											<div class="item"><a href="#"><img src="img/icons/Popup/foth_img.jpg" alt="" /></a></div>
+																											<div class="item"><a href="#"><img src="img/icons/Popup/third_img.jpg" alt="" /></a></div>
+																										</div> -->
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																				<div class="col-xs-2">
+																					<div class="row">
+																						<div class="item">
+																							<div class="img_wrap">
+																								<a href="#" class="popup_content" data-toggle="modal" data-target=".bs-example-modal-lg"><img class="main_img" src="img/icons/section_albums_view/third_img.jpg" alt="img"></a>
+																							</div>
+																							<div class="hidden">
+																								<div class="podrt_descr">
+																									<button type="button" class="arrow_popup arrow_popup_left"></button>
+																									<button type="button" class="arrow_popup arrow_popup_right"></button>
+																									<div class="modal-box-content">
+																										<div class="img_wrap left">
+																											<img src="img/icons/section_albums_view/third_img.jpg" alt="Alt"/>
+																										</div>
+																										<!-- <div class="preview_hide">
+																											<a href="#" class="share"></a><span>134</span>
+																											<a href="#" class="like"></a><span>134</span>
+																											<a href="#" class="toggle-mnu3"><span></span></a>
+																										</div> -->
+																										<div class="wrap_right_side clearfix">
+																											<div class="album_description right">
+																												<div class="top_description">
+																													<a href="#" class="user"><img src="img/icons/Popup/ava.png" alt="ava" /></a>
+																													<span class="user_name">Anna Ivanova</span>
+																													<a href="#" class="album_name">My vacacion in Greece</a>
+																													<span class="date">October 3, 2015</span>
+																													<div class="dropdown right">
+																														<button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+																															<img class="drop_arrow" src="img/icons/section_albums_view/arrow.png" alt="dropdown">
+																														</button>
+																														<ul class="dropdown-menu">
+																															<li><a href="#">Add location</a></li>
+																															<li><a href="#">Add person</a></li>
+																															<li><a href="#">Make profile picture</a></li>
+																															<li><a href="#">Make cover photo</a></li>
+																															<li><a href="#">Get link</a></li>
+																															<li><a href="#">Delete photo</a></li>
+																														</ul>
+																													</div>
+																												</div>
+																												<div class="bottom_description">
+																													<h5>The best vacation I’ve ever had! Lorem ipsum dolor sit a. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate corrupti similique inventore dolor, accusamus illum eveniet quaerat iste ab tempora suscipit tempore perferendis laboriosam odit in dicta cupiditate quia nobis magni, debitis asperiores at autem. Harum adipisci ipsam consequuntur repellat, distinctio odit, sit, temporibus vero doloremque velit tenetur maxime magni.</h5>
+																													<ul class="with_friend">
+																														<li>With</li>
+																														<li><a href="#" class="friend">Garet Bale,</a></li>
+																														<li><a href="#" class="friend">James Rodrigues,</a></li>
+																														<li><a href="#" class="friend">Tony Kross,</a></li>
+																														<li><a href="#" class="friend">Karim Benzema,</a></li>
+																														<li>in</li>
+																														<li><a href="#" class="place">Athens,</a></li>
+																														<li><a href="#" class="place">Greece.</a></li>
+																													</ul>
+																													<ul class="hashtag">
+																														<li><a href="#">#loremsda</a></li>
+																														<li><a href="#">#loremd</a></li>
+																														<li><a href="#">#loremsdsdsd</a></li>
+																														<li><a href="#">#loremsaa</a></li>
+																														<li><a href="#">#loremsd</a></li>
+																														<li><a href="#">#loremsd</a></li>
+
+																													</ul>
+																													<!-- <div class="wrap_arrow">
+																														<img class="open_description" src="img/icons/Popup/aroow_blue.png" alt="arrow" />
+																													</div> -->
+																												</div>
+																											</div>
+																											<!-- <div class="comments popup right">
+																												<ul>
+																													<li class="clearfix">
+																														<a href="#" class="avatar left"><img class="" src="img/icons/section_albums_view/fifth.png" alt="ava" /></a>
+																														<p><strong>Anna Ivanova</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fu, ducimus</p>
+																														<div class="answer right clearfix">
+																															<span class="left data">14.09.2016</span>
+																															<span class="left answer_word">Answer</span>
+																															<span class="right comment_sum">134</span>
+																															<a href="#" class="like_comment right"><img src="img/icons/section_albums/like.png" alt="like"></a>
+																														</div>
+																													</li>
+																													<li class="clearfix">
+																														<a href="#" class="avatar left"><img class="" src="img/icons/section_albums_view/fifth.png" alt="ava" /></a>
+																														<p><strong>Anna Ivanova</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fu, ducimus</p>
+																														<div class="answer right clearfix">
+																															<span class="left data">14.09.2016</span>
+																															<span class="left answer_word">Answer</span>
+																															<span class="right comment_sum">134</span>
+																															<a href="#" class="like_comment right"><img src="img/icons/section_albums/like.png" alt="like"></a>
+																														</div>
+																													</li>
+																													<li class="clearfix">
+																														<a href="#" class="avatar left"><img class="" src="img/icons/section_albums_view/fifth.png" alt="ava" /></a>
+																														<p><strong>Anna Ivanova</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fu, ducimus Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam nulla consectetur totam fugit adipisci sunt, debitis recusandae obcaecati cum eum!</p>
+																														<div class="answer right clearfix">
+																															<span class="left data">14.09.2016</span>
+																															<span class="left answer_word">Answer</span>
+																															<span class="right comment_sum">134</span>
+																															<a href="#" class="like_comment right"><img src="img/icons/section_albums/like.png" alt="like"></a>
+																														</div>
+																													</li>
+																													<li class="clearfix">
+																														<a href="#" class="avatar left"><img class="" src="img/icons/section_albums_view/fifth.png" alt="ava" /></a>
+																														<p><strong>Anna Ivanova</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fu, ducimus</p>
+																														<div class="answer right clearfix">
+																															<span class="left data">14.09.2016</span>
+																															<span class="left answer_word">Answer</span>
+																															<span class="right comment_sum">134</span>
+																															<a href="#" class="like_comment right"><img src="img/icons/section_albums/like.png" alt="like"></a>
+																														</div>
+																													</li>
+																												</ul>
+																												<textarea class="right chat_field" placeholder="Write a comment..." onfocus="this.placeholder = ''" ></textarea>
+																											</div> -->
+																										</div>
+																										<!-- <div class="owl-carousel popup_slider">
+																											<div class="item"><a href="#"><img src="img/icons/Popup/second_img.jpg" alt="" /></a></div>
+																											<div class="item"><a href="#"><img src="img/icons/Popup/third_img.jpg" alt="" /></a></div>
+																											<div class="item"><a href="#"><img src="img/icons/Popup/first_img.jpg" alt="" /></a></div>
+																											<div class="item"><a href="#"><img src="img/icons/Popup/second_img.jpg" alt="" /></a></div>
+																											<div class="item"><a href="#"><img src="img/icons/Popup/first_img.jpg" alt="" /></a></div>
+																											<div class="item"><a href="#"><img src="img/icons/Popup/foth_img.jpg" alt="" /></a></div>
+																											<div class="item"><a href="#"><img src="img/icons/Popup/third_img.jpg" alt="" /></a></div>
+																										</div> -->
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																				<div class="col-xs-2">
+																					<div class="row">
+																						<div class="item">
+																							<div class="img_wrap">
+																								<a href="#" class="popup_content" data-toggle="modal" data-target=".bs-example-modal-lg"><img class="main_img" src="img/icons/section_albums_view/foth_img.jpg" alt="img"></a>
+																							</div>
+																							<div class="hidden">
+																								<div class="podrt_descr">
+																									<button type="button" class="arrow_popup arrow_popup_left"></button>
+																									<button type="button" class="arrow_popup arrow_popup_right"></button>
+																									<div class="modal-box-content">
+																										<div class="img_wrap left">
+																											<img src="img/icons/section_albums_view/foth_img.jpg" alt="Alt"/>
+																										</div>
+																										<!-- <div class="preview_hide">
+																											<a href="#" class="share"></a><span>134</span>
+																											<a href="#" class="like"></a><span>134</span>
+																											<a href="#" class="toggle-mnu3"><span></span></a>
+																										</div> -->
+																										<div class="wrap_right_side clearfix">
+																											<div class="album_description right">
+																												<div class="top_description">
+																													<a href="#" class="user"><img src="img/icons/Popup/ava.png" alt="ava" /></a>
+																													<span class="user_name">Anna Ivanova</span>
+																													<a href="#" class="album_name">My vacacion in Greece</a>
+																													<span class="date">October 3, 2015</span>
+																													<div class="dropdown right">
+																														<button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+																															<img class="drop_arrow" src="img/icons/section_albums_view/arrow.png" alt="dropdown">
+																														</button>
+																														<ul class="dropdown-menu">
+																															<li><a href="#">Add location</a></li>
+																															<li><a href="#">Add person</a></li>
+																															<li><a href="#">Make profile picture</a></li>
+																															<li><a href="#">Make cover photo</a></li>
+																															<li><a href="#">Get link</a></li>
+																															<li><a href="#">Delete photo</a></li>
+																														</ul>
+																													</div>
+																												</div>
+																												<div class="bottom_description">
+																													<h5>The best vacation I’ve ever had! Lorem ipsum dolor sit a. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate corrupti similique inventore dolor, accusamus illum eveniet quaerat iste ab tempora suscipit tempore perferendis laboriosam odit in dicta cupiditate quia nobis magni, debitis asperiores at autem. Harum adipisci ipsam consequuntur repellat, distinctio odit, sit, temporibus vero doloremque velit tenetur maxime magni.</h5>
+																													<ul class="with_friend">
+																														<li>With</li>
+																														<li><a href="#" class="friend">Garet Bale,</a></li>
+																														<li><a href="#" class="friend">James Rodrigues,</a></li>
+																														<li><a href="#" class="friend">Tony Kross,</a></li>
+																														<li><a href="#" class="friend">Karim Benzema,</a></li>
+																														<li>in</li>
+																														<li><a href="#" class="place">Athens,</a></li>
+																														<li><a href="#" class="place">Greece.</a></li>
+																													</ul>
+																													<ul class="hashtag">
+																														<li><a href="#">#loremsda</a></li>
+																														<li><a href="#">#loremd</a></li>
+																														<li><a href="#">#loremsdsdsd</a></li>
+																														<li><a href="#">#loremsaa</a></li>
+																														<li><a href="#">#loremsd</a></li>
+																														<li><a href="#">#loremsd</a></li>
+
+																													</ul>
+																													<!-- <div class="wrap_arrow">
+																														<img class="open_description" src="img/icons/Popup/aroow_blue.png" alt="arrow" />
+																													</div> -->
+																												</div>
+																											</div>
+																											<!-- <div class="comments popup right">
+																												<ul>
+																													<li class="clearfix">
+																														<a href="#" class="avatar left"><img class="" src="img/icons/section_albums_view/fifth.png" alt="ava" /></a>
+																														<p><strong>Anna Ivanova</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fu, ducimus</p>
+																														<div class="answer right clearfix">
+																															<span class="left data">14.09.2016</span>
+																															<span class="left answer_word">Answer</span>
+																															<span class="right comment_sum">134</span>
+																															<a href="#" class="like_comment right"><img src="img/icons/section_albums/like.png" alt="like"></a>
+																														</div>
+																													</li>
+																													<li class="clearfix">
+																														<a href="#" class="avatar left"><img class="" src="img/icons/section_albums_view/fifth.png" alt="ava" /></a>
+																														<p><strong>Anna Ivanova</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fu, ducimus</p>
+																														<div class="answer right clearfix">
+																															<span class="left data">14.09.2016</span>
+																															<span class="left answer_word">Answer</span>
+																															<span class="right comment_sum">134</span>
+																															<a href="#" class="like_comment right"><img src="img/icons/section_albums/like.png" alt="like"></a>
+																														</div>
+																													</li>
+																													<li class="clearfix">
+																														<a href="#" class="avatar left"><img class="" src="img/icons/section_albums_view/fifth.png" alt="ava" /></a>
+																														<p><strong>Anna Ivanova</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fu, ducimus Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam nulla consectetur totam fugit adipisci sunt, debitis recusandae obcaecati cum eum!</p>
+																														<div class="answer right clearfix">
+																															<span class="left data">14.09.2016</span>
+																															<span class="left answer_word">Answer</span>
+																															<span class="right comment_sum">134</span>
+																															<a href="#" class="like_comment right"><img src="img/icons/section_albums/like.png" alt="like"></a>
+																														</div>
+																													</li>
+																													<li class="clearfix">
+																														<a href="#" class="avatar left"><img class="" src="img/icons/section_albums_view/fifth.png" alt="ava" /></a>
+																														<p><strong>Anna Ivanova</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fu, ducimus</p>
+																														<div class="answer right clearfix">
+																															<span class="left data">14.09.2016</span>
+																															<span class="left answer_word">Answer</span>
+																															<span class="right comment_sum">134</span>
+																															<a href="#" class="like_comment right"><img src="img/icons/section_albums/like.png" alt="like"></a>
+																														</div>
+																													</li>
+																												</ul>
+																												<textarea class="right chat_field" placeholder="Write a comment..." onfocus="this.placeholder = ''" ></textarea>
+																											</div> -->
+																										</div>
+																										<!-- <div class="owl-carousel popup_slider">
+																											<div class="item"><a href="#"><img src="img/icons/Popup/second_img.jpg" alt="" /></a></div>
+																											<div class="item"><a href="#"><img src="img/icons/Popup/third_img.jpg" alt="" /></a></div>
+																											<div class="item"><a href="#"><img src="img/icons/Popup/first_img.jpg" alt="" /></a></div>
+																											<div class="item"><a href="#"><img src="img/icons/Popup/second_img.jpg" alt="" /></a></div>
+																											<div class="item"><a href="#"><img src="img/icons/Popup/first_img.jpg" alt="" /></a></div>
+																											<div class="item"><a href="#"><img src="img/icons/Popup/foth_img.jpg" alt="" /></a></div>
+																											<div class="item"><a href="#"><img src="img/icons/Popup/third_img.jpg" alt="" /></a></div>
+																										</div> -->
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																				<div class="col-xs-2">
+																					<div class="row">
+																						<div class="item">
+																							<div class="img_wrap">
+																								<a href="#" class="popup_content" data-toggle="modal" data-target=".bs-example-modal-lg"><img class="main_img" src="img/icons/section_albums_view/first_img.jpg" alt="img"></a>
+																							</div>
+																							<div class="hidden">
+																								<div class="podrt_descr">
+																									<button type="button" class="arrow_popup arrow_popup_left"></button>
+																									<button type="button" class="arrow_popup arrow_popup_right"></button>
+																									<div class="modal-box-content">
+																										<div class="img_wrap left">
+																											<img src="img/icons/section_albums_view/first_img.jpg" alt="Alt"/>
+																										</div>
+																										<!-- <div class="preview_hide">
+																											<a href="#" class="share"></a><span>134</span>
+																											<a href="#" class="like"></a><span>134</span>
+																											<a href="#" class="toggle-mnu3"><span></span></a>
+																										</div> -->
+																										<div class="wrap_right_side clearfix">
+																											<div class="album_description right">
+																												<div class="top_description">
+																													<a href="#" class="user"><img src="img/icons/Popup/ava.png" alt="ava" /></a>
+																													<span class="user_name">Anna Ivanova</span>
+																													<a href="#" class="album_name">My vacacion in Greece</a>
+																													<span class="date">October 3, 2015</span>
+																													<div class="dropdown right">
+																														<button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+																															<img class="drop_arrow" src="img/icons/section_albums_view/arrow.png" alt="dropdown">
+																														</button>
+																														<ul class="dropdown-menu">
+																															<li><a href="#">Add location</a></li>
+																															<li><a href="#">Add person</a></li>
+																															<li><a href="#">Make profile picture</a></li>
+																															<li><a href="#">Make cover photo</a></li>
+																															<li><a href="#">Get link</a></li>
+																															<li><a href="#">Delete photo</a></li>
+																														</ul>
+																													</div>
+																												</div>
+																												<div class="bottom_description">
+																													<h5>The best vacation I’ve ever had! Lorem ipsum dolor sit a. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate corrupti similique inventore dolor, accusamus illum eveniet quaerat iste ab tempora suscipit tempore perferendis laboriosam odit in dicta cupiditate quia nobis magni, debitis asperiores at autem. Harum adipisci ipsam consequuntur repellat, distinctio odit, sit, temporibus vero doloremque velit tenetur maxime magni.</h5>
+																													<ul class="with_friend">
+																														<li>With</li>
+																														<li><a href="#" class="friend">Garet Bale,</a></li>
+																														<li><a href="#" class="friend">James Rodrigues,</a></li>
+																														<li><a href="#" class="friend">Tony Kross,</a></li>
+																														<li><a href="#" class="friend">Karim Benzema,</a></li>
+																														<li>in</li>
+																														<li><a href="#" class="place">Athens,</a></li>
+																														<li><a href="#" class="place">Greece.</a></li>
+																													</ul>
+																													<ul class="hashtag">
+																														<li><a href="#">#loremsda</a></li>
+																														<li><a href="#">#loremd</a></li>
+																														<li><a href="#">#loremsdsdsd</a></li>
+																														<li><a href="#">#loremsaa</a></li>
+																														<li><a href="#">#loremsd</a></li>
+																														<li><a href="#">#loremsd</a></li>
+
+																													</ul>
+																													<!-- <div class="wrap_arrow">
+																														<img class="open_description" src="img/icons/Popup/aroow_blue.png" alt="arrow" />
+																													</div> -->
+																												</div>
+																											</div>
+																											<!-- <div class="comments popup right">
+																												<ul>
+																													<li class="clearfix">
+																														<a href="#" class="avatar left"><img class="" src="img/icons/section_albums_view/fifth.png" alt="ava" /></a>
+																														<p><strong>Anna Ivanova</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fu, ducimus</p>
+																														<div class="answer right clearfix">
+																															<span class="left data">14.09.2016</span>
+																															<span class="left answer_word">Answer</span>
+																															<span class="right comment_sum">134</span>
+																															<a href="#" class="like_comment right"><img src="img/icons/section_albums/like.png" alt="like"></a>
+																														</div>
+																													</li>
+																													<li class="clearfix">
+																														<a href="#" class="avatar left"><img class="" src="img/icons/section_albums_view/fifth.png" alt="ava" /></a>
+																														<p><strong>Anna Ivanova</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fu, ducimus</p>
+																														<div class="answer right clearfix">
+																															<span class="left data">14.09.2016</span>
+																															<span class="left answer_word">Answer</span>
+																															<span class="right comment_sum">134</span>
+																															<a href="#" class="like_comment right"><img src="img/icons/section_albums/like.png" alt="like"></a>
+																														</div>
+																													</li>
+																													<li class="clearfix">
+																														<a href="#" class="avatar left"><img class="" src="img/icons/section_albums_view/fifth.png" alt="ava" /></a>
+																														<p><strong>Anna Ivanova</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fu, ducimus Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam nulla consectetur totam fugit adipisci sunt, debitis recusandae obcaecati cum eum!</p>
+																														<div class="answer right clearfix">
+																															<span class="left data">14.09.2016</span>
+																															<span class="left answer_word">Answer</span>
+																															<span class="right comment_sum">134</span>
+																															<a href="#" class="like_comment right"><img src="img/icons/section_albums/like.png" alt="like"></a>
+																														</div>
+																													</li>
+																													<li class="clearfix">
+																														<a href="#" class="avatar left"><img class="" src="img/icons/section_albums_view/fifth.png" alt="ava" /></a>
+																														<p><strong>Anna Ivanova</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fu, ducimus</p>
+																														<div class="answer right clearfix">
+																															<span class="left data">14.09.2016</span>
+																															<span class="left answer_word">Answer</span>
+																															<span class="right comment_sum">134</span>
+																															<a href="#" class="like_comment right"><img src="img/icons/section_albums/like.png" alt="like"></a>
+																														</div>
+																													</li>
+																												</ul>
+																												<textarea class="right chat_field" placeholder="Write a comment..." onfocus="this.placeholder = ''" ></textarea>
+																											</div> -->
+																										</div>
+																										<!-- <div class="owl-carousel popup_slider">
+																											<div class="item"><a href="#"><img src="img/icons/Popup/second_img.jpg" alt="" /></a></div>
+																											<div class="item"><a href="#"><img src="img/icons/Popup/third_img.jpg" alt="" /></a></div>
+																											<div class="item"><a href="#"><img src="img/icons/Popup/first_img.jpg" alt="" /></a></div>
+																											<div class="item"><a href="#"><img src="img/icons/Popup/second_img.jpg" alt="" /></a></div>
+																											<div class="item"><a href="#"><img src="img/icons/Popup/first_img.jpg" alt="" /></a></div>
+																											<div class="item"><a href="#"><img src="img/icons/Popup/foth_img.jpg" alt="" /></a></div>
+																											<div class="item"><a href="#"><img src="img/icons/Popup/third_img.jpg" alt="" /></a></div>
+																										</div> -->
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																				<div class="col-xs-2">
+																					<div class="row">
+																						<div class="item">
+																							<div class="img_wrap">
+																								<a href="#" class="popup_content" data-toggle="modal" data-target=".bs-example-modal-lg"><img class="main_img" src="img/icons/section_albums_view/foth_img.jpg" alt="img"></a>
+																							</div>
+																							<div class="hidden">
+																								<div class="podrt_descr">
+																									<button type="button" class="arrow_popup arrow_popup_left"></button>
+																									<button type="button" class="arrow_popup arrow_popup_right"></button>
+																									<div class="modal-box-content">
+																										<div class="img_wrap left">
+																											<img src="img/icons/section_albums_view/foth_img.jpg" alt="Alt"/>
+																										</div>
+																										<!-- <div class="preview_hide">
+																											<a href="#" class="share"></a><span>134</span>
+																											<a href="#" class="like"></a><span>134</span>
+																											<a href="#" class="toggle-mnu3"><span></span></a>
+																										</div> -->
+																										<div class="wrap_right_side clearfix">
+																											<div class="album_description right">
+																												<div class="top_description">
+																													<a href="#" class="user"><img src="img/icons/Popup/ava.png" alt="ava" /></a>
+																													<span class="user_name">Anna Ivanova</span>
+																													<a href="#" class="album_name">My vacacion in Greece</a>
+																													<span class="date">October 3, 2015</span>
+																													<div class="dropdown right">
+																														<button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+																															<img class="drop_arrow" src="img/icons/section_albums_view/arrow.png" alt="dropdown">
+																														</button>
+																														<ul class="dropdown-menu">
+																															<li><a href="#">Add location</a></li>
+																															<li><a href="#">Add person</a></li>
+																															<li><a href="#">Make profile picture</a></li>
+																															<li><a href="#">Make cover photo</a></li>
+																															<li><a href="#">Get link</a></li>
+																															<li><a href="#">Delete photo</a></li>
+																														</ul>
+																													</div>
+																												</div>
+																												<div class="bottom_description">
+																													<h5>The best vacation I’ve ever had! Lorem ipsum dolor sit a. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate corrupti similique inventore dolor, accusamus illum eveniet quaerat iste ab tempora suscipit tempore perferendis laboriosam odit in dicta cupiditate quia nobis magni, debitis asperiores at autem. Harum adipisci ipsam consequuntur repellat, distinctio odit, sit, temporibus vero doloremque velit tenetur maxime magni.</h5>
+																													<ul class="with_friend">
+																														<li>With</li>
+																														<li><a href="#" class="friend">Garet Bale,</a></li>
+																														<li><a href="#" class="friend">James Rodrigues,</a></li>
+																														<li><a href="#" class="friend">Tony Kross,</a></li>
+																														<li><a href="#" class="friend">Karim Benzema,</a></li>
+																														<li>in</li>
+																														<li><a href="#" class="place">Athens,</a></li>
+																														<li><a href="#" class="place">Greece.</a></li>
+																													</ul>
+																													<ul class="hashtag">
+																														<li><a href="#">#loremsda</a></li>
+																														<li><a href="#">#loremd</a></li>
+																														<li><a href="#">#loremsdsdsd</a></li>
+																														<li><a href="#">#loremsaa</a></li>
+																														<li><a href="#">#loremsd</a></li>
+																														<li><a href="#">#loremsd</a></li>
+
+																													</ul>
+																													<!-- <div class="wrap_arrow">
+																														<img class="open_description" src="img/icons/Popup/aroow_blue.png" alt="arrow" />
+																													</div> -->
+																												</div>
+																											</div>
+																											<!-- <div class="comments popup right">
+																												<ul>
+																													<li class="clearfix">
+																														<a href="#" class="avatar left"><img class="" src="img/icons/section_albums_view/fifth.png" alt="ava" /></a>
+																														<p><strong>Anna Ivanova</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fu, ducimus</p>
+																														<div class="answer right clearfix">
+																															<span class="left data">14.09.2016</span>
+																															<span class="left answer_word">Answer</span>
+																															<span class="right comment_sum">134</span>
+																															<a href="#" class="like_comment right"><img src="img/icons/section_albums/like.png" alt="like"></a>
+																														</div>
+																													</li>
+																													<li class="clearfix">
+																														<a href="#" class="avatar left"><img class="" src="img/icons/section_albums_view/fifth.png" alt="ava" /></a>
+																														<p><strong>Anna Ivanova</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fu, ducimus</p>
+																														<div class="answer right clearfix">
+																															<span class="left data">14.09.2016</span>
+																															<span class="left answer_word">Answer</span>
+																															<span class="right comment_sum">134</span>
+																															<a href="#" class="like_comment right"><img src="img/icons/section_albums/like.png" alt="like"></a>
+																														</div>
+																													</li>
+																													<li class="clearfix">
+																														<a href="#" class="avatar left"><img class="" src="img/icons/section_albums_view/fifth.png" alt="ava" /></a>
+																														<p><strong>Anna Ivanova</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fu, ducimus Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam nulla consectetur totam fugit adipisci sunt, debitis recusandae obcaecati cum eum!</p>
+																														<div class="answer right clearfix">
+																															<span class="left data">14.09.2016</span>
+																															<span class="left answer_word">Answer</span>
+																															<span class="right comment_sum">134</span>
+																															<a href="#" class="like_comment right"><img src="img/icons/section_albums/like.png" alt="like"></a>
+																														</div>
+																													</li>
+																													<li class="clearfix">
+																														<a href="#" class="avatar left"><img class="" src="img/icons/section_albums_view/fifth.png" alt="ava" /></a>
+																														<p><strong>Anna Ivanova</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fu, ducimus</p>
+																														<div class="answer right clearfix">
+																															<span class="left data">14.09.2016</span>
+																															<span class="left answer_word">Answer</span>
+																															<span class="right comment_sum">134</span>
+																															<a href="#" class="like_comment right"><img src="img/icons/section_albums/like.png" alt="like"></a>
+																														</div>
+																													</li>
+																												</ul>
+																												<textarea class="right chat_field" placeholder="Write a comment..." onfocus="this.placeholder = ''" ></textarea>
+																											</div> -->
+																										</div>
+																										<!-- <div class="owl-carousel popup_slider">
+																											<div class="item"><a href="#"><img src="img/icons/Popup/second_img.jpg" alt="" /></a></div>
+																											<div class="item"><a href="#"><img src="img/icons/Popup/third_img.jpg" alt="" /></a></div>
+																											<div class="item"><a href="#"><img src="img/icons/Popup/first_img.jpg" alt="" /></a></div>
+																											<div class="item"><a href="#"><img src="img/icons/Popup/second_img.jpg" alt="" /></a></div>
+																											<div class="item"><a href="#"><img src="img/icons/Popup/first_img.jpg" alt="" /></a></div>
+																											<div class="item"><a href="#"><img src="img/icons/Popup/foth_img.jpg" alt="" /></a></div>
+																											<div class="item"><a href="#"><img src="img/icons/Popup/third_img.jpg" alt="" /></a></div>
+																										</div> -->
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!-- END: photos tape -->
+
+												<!-- START: other tapes-->
+												<div class="col-xs-12">
+													<div class="row">
+														<!-- START: left side tape -->
+														<div class="col-xs-4 left_tape">
+															<!-- START: friends tape -->
+															<div class="tape clearfix">
+																<div class="col-xs-12">
+																	<div class="row">
+																		<div class="heading clearfix">
+																			<div class="col-xs-12">
+																				<div class="row">
+																					<div class="col-xs-10 heading_tittle">
+																						<div class="row">
+																							<a href="#"><img src="img/icons/my_profil/friend_tape.png" alt="img">
+																								<span class="title_tape">friends</span></a>
+																							</div>
+																						</div>
+																						<div class="col-xs-2 right_txt">
+																							<div class="row">
+																								<span class="sum">345</span>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="tape_content friends clearfix">
+																				<div class="col-xs-12">
+																					<div class="row">
+																						<div class="col-xs-12">
+																							<div class="row">
+																								<div class="col-xs-4"><div class="row">
+																									<a href="#"><div class="avatar"><img src="img/icons/friends/avatar.png" alt=""></div>
+																										<span>Anita Werner</span></a>
+																									</div>
+																								</div>
+																								<div class="col-xs-4"><div class="row">
+																									<a href="#"><div class="avatar"><img src="img/icons/friends/ava_on_popup.png" alt=""></div>
+																										<span>Olya Lomonosova </span></a>
+																									</div>
+																								</div>
+																								<div class="col-xs-4"><div class="row">
+																									<a href="#"><div class="avatar"><img src="img/icons/friends/avatar_2.png" alt=""></div>
+																										<span>Anna Vinogradova</span></a>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																						<div class="col-xs-12">
+																							<div class="row">
+																								<div class="col-xs-4"><div class="row">
+																									<a href="#"><div class="avatar"><img src="img/icons/friends/avatar.png" alt=""></div>
+																										<span>Anna Vinogradova</span></a>
+																									</div>
+																								</div>
+																								<div class="col-xs-4"><div class="row">
+																									<a href="#"><div class="avatar"><img src="img/icons/friends/ava_on_popup.png" alt=""></div>
+																										<span>Olya Lomonosova</span></a>
+																									</div>
+																								</div>
+																								<div class="col-xs-4"><div class="row">
+																									<a href="#"><div class="avatar"><img src="img/icons/friends/avatar_2.png" alt=""></div>
+																										<span>Anna Shtruh</span></a>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<!-- END: friends tape -->
+																<!-- START: people you may know tape -->
+																<div class="tape clearfix">
+																	<div class="col-xs-12">
+																		<div class="row">
+																			<div class="heading clearfix">
+																				<div class="col-xs-12">
+																					<div class="row">
+																						<div class="col-xs-10 heading_tittle">
+																							<div class="row">
+																								<a href="#"><img src="img/icons/my_profil/friend_tape_2.png" alt="img">
+																									<span class="title_tape">people you may know</span></a>
+																								</div>
+																							</div>
+																							<div class="col-xs-2 right_txt">
+																								<div class="row">
+																									<span class="sum">345</span>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																				<div class="tape_content friends clearfix">
+																					<div class="col-xs-12">
+																						<div class="row">
+																							<div class="col-xs-12">
+																								<div class="row">
+																									<div class="col-xs-4"><div class="row">
+																										<a href="#"><div class="avatar"><img src="img/icons/friends/avatar.png" alt=""></div>
+																											<span>Anita Werner</span></a>
+																										</div>
+																									</div>
+																									<div class="col-xs-4"><div class="row">
+																										<a href="#"><div class="avatar"><img src="img/icons/friends/ava_on_popup.png" alt=""></div>
+																											<span>Olya Lomonosova </span></a>
+																										</div>
+																									</div>
+																									<div class="col-xs-4"><div class="row">
+																										<a href="#"><div class="avatar"><img src="img/icons/friends/avatar_2.png" alt=""></div>
+																											<span>Anna Vinogradova</span></a>
+																										</div>
+																									</div>
+																								</div>
+																							</div>
+																							<div class="col-xs-12">
+																								<div class="row">
+																									<div class="col-xs-4"><div class="row">
+																										<a href="#"><div class="avatar"><img src="img/icons/friends/avatar.png" alt=""></div>
+																											<span>Anna Vinogradova</span></a>
+																										</div>
+																									</div>
+																									<div class="col-xs-4"><div class="row">
+																										<a href="#"><div class="avatar"><img src="img/icons/friends/ava_on_popup.png" alt=""></div>
+																											<span>Olya Lomonosova</span></a>
+																										</div>
+																									</div>
+																									<div class="col-xs-4"><div class="row">
+																										<a href="#"><div class="avatar"><img src="img/icons/friends/avatar_2.png" alt=""></div>
+																											<span>Anna Shtruh</span></a>
+																										</div>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<!-- END: people you may know tape -->
+																	<!-- START: music tape -->
+																	<div class="tape clearfix">
+																		<div class="col-xs-12">
+																			<div class="row">
+																				<div class="heading clearfix">
+																					<div class="col-xs-12">
+																						<div class="row">
+																							<div class="col-xs-10 heading_tittle">
+																								<div class="row">
+																									<a href="#"><img src="img/icons/my_profil/music_tape.png" alt="img">
+																										<span class="title_tape">music</span></a>
+																									</div>
+																								</div>
+																								<div class="col-xs-2 right_txt">
+																									<div class="row">
+																										<span class="sum">345</span>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																					<div class="tape_content clearfix">
+																						<div class="col-xs-12">
+																							<div class="row">
+																								<div class="audio_container clearfix">
+																									<div class="col-xs-12">
+																										<div class="row">
+																											<div class="audio main_track clearfix audio-player tape_music">	
+																												<div class="col-xs-8 col-xs-push-1">
+																												<div class="row">
+																													<div class="title" title="Lorem Ipsum - Doler sit amet, consectatur Lorem ipsum dolor sit amet.">
+																														<a href="#"><strong>Lorem Ipsum </strong></a><span>-</span><a href="#"> Doler sit amet, consectatur Lorem ipsum dolor sit amet.</a>
+																													</div>
+																												</div>
+																												</div>
+																												<audio id="audio-player">
+																													<source src="audio/Mind_Vortex_Alive.mp3" type="audio/mp3">
+																													</audio>
+																												</div>
+																										</div>
+																									</div>
+																								</div>
+																								<div class="audio_container clearfix">
+																									<div class="col-xs-12">
+																										<div class="row">
+																											<div class="audio main_track clearfix audio-player tape_music">	
+																												<div class="col-xs-8 col-xs-push-1">
+																												<div class="row">
+																													<div class="title" title="Lorem Ipsum - Doler sit amet, consectatur Lorem ipsum dolor sit amet.">
+																														<a href="#"><strong>Lorem Ipsum </strong></a><span>-</span><a href="#"> Doler sit amet, consectatur Lorem ipsum dolor sit amet.</a>
+																													</div>
+																												</div>
+																												</div>
+																												<audio id="audio-player">
+																													<source src="audio/Mind_Vortex_Alive.mp3" type="audio/mp3">
+																													</audio>
+																												</div>
+																										</div>
+																									</div>
+																								</div>
+																								<div class="audio_container clearfix">
+																									<div class="col-xs-12">
+																										<div class="row">
+																											<div class="audio main_track clearfix audio-player tape_music">	
+																												<div class="col-xs-8 col-xs-push-1">
+																												<div class="row">
+																													<div class="title" title="Lorem Ipsum - Doler sit amet, consectatur Lorem ipsum dolor sit amet.">
+																														<a href="#"><strong>Lorem Ipsum </strong></a><span>-</span><a href="#"> Doler sit amet, consectatur Lorem ipsum dolor sit amet.</a>
+																													</div>
+																												</div>
+																												</div>
+																												<audio id="audio-player">
+																													<source src="audio/Mind_Vortex_Alive.mp3" type="audio/mp3">
+																													</audio>
+																												</div>
+																										</div>
+																									</div>
+																								</div>
+																								<div class="audio_container clearfix">
+																									<div class="col-xs-12">
+																										<div class="row">
+																											<div class="audio main_track clearfix audio-player tape_music">	
+																												<div class="col-xs-8 col-xs-push-1">
+																												<div class="row">
+																													<div class="title" title="Lorem Ipsum - Doler sit amet, consectatur Lorem ipsum dolor sit amet.">
+																														<a href="#"><strong>Lorem Ipsum </strong></a><span>-</span><a href="#"> Doler sit amet, consectatur Lorem ipsum dolor sit amet.</a>
+																													</div>
+																												</div>
+																												</div>
+																												<audio id="audio-player">
+																													<source src="audio/Mind_Vortex_Alive.mp3" type="audio/mp3">
+																													</audio>
+																												</div>
+																										</div>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<!-- END: music tape -->
+																		<!-- START: video tape -->
+																		<div class="tape clearfix">
+																			<div class="col-xs-12">
+																				<div class="row">
+																					<div class="heading clearfix">
+																						<div class="col-xs-12">
+																							<div class="row">
+																								<div class="col-xs-10 heading_tittle">
+																									<div class="row">
+																										<a href="#"><img src="img/icons/my_profil/video_tape.png" alt="img">
+																											<span class="title_tape">video</span></a>
+																										</div>
+																									</div>
+																									<div class="col-xs-2 right_txt">
+																										<div class="row">
+																											<span class="sum">345</span>
+																										</div>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																						<div class="tape_content popup-gallery-video clearfix">
+																							<div class="col-xs-12">
+																								<div class="row">
+																									<div class="item video_container clearfix">
+																										<div class="col-xs-12">
+																											<div class="row">
+																												<div class="video clearfix">
+																													<video poster="img/icons/my_profil/first_img.jpg">
+																														<source src="video/Chris Daughtry-Supernatural.mp4.mp4" type='video/mp4' />
+																													</video>
+																													<a href="#" class="popup_content_video play_video" data-toggle="modal" data-target=".bs-example-modal-lg"><img src="img/icons/my_profil/video_play.png" alt="img"></a>
+																												</div>
+																												<div class="hidden">
+																													<div class="podrt_descr">
+																														<button type="button" class="arrow_popup arrow_popup_left"></button>
+																														<button type="button" class="arrow_popup arrow_popup_right"></button>
+																														<div class="modal-box-content">
+																															<div class="img_wrap left">
+																																<video poster="img/icons/my_profil/first_img.jpg" controls="controls">
+																																	<source src="video/Chris Daughtry-Supernatural.mp4.mp4" type='video/mp4' />
+																																</video>
+																															</div>
+																															<!-- <div class="preview_hide">
+																																<a href="#" class="share"></a><span>134</span>
+																																<a href="#" class="like"></a><span>134</span>
+																																<a href="#" class="toggle-mnu3"><span></span></a>
+																															</div> -->
+																															<div class="wrap_right_side clearfix">
+																																<div class="album_description right">
+																																	<div class="top_description">
+																																		<a href="#" class="user"><img src="img/icons/Popup/ava.png" alt="ava" /></a>
+																																		<span class="user_name">Anna Ivanova</span>
+																																		<a href="#" class="album_name">My vacacion in Greece</a>
+																																		<span class="date">October 3, 2015</span>
+																																		<div class="dropdown right">
+																																			<button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+																																				<img class="drop_arrow" src="img/icons/section_albums_view/arrow.png" alt="dropdown">
+																																			</button>
+																																			<ul class="dropdown-menu">
+																																				<li><a href="#">Add location</a></li>
+																																				<li><a href="#">Add person</a></li>
+																																				<li><a href="#">Make profile picture</a></li>
+																																				<li><a href="#">Make cover photo</a></li>
+																																				<li><a href="#">Get link</a></li>
+																																				<li><a href="#">Delete photo</a></li>
+																																			</ul>
+																																		</div>
+																																	</div>
+																																	<div class="bottom_description">
+																																		<h5>The best vacation I’ve ever had! Lorem ipsum dolor sit a. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate corrupti similique inventore dolor, accusamus illum eveniet quaerat iste ab tempora suscipit tempore perferendis laboriosam odit in dicta cupiditate quia nobis magni, debitis asperiores at autem. Harum adipisci ipsam consequuntur repellat, distinctio odit, sit, temporibus vero doloremque velit tenetur maxime magni.</h5>
+																																		<ul class="with_friend">
+																																			<li>With</li>
+																																			<li><a href="#" class="friend">Garet Bale,</a></li>
+																																			<li><a href="#" class="friend">James Rodrigues,</a></li>
+																																			<li><a href="#" class="friend">Tony Kross,</a></li>
+																																			<li><a href="#" class="friend">Karim Benzema,</a></li>
+																																			<li>in</li>
+																																			<li><a href="#" class="place">Athens,</a></li>
+																																			<li><a href="#" class="place">Greece.</a></li>
+																																		</ul>
+																																		<ul class="hashtag">
+																																			<li><a href="#">#loremsda</a></li>
+																																			<li><a href="#">#loremd</a></li>
+																																			<li><a href="#">#loremsdsdsd</a></li>
+																																			<li><a href="#">#loremsaa</a></li>
+																																			<li><a href="#">#loremsd</a></li>
+																																			<li><a href="#">#loremsd</a></li>
+
+																																		</ul>
+																																		<!-- <div class="wrap_arrow">
+																																			<img class="open_description" src="img/icons/Popup/aroow_blue.png" alt="arrow" />
+																																		</div> -->
+																																	</div>
+																																</div>
+																																<!-- <div class="comments popup right">
+																																	<ul>
+																																		<li class="clearfix">
+																																			<a href="#" class="avatar left"><img class="" src="img/icons/section_albums_view/fifth.png" alt="ava" /></a>
+																																			<p><strong>Anna Ivanova</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fu, ducimus</p>
+																																			<div class="answer right clearfix">
+																																				<span class="left data">14.09.2016</span>
+																																				<span class="left answer_word">Answer</span>
+																																				<span class="right comment_sum">134</span>
+																																				<a href="#" class="like_comment right"><img src="img/icons/section_albums/like.png" alt="like"></a>
+																																			</div>
+																																		</li>
+																																		<li class="clearfix">
+																																			<a href="#" class="avatar left"><img class="" src="img/icons/section_albums_view/fifth.png" alt="ava" /></a>
+																																			<p><strong>Anna Ivanova</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fu, ducimus</p>
+																																			<div class="answer right clearfix">
+																																				<span class="left data">14.09.2016</span>
+																																				<span class="left answer_word">Answer</span>
+																																				<span class="right comment_sum">134</span>
+																																				<a href="#" class="like_comment right"><img src="img/icons/section_albums/like.png" alt="like"></a>
+																																			</div>
+																																		</li>
+																																		<li class="clearfix">
+																																			<a href="#" class="avatar left"><img class="" src="img/icons/section_albums_view/fifth.png" alt="ava" /></a>
+																																			<p><strong>Anna Ivanova</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fu, ducimus Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam nulla consectetur totam fugit adipisci sunt, debitis recusandae obcaecati cum eum!</p>
+																																			<div class="answer right clearfix">
+																																				<span class="left data">14.09.2016</span>
+																																				<span class="left answer_word">Answer</span>
+																																				<span class="right comment_sum">134</span>
+																																				<a href="#" class="like_comment right"><img src="img/icons/section_albums/like.png" alt="like"></a>
+																																			</div>
+																																		</li>
+																																		<li class="clearfix">
+																																			<a href="#" class="avatar left"><img class="" src="img/icons/section_albums_view/fifth.png" alt="ava" /></a>
+																																			<p><strong>Anna Ivanova</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fu, ducimus</p>
+																																			<div class="answer right clearfix">
+																																				<span class="left data">14.09.2016</span>
+																																				<span class="left answer_word">Answer</span>
+																																				<span class="right comment_sum">134</span>
+																																				<a href="#" class="like_comment right"><img src="img/icons/section_albums/like.png" alt="like"></a>
+																																			</div>
+																																		</li>
+																																	</ul>
+																																	<textarea class="right chat_field" placeholder="Write a comment..." onfocus="this.placeholder = ''" ></textarea>
+																																</div> -->
+																															</div>
+																															<!-- <div class="owl-carousel popup_slider">
+																																<div class="item">
+																																	<a href="#">
+																																		<video poster="img/icons/my_profil/first_img.jpg">
+																																			<source src="video/Chris Daughtry-Supernatural.mp4.mp4" type='video/mp4' />
+																																		</video>
+																																	</a>
+																																	<img class="play_video" src="img/icons/my_profil/video_play.png" alt="img">
+																																</div>
+																																<div class="item">
+																																	<a href="#">
+																																		<video poster="img/icons/section_albums_view/second_img.jpg">
+																																			<source src="video/Chris Daughtry-Supernatural.mp4.mp4" type='video/mp4' />
+																																		</video>
+																																	</a>
+																																	<img class="play_video" src="img/icons/my_profil/video_play.png" alt="img">
+																																</div>
+																																<div class="item">
+																																	<a href="#">
+																																		<video poster="img/icons/section_albums_view/fifth.png">
+																																			<source src="video/Chris Daughtry-Supernatural.mp4.mp4" type='video/mp4' />
+																																		</video>
+																																	</a>
+																																	<img class="play_video" src="img/icons/my_profil/video_play.png" alt="img">
+																																</div>
+																																<div class="item">
+																																	<a href="#">
+																																		<video poster="img/icons/section_albums_view/second_img.jpg">
+																																			<source src="video/Chris Daughtry-Supernatural.mp4.mp4" type='video/mp4' />
+																																		</video>
+																																	</a>
+																																	<img class="play_video" src="img/icons/my_profil/video_play.png" alt="img">
+																																</div>
+																																<div class="item">
+																																	<a href="#">
+																																		<video poster="img/icons/section_albums_view/second_img.jpg">
+																																			<source src="video/Chris Daughtry-Supernatural.mp4.mp4" type='video/mp4' />
+																																		</video>
+																																	</a>
+																																	<img class="play_video" src="img/icons/my_profil/video_play.png" alt="img">
+																																</div>
+																																<div class="item">
+																																	<a href="#">
+																																		<video poster="img/icons/section_albums_view/first_img.jpg">
+																																			<source src="video/Chris Daughtry-Supernatural.mp4.mp4" type='video/mp4' />
+																																		</video>
+																																	</a>
+																																	<img class="play_video" src="img/icons/my_profil/video_play.png" alt="img">
+																																</div>
+																																<div class="item">
+																																	<a href="#">
+																																		<video poster="img/icons/section_albums_view/fifth.png">
+																																			<source src="video/Chris Daughtry-Supernatural.mp4.mp4" type='video/mp4' />
+																																		</video>
+																																	</a>
+																																	<img class="play_video" src="img/icons/my_profil/video_play.png" alt="img">
+																																</div>
+																															</div> -->
+																														</div>
+																													</div>
+																												</div>
+																											</div>
+																										</div>
+																										<div class="col-xs-12">
+																											<div class="title_video clearfix">
+																												<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut nobis dicta fugiat unde. Nulla, excepturi.</span>
+																											</div>
+																										</div>
+																										<div class="col-xs-12">
+																											<div class="row">
+																												<div class="col-xs-6 data">
+																													<span>24 June 2016</span>
+																												</div>
+																												<div class="col-xs-6 coment">
+																													<span>0</span> comments
+																												</div>
+																											</div>
+																										</div>
+																									</div>
+																									<div class="item video_container clearfix">
+																										<div class="col-xs-12">
+																											<div class="row">
+																												<div class="video clearfix">
+																													<video poster="img/icons/section_albums_view/second_img.jpg">
+																														<source src="video/Chris Daughtry-Supernatural.mp4.mp4" type='video/mp4' />
+																													</video>
+																													<a href="#" class="popup_content_video play_video" data-toggle="modal" data-target=".bs-example-modal-lg"><img src="img/icons/my_profil/video_play.png" alt="img"></a>
+																												</div>
+																												<div class="hidden">
+																													<div class="podrt_descr">
+																														<button type="button" class="arrow_popup arrow_popup_left"></button>
+																														<button type="button" class="arrow_popup arrow_popup_right"></button>
+																														<div class="modal-box-content">
+																															<div class="img_wrap left">
+																																<video poster="img/icons/section_albums_view/second_img.jpg" controls="controls">
+																																	<source src="video/Chris Daughtry-Supernatural.mp4.mp4" type='video/mp4' />
+																																</video>
+																															</div>
+																															<!-- <div class="preview_hide">
+																																<a href="#" class="share"></a><span>134</span>
+																																<a href="#" class="like"></a><span>134</span>
+																																<a href="#" class="toggle-mnu3"><span></span></a>
+																															</div> -->
+																															<div class="wrap_right_side clearfix">
+																																<div class="album_description right">
+																																	<div class="top_description">
+																																		<a href="#" class="user"><img src="img/icons/Popup/ava.png" alt="ava" /></a>
+																																		<span class="user_name">Anna Ivanova</span>
+																																		<a href="#" class="album_name">My vacacion in Greece</a>
+																																		<span class="date">October 3, 2015</span>
+																																		<div class="dropdown right">
+																																			<button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+																																				<img class="drop_arrow" src="img/icons/section_albums_view/arrow.png" alt="dropdown">
+																																			</button>
+																																			<ul class="dropdown-menu">
+																																				<li><a href="#">Add location</a></li>
+																																				<li><a href="#">Add person</a></li>
+																																				<li><a href="#">Make profile picture</a></li>
+																																				<li><a href="#">Make cover photo</a></li>
+																																				<li><a href="#">Get link</a></li>
+																																				<li><a href="#">Delete photo</a></li>
+																																			</ul>
+																																		</div>
+																																	</div>
+																																	<div class="bottom_description">
+																																		<h5>The best vacation I’ve ever had! Lorem ipsum dolor sit a. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate corrupti similique inventore dolor, accusamus illum eveniet quaerat iste ab tempora suscipit tempore perferendis laboriosam odit in dicta cupiditate quia nobis magni, debitis asperiores at autem. Harum adipisci ipsam consequuntur repellat, distinctio odit, sit, temporibus vero doloremque velit tenetur maxime magni.</h5>
+																																		<ul class="with_friend">
+																																			<li>With</li>
+																																			<li><a href="#" class="friend">Garet Bale,</a></li>
+																																			<li><a href="#" class="friend">James Rodrigues,</a></li>
+																																			<li><a href="#" class="friend">Tony Kross,</a></li>
+																																			<li><a href="#" class="friend">Karim Benzema,</a></li>
+																																			<li>in</li>
+																																			<li><a href="#" class="place">Athens,</a></li>
+																																			<li><a href="#" class="place">Greece.</a></li>
+																																		</ul>
+																																		<ul class="hashtag">
+																																			<li><a href="#">#loremsda</a></li>
+																																			<li><a href="#">#loremd</a></li>
+																																			<li><a href="#">#loremsdsdsd</a></li>
+																																			<li><a href="#">#loremsaa</a></li>
+																																			<li><a href="#">#loremsd</a></li>
+																																			<li><a href="#">#loremsd</a></li>
+
+																																		</ul>
+																																		<!-- <div class="wrap_arrow">
+																																			<img class="open_description" src="img/icons/Popup/aroow_blue.png" alt="arrow" />
+																																		</div> -->
+																																	</div>
+																																</div>
+																																<!-- <div class="comments popup right">
+																																	<ul>
+																																		<li class="clearfix">
+																																			<a href="#" class="avatar left"><img class="" src="img/icons/section_albums_view/fifth.png" alt="ava" /></a>
+																																			<p><strong>Anna Ivanova</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fu, ducimus</p>
+																																			<div class="answer right clearfix">
+																																				<span class="left data">14.09.2016</span>
+																																				<span class="left answer_word">Answer</span>
+																																				<span class="right comment_sum">134</span>
+																																				<a href="#" class="like_comment right"><img src="img/icons/section_albums/like.png" alt="like"></a>
+																																			</div>
+																																		</li>
+																																		<li class="clearfix">
+																																			<a href="#" class="avatar left"><img class="" src="img/icons/section_albums_view/fifth.png" alt="ava" /></a>
+																																			<p><strong>Anna Ivanova</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fu, ducimus</p>
+																																			<div class="answer right clearfix">
+																																				<span class="left data">14.09.2016</span>
+																																				<span class="left answer_word">Answer</span>
+																																				<span class="right comment_sum">134</span>
+																																				<a href="#" class="like_comment right"><img src="img/icons/section_albums/like.png" alt="like"></a>
+																																			</div>
+																																		</li>
+																																		<li class="clearfix">
+																																			<a href="#" class="avatar left"><img class="" src="img/icons/section_albums_view/fifth.png" alt="ava" /></a>
+																																			<p><strong>Anna Ivanova</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fu, ducimus Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam nulla consectetur totam fugit adipisci sunt, debitis recusandae obcaecati cum eum!</p>
+																																			<div class="answer right clearfix">
+																																				<span class="left data">14.09.2016</span>
+																																				<span class="left answer_word">Answer</span>
+																																				<span class="right comment_sum">134</span>
+																																				<a href="#" class="like_comment right"><img src="img/icons/section_albums/like.png" alt="like"></a>
+																																			</div>
+																																		</li>
+																																		<li class="clearfix">
+																																			<a href="#" class="avatar left"><img class="" src="img/icons/section_albums_view/fifth.png" alt="ava" /></a>
+																																			<p><strong>Anna Ivanova</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fu, ducimus</p>
+																																			<div class="answer right clearfix">
+																																				<span class="left data">14.09.2016</span>
+																																				<span class="left answer_word">Answer</span>
+																																				<span class="right comment_sum">134</span>
+																																				<a href="#" class="like_comment right"><img src="img/icons/section_albums/like.png" alt="like"></a>
+																																			</div>
+																																		</li>
+																																	</ul>
+																																	<textarea class="right chat_field" placeholder="Write a comment..." onfocus="this.placeholder = ''" ></textarea>
+																																</div> -->
+																															</div>
+																															<!-- <div class="owl-carousel popup_slider">
+																																<div class="item">
+																																	<a href="#">
+																																		<video poster="img/icons/my_profil/first_img.jpg">
+																																			<source src="video/Chris Daughtry-Supernatural.mp4.mp4" type='video/mp4' />
+																																		</video>
+																																	</a>
+																																	<img class="play_video" src="img/icons/my_profil/video_play.png" alt="img">
+																																</div>
+																																<div class="item">
+																																	<a href="#">
+																																		<video poster="img/icons/section_albums_view/second_img.jpg">
+																																			<source src="video/Chris Daughtry-Supernatural.mp4.mp4" type='video/mp4' />
+																																		</video>
+																																	</a>
+																																	<img class="play_video" src="img/icons/my_profil/video_play.png" alt="img">
+																																</div>
+																																<div class="item">
+																																	<a href="#">
+																																		<video poster="img/icons/section_albums_view/fifth.png">
+																																			<source src="video/Chris Daughtry-Supernatural.mp4.mp4" type='video/mp4' />
+																																		</video>
+																																	</a>
+																																	<img class="play_video" src="img/icons/my_profil/video_play.png" alt="img">
+																																</div>
+																																<div class="item">
+																																	<a href="#">
+																																		<video poster="img/icons/section_albums_view/second_img.jpg">
+																																			<source src="video/Chris Daughtry-Supernatural.mp4.mp4" type='video/mp4' />
+																																		</video>
+																																	</a>
+																																	<img class="play_video" src="img/icons/my_profil/video_play.png" alt="img">
+																																</div>
+																																<div class="item">
+																																	<a href="#">
+																																		<video poster="img/icons/section_albums_view/second_img.jpg">
+																																			<source src="video/Chris Daughtry-Supernatural.mp4.mp4" type='video/mp4' />
+																																		</video>
+																																	</a>
+																																	<img class="play_video" src="img/icons/my_profil/video_play.png" alt="img">
+																																</div>
+																																<div class="item">
+																																	<a href="#">
+																																		<video poster="img/icons/section_albums_view/first_img.jpg">
+																																			<source src="video/Chris Daughtry-Supernatural.mp4.mp4" type='video/mp4' />
+																																		</video>
+																																	</a>
+																																	<img class="play_video" src="img/icons/my_profil/video_play.png" alt="img">
+																																</div>
+																																<div class="item">
+																																	<a href="#">
+																																		<video poster="img/icons/section_albums_view/fifth.png">
+																																			<source src="video/Chris Daughtry-Supernatural.mp4.mp4" type='video/mp4' />
+																																		</video>
+																																	</a>
+																																	<img class="play_video" src="img/icons/my_profil/video_play.png" alt="img">
+																																</div>
+																															</div> -->
+																														</div>
+																													</div>
+																												</div>
+																											</div>
+																										</div>
+																										<div class="col-xs-12">
+																											<div class="title_video clearfix">
+																												<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+																											</div>
+																										</div>
+																										<div class="col-xs-12">
+																											<div class="row">
+																												<div class="col-xs-6 data">
+																													<span>24 June 2016</span>
+																												</div>
+																												<div class="col-xs-6 coment">
+																													<span>0</span> comments
+																												</div>
+																											</div>
+																										</div>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																			<!-- END: video tape -->
+																			<!-- START: albums tape -->
+																			<div class="tape clearfix">
+																				<div class="col-xs-12">
+																					<div class="row">
+																						<div class="heading clearfix">
+																							<div class="col-xs-12">
+																								<div class="row">
+																									<div class="col-xs-10 heading_tittle">
+																										<div class="row">
+																											<a href="#"><img src="img/icons/my_profil/photo.png" alt="img">
+																												<span class="title_tape">photo albums</span></a>
+																											</div>
+																										</div>
+																										<div class="col-xs-2 right_txt">
+																											<div class="row">
+																												<span class="sum">345</span>
+																											</div>
+																										</div>
+																									</div>
+																								</div>
+																							</div>
+																							<div class="tape_content clearfix">
+																								<div class="col-xs-12">
+																									<div class="row">
+																										<div class="col-xs-12">
+																											<div class="img_wrap_other">
+																												<div class="col-xs-12">
+																													<div class="row">
+																														<a href="#">
+																															<img src="img/icons/section_albums_view/fifth.png" alt="img"/>
+																														</a>
+																													</div>
+																												</div>
+																												<div class="float_text">
+																													Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, itaque.
+																												</div>			
+																											</div>
+																										</div>
+																										<div class="col-xs-12">
+																											<div class="img_wrap_other">
+																												<div class="col-xs-12">
+																													<div class="row">
+																														<a href="#" class="clearfix"><img src="img/icons/section_albums_view/foth_img.png" alt="img" /></a>
+																													</div>
+																												</div>
+																												<div class="float_text">
+																													Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, itaque.
+																												</div>																						
+																											</div>
+																										</div>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																				<!-- END: albums tape -->
+																				<!-- START: groups tape -->
+																				<div class="tape clearfix">
+																					<div class="col-xs-12">
+																						<div class="row">
+																							<div class="heading clearfix">
+																								<div class="col-xs-12">
+																									<div class="row">
+																										<div class="col-xs-10 heading_tittle">
+																											<div class="row">
+																												<a href="#"><img src="img/icons/my_profil/groups.png" alt="img">
+																													<span class="title_tape">groups</span></a>
+																												</div>
+																											</div>
+																											<div class="col-xs-2 right_txt">
+																												<div class="row">
+																													<span class="sum">345</span>
+																												</div>
+																											</div>
+																										</div>
+																									</div>
+																								</div>
+																								<div class="tape_content clearfix">
+																									<div class="col-xs-12">
+																										<div class="row">
+																											<div class="group_item clearfix">
+																												<div class="col-xs-12">
+																													<div class="row">
+																														<a href="#"><div class="col-xs-2">
+																															<div class="avatar">
+																																<img src="img/icons/my_profil/first_img.jpg" alt="img">
+																															</div>						
+																														</div>																							
+																														<div class="col-xs-10">
+																															<div class="group_title">
+																																<span>Lorem ipsum dolor sit.</span>
+																															</div>
+																														</div>
+																													</a>
+																												</div>
+																											</div>
+																										</div>
+																										<div class="group_item clearfix">
+																											<div class="col-xs-12">
+																												<div class="row">
+																													<a href="#"><div class="col-xs-2">
+																														<div class="avatar">
+																															<img src="img/icons/my_profil/first_img.jpg" alt="img">
+																														</div>						
+																													</div>																							
+																													<div class="col-xs-10">
+																														<div class="group_title">
+																															<span>Lorem ipsum dolor sit.</span>
+																														</div>
+																													</div>
+																												</a>
+																											</div>
+																										</div>
+																									</div>
+																									<div class="group_item clearfix">
+																										<div class="col-xs-12">
+																											<div class="row">
+																												<a href="#"><div class="col-xs-2">
+																													<div class="avatar">
+																														<img src="img/icons/my_profil/first_img.jpg" alt="img">
+																													</div>						
+																												</div>																							
+																												<div class="col-xs-10">
+																													<div class="group_title">
+																														<span>Lorem ipsum dolor sit.</span>
+																													</div>
+																												</div>
+																											</a>
+																										</div>
+																									</div>
+																								</div>
+																								<div class="group_item clearfix">
+																									<div class="col-xs-12">
+																										<div class="row">
+																											<a href="#"><div class="col-xs-2">
+																												<div class="avatar">
+																													<img src="img/icons/my_profil/first_img.jpg" alt="img">
+																												</div>						
+																											</div>																							
+																											<div class="col-xs-10">
+																												<div class="group_title ">
+																													<span>Lorem ipsum dolor sit.</span>
+																												</div>
+																											</div>
+																										</a>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<!-- END: albums tape -->
+																</div>
+																<!-- END: left side tape -->
+
+																<!--START: right side tape  -->
+																<div class="col-xs-8 right_tape">
+																	<div class="row">
+																		<!-- START: what's new tape -->
+																		<div class="tape mr clearfix">
+																			<div class="col-xs-12">
+																				<div class="row">
+																					<div class="tape_content whats_new clearfix">
+																						<div class="col-xs-12">
+																							<div class="row">
+																								<ul>
+																									<li class="active">
+																										<a href="#">Update status</a>
+																									</li>
+																									<li>
+																										<a href="#" class="post_photo">Add photo</a>
+																									</li>
+																									<li>
+																										<a href="#" class="post_video">Add video</a>
+																									</li>
+																								</ul>
+																							</div>
+																						</div>
+																						<form action="" method="post">
+																							<div class="col-xs-12 input_mind">
+																								<textarea placeholder="What's on your mind?" onfocus="this.placeholder = ''"  rows="3"></textarea>
+																								<img class="video_icon" data-original-title="Add video" data-toggle="tooltip" data-placement="top" title="" src="img/icons/chat/video_add.png" alt="add">
+																								<img class="photo_icon" data-original-title="Add photo" data-toggle="tooltip" data-placement="top" title="" src="img/icons/chat/icon_add.png" alt="add">
+																							</div>
+																							<div class="col-xs-12 media_preview">
+																								<div class="wrap_preview_docs">
+																									<div class="preview_doc"><img src="img/icons/section_albums/first_img.png" alt="">
+																										<img class="remove_img" src="img/icons/section_photos/clear.png" alt="clear" />
+																									</div>
+																									<div class="preview_doc"><img src="img/icons/section_albums/first_img.png" alt="">
+																										<img class="remove_img" src="img/icons/section_photos/clear.png" alt="clear" />
+																									</div>
+																									<div class="preview_doc"><img src="img/icons/section_albums/first_img.png" alt="">
+																										<img class="remove_img" src="img/icons/section_photos/clear.png" alt="clear" />
+																									</div>
+																									<div class="preview_doc"><img src="img/icons/section_albums/first_img.png" alt="">
+																										<img class="remove_img" src="img/icons/section_photos/clear.png" alt="clear" />
+																									</div>
+																									<div class="preview_doc video_doc"><img src="img/icons/section_albums/foth_img.png" alt="">
+																										<img class="remove_img" src="img/icons/section_photos/clear.png" alt="clear" />
+																										<img class="play_icon" src="img/icons/my_profil/video_play.png" alt="img">
+																									</div>
+																									<div class="preview_doc video_doc"><img src="img/icons/section_albums/third_img.png" alt="">
+																										<img class="remove_img" src="img/icons/section_photos/clear.png" alt="clear" />
+																										<img class="play_icon" src="img/icons/my_profil/video_play.png" alt="img">
+																									</div>
+																								</div>
+																								<div class="wrap_progress clearfix">
+																									<div class="progress">
+																										<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+																										</div>
+																									</div>
+																									<div class="attach_label">name of the file.png
+																										<img class="remove_img" src="img/icons/section_photos/clear.png" alt="clear" />
+																									</div>
+																								</div>
+																								<div class="wrap_progress clearfix">
+																									<div class="progress">
+																										<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 30%;">
+																										</div>
+																									</div>
+																									<div class="attach_label">Lorem ipsum dolor sit amet.png
+																										<img class="remove_img" src="img/icons/section_photos/clear.png" alt="clear" />
+																									</div>
+																								</div>
+																								<div class="wrap_progress clearfix">
+																									<div class="progress">
+																										<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 15%;">
+																										</div>
+																									</div>
+																									<div class="attach_label">name of the file.avi
+																										<img class="remove_img" src="img/icons/section_photos/clear.png" alt="clear" />
+																									</div>
+																								</div>
+																								<div class="wrap_progress clearfix">
+																									<div class="progress">
+																										<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 5%;">
+																										</div>
+																									</div>
+																									<div class="attach_label">Lorem ipsum dolor sit amet, consectetur adipisicing.avi
+																										<img class="remove_img" src="img/icons/section_photos/clear.png" alt="clear" />
+																									</div>
+																								</div>
+																							</div>
+																							<button type="submit" class="submit">Post</button>
+																						</form>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<!-- END: what's new tape -->
+																		<!-- START: main wall -->
+																		<div class="tape mr main_wall clearfix">
+																			<div class="col-xs-12">
+																				<div class="row">
+																					<div class="post clearfix">
+																						<div class="col-xs-12">
+																							<div class="row">
+																								<div class="post_upper clearfix">
+																									<div class="col-xs-12">
+																										<div class="row">
+																											<div class="col-xs-2 main_avatar">
+																												<div class="avatar">
+																													<a href="#"><img src="img/icons/my_profil/first_img.jpg" alt=""></a>
+																												</div>
+																												<p class="online status">online</p>
+																											</div>
+																											<div class="col-xs-3 col-xs-offset-2">
+																												<div class="row">
+																													<span class="author">Anna Ivanova</span>
+																												</div>
+																											</div>
+																											<div class="col-xs-1">
+																												<a href="#"><img class="share" src="img/icons/my_profil/share.png" alt="img"></a>
+																											</div>
+																											<div class="col-xs-5">
+																												<div class="row">
+																													<div class="published_by clearfix">
+																														<div class="col-xs-2">
+																															<div class="row">
+																																<div class="avatar"><a href="#"><img src="img/icons/my_profil/top_img.png" alt=""></a></div>
+																															</div>
+																														</div>
+																														<div class="col-xs-10">
+																															<div class="row">
+																																<div class="col-xs-12">
+																																	<div class="row">
+																																		<span class="publishd_by_tittle">Elena Vinogradova</span>
+																																	</div>
+																																</div>
+																																<div class="col-xs-12">
+																																	<div class="row">
+																																		<span class="published_data">23.10.2015</span>
+																																	</div>
+																																</div>
+																															</div>
+																														</div>
+																													</div>
+																												</div>
+																											</div>
+																											<div class="col-xs-2 all_share">
+																												<div class="row">
+																													<a href="#">all shares <img src="img/icons/my_profil/right.png" alt=""></a>
+																												</div>
+																											</div>
+																										</div>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																						<div class="col-xs-10 col-xs-offset-2">
+																							<div class="row">
+																								<div class="wall_text clearfix">
+																									<div class="col-xs-12">
+																										<div class="row">
+																											<div class="wall_post_text clearfix">
+																												<div class="col-xs-12">
+																													<div class="row">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum necessitatibus, amet libero ea sit nisi saepe similique deserunt harum nostrum ipsa, cum nam magnam mollitia adipisci voluptatibus aperiam labore eveniet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quas temporibus sequi necessitatibus repudiandae quo eos aut dolore, asperiores earum?</div>
+																												</div>
+																											</div>
+																										</div>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																						<div class="col-xs-10 col-xs-offset-2">
+																							<div class="row">
+																								<div class="replies">
+																									<div class="col-xs-12">
+																										<div class="row">
+																											<div class="col-xs-8">
+																												<div class="row">
+																													<span>23.12.2015</span>
+																												</div>
+																											</div>
+																											<div class="col-xs-2">
+																												<div class="row">
+																													<a href="#">Share
+																														<img class="like_icon" src="img/icons/my_profil/share-hover.png" alt="img">
+																														<span>25</span></a>
+																												</div>
+																											</div>
+																											<div class="col-xs-2">
+																												<div class="row">
+																													<a href="#">Like
+																														<img class="like_icon" src="img/icons/my_profil/like-hover.png" alt="img">
+																														<span>134</span></a>
+																												</div>
+																											</div>
+																										</div>
+																									</div>
+																									<div class="comments">
+																										<ul>
+																												<li class="clearfix">
+																													<a href="#" class="avatar left"><img class="" src="img/icons/section_albums_view/fifth.png" alt="ava" /></a>
+																													<p><a href="#" class="txt_blue"><strong>Olive Guriod</strong></a> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fu, ducimus officiis excepturi </p>
+																													<div class="answer right clearfix">
+																														<span class="left data">14.09.2016</span>
+																														<span class="left answer_word">Answer</span>
+																														<span class="right comment_sum">134</span>
+																														<a href="#" class="like_comment right"><img src="img/icons/section_albums/like.png" alt="like"></a>
+																													</div>
+																												</li>
+																												<li class="clearfix">
+																													<a href="#" class="avatar left"><img class="" src="img/icons/section_albums_view/fifth.png" alt="ava" /></a>
+																													<p><a href="#" class="txt_blue"><strong>James Rodrigues</strong></a> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fu, ducimus officiis excepturi </p>
+																													<div class="answer right clearfix">
+																														<span class="left data">14.09.2016</span>
+																														<span class="left answer_word">Answer</span>
+																														<span class="right comment_sum">134</span>
+																														<a href="#" class="like_comment right"><img src="img/icons/section_albums/like.png" alt="like"></a>
+																													</div>
+																												</li>
+																												<li class="clearfix">
+																													<a href="#" class="avatar left"><img class="" src="img/icons/section_albums_view/fifth.png" alt="ava" /></a>
+																													<p><a href="#" class="txt_blue"><strong>Anna Ivanova</strong></a> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed quis sunt porro, nam animi inventore saepe, minus asperiores commodi similique, explicabo ut fuga natus eligendi officiis dignissimos veritatis rerum! Id suscipit sint ipsa! Esse aliquid culpa, impedit voluptatibus consequatur neque!</p>
+																													<div class="answer right clearfix">
+																														<span class="left data">14.09.2016</span>
+																														<span class="left answer_word">Answer</span>
+																														<span class="right comment_sum">134</span>
+																														<a href="#" class="like_comment right"><img src="img/icons/section_albums/like.png" alt="like"></a>
+																													</div>
+																												</li>
+																											</ul>
+																										</div>
+																									<!-- <div class="col-xs-12 replies_table">
+																										<div class="row">
+																											<div class="col-xs-1">
+																												<div class="row">
+																													<div class="replies_form_image avatar">
+																														<a href="#"><img src="img/icons/section_albums_view/first_img.jpg" alt="img"></a>
+																													</div>
+																												</div>
+																											</div>
+																											<div class="col-xs-11">
+																												<div class="row">
+																													<div class="replies_info clearfix">
+																														<div class="col-xs-12">
+																															<div class="reply_text">
+																																<a href="#" class="txt_blue">Anna Ivanova</a>
+																															</div>
+																														</div>
+																														<div class="col-xs-12">
+																															<div class="wall_reply_text">
+																																Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, repudiandae?
+																															</div>
+																														</div>
+																														<div class="col-xs-12">
+																														<div class="col-xs-4">
+																																<div class="row">
+																																	<div class="rel_date">10 April, 21:28</div>
+																																</div>
+																															</div>
+																															<div class="col-xs-4">
+																																<div class="row">
+																																	<div class="reply_lnk">Answer</div>
+																																</div>
+																															</div>
+																														</div>
+																													</div>
+																												</div>
+																											</div>
+																										</div>
+																									</div> -->
+																									<div class="col-xs-12 replies_form">
+																										<div class="row">
+																											<div class="col-xs-1">
+																												<div class="row">
+																													<div class="replies_form_image avatar">
+																														<a href="#"><img src="img/icons/section_albums_view/first_img.jpg" alt="img"></a>
+																													</div>
+																												</div>
+																											</div>
+																											<div class="col-xs-11 replies_form_input">
+																												<textarea placeholder="Write a comment" onfocus="this.placeholder = ''" rows="1"></textarea>
+																											</div>
+																										</div>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																					<div class="post clearfix">
+																						<div class="col-xs-12">
+																							<div class="row">
+																								<div class="post_upper clearfix">
+																									<div class="col-xs-12">
+																										<div class="row">
+																											<div class="col-xs-2 main_avatar">
+																												<div class="avatar">
+																													<a href="#"><img src="img/icons/my_profil/first_img.jpg" alt=""></a>
+																												</div>
+																												<p class="online status">online</p>
+																											</div>
+																											<div class="col-xs-3 col-xs-offset-2">
+																												<div class="row">
+																													<span class="author">Anna Ivanova</span>
+																												</div>
+																											</div>
+																											<div class="col-xs-1">
+																												<a href="#"><img class="share" src="img/icons/my_profil/share.png" alt="img"></a>
+																											</div>
+																											<div class="col-xs-5">
+																												<div class="row">
+																													<div class="published_by clearfix">
+																														<div class="col-xs-2">
+																															<div class="row">
+																																<div class="avatar"><a href="#"><img src="img/icons/my_profil/top_img.png" alt=""></a></div>
+																															</div>
+																														</div>
+																														<div class="col-xs-10">
+																															<div class="row">
+																																<div class="col-xs-12">
+																																	<div class="row">
+																																		<span class="publishd_by_tittle">Elena Vinogradova</span>
+																																	</div>
+																																</div>
+																																<div class="col-xs-12">
+																																	<div class="row">
+																																		<span class="published_data">23.10.2015</span>
+																																	</div>
+																																</div>
+																															</div>
+																														</div>
+																													</div>
+																												</div>
+																											</div>
+																											<div class="col-xs-2 all_share close">
+																												<a href="#"><img src="img/icons/my_profil/close.png" alt="img" data-toggle="tooltip" data-placement="top" title="Delete"></a>
+																											</div>
+																										</div>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																						<div class="col-xs-10 col-xs-offset-2">
+																							<div class="row">
+																								<div class="wall_text clearfix">
+																									<div class="col-xs-12">
+																										<div class="row">
+																											<div class="wall_post_text clearfix">
+																												<div class="col-xs-12">
+																													<div class="row">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum necessitatibus, amet libero ea sit nisi saepe similique deserunt harum nostrum ipsa, cum nam magnam mollitia adipisci voluptatibus aperiam labore eveniet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quas temporibus sequi necessitatibus repudiandae quo eos aut dolore, asperiores earum?</div>
+																												</div>
+																											</div>
+																										</div>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																						<div class="col-xs-10 col-xs-offset-2">
+																							<div class="row">
+																								<div class="replies">
+																									<div class="col-xs-12">
+																										<div class="row">
+																											<div class="col-xs-8">
+																												<div class="row">
+																													<span>23.12.2015</span>
+																												</div>
+																											</div>
+																											<div class="col-xs-2">
+																												<div class="row">
+																													<a href="#">Share
+																														<img class="like_icon" src="img/icons/my_profil/share-hover.png" alt="img">
+																														<span>25</span></a>
+																												</div>
+																											</div>
+																											<div class="col-xs-2">
+																												<div class="row">
+																													<a href="#">Like
+																														<img class="like_icon" src="img/icons/my_profil/like-hover.png" alt="img">
+																														<span>134</span></a>
+																												</div>
+																											</div>
+																										</div>
+																									</div>
+																									<div class="col-xs-12 replies_form">
+																										<div class="row">
+																											<div class="col-xs-1">
+																												<div class="row">
+																													<div class="replies_form_image avatar">
+																														<a href="#"><img src="img/icons/section_albums_view/first_img.jpg" alt="img"></a>
+																													</div>
+																												</div>
+																											</div>
+																											<div class="col-xs-11 replies_form_input">
+																												<textarea placeholder="Write a comment" onfocus="this.placeholder = ''" rows="1"></textarea>
+																											</div>
+																										</div>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																					<div class="post clearfix">
+																						<div class="col-xs-12">
+																							<div class="row">
+																								<div class="post_upper clearfix">
+																									<div class="col-xs-12">
+																										<div class="row">
+																											<div class="col-xs-2 main_avatar">
+																												<div class="avatar">
+																													<a href="#"><img src="img/icons/my_profil/first_img.jpg" alt=""></a>
+																												</div>
+																												<p class="online status">online</p>
+																											</div>
+																											<div class="col-xs-3 col-xs-offset-2">
+																												<div class="row">
+																													<span class="author">Anna Ivanova</span>
+																												</div>
+																											</div>
+																											<div class="col-xs-1">
+																												<a href="#"><img class="share" src="img/icons/my_profil/share.png" alt="img"></a>
+																											</div>
+																											<div class="col-xs-5">
+																												<div class="row">
+																													<div class="published_by clearfix">
+																														<div class="col-xs-2">
+																															<div class="row">
+																																<div class="avatar"><a href="#"><img src="img/icons/my_profil/top_img.png" alt=""></a></div>
+																															</div>
+																														</div>
+																														<div class="col-xs-10">
+																															<div class="row">
+																																<div class="col-xs-12">
+																																	<div class="row">
+																																		<span class="publishd_by_tittle">Elena Vinogradova</span>
+																																	</div>
+																																</div>
+																																<div class="col-xs-12">
+																																	<div class="row">
+																																		<span class="published_data">23.10.2015</span>
+																																	</div>
+																																</div>
+																															</div>
+																														</div>
+																													</div>
+																												</div>
+																											</div>
+																											<div class="col-xs-2 all_share close">
+																												<a href="#"><img src="img/icons/my_profil/close.png" alt="img" data-toggle="tooltip" data-placement="top" title="Delete"></a>
+																											</div>
+																										</div>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																						<div class="col-xs-10 col-xs-offset-2">
+																							<div class="row">
+																								<div class="wall_text clearfix">
+																									<div class="col-xs-12">
+																										<div class="row">
+																											<div class="wall_post_img clearfix">
+																												<div class="col-xs-12">
+																													<div class="row">
+																														<img src="img/icons/section_albums/sixth.png" alt="img">
+																													</div>
+																												</div>
+																											</div>
+																										</div>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																						<div class="col-xs-10 col-xs-offset-2">
+																							<div class="row">
+																								<div class="replies">
+																									<div class="col-xs-12">
+																										<div class="row">
+																											<div class="col-xs-8">
+																												<div class="row">
+																													<span>23.12.2015</span>
+																												</div>
+																											</div>
+																											<div class="col-xs-2">
+																												<div class="row">
+																													<a href="#">Share
+																														<img class="like_icon" src="img/icons/my_profil/share-hover.png" alt="img">
+																														<span>25</span></a>
+																												</div>
+																											</div>
+																											<div class="col-xs-2">
+																												<div class="row">
+																													<a href="#">Like
+																														<img class="like_icon" src="img/icons/my_profil/like-hover.png" alt="img">
+																														<span>134</span></a>
+																												</div>
+																											</div>
+																										</div>
+																									</div>
+																									<div class="comments">
+																										<ul>
+																												<li class="clearfix">
+																													<a href="#" class="avatar left"><img class="" src="img/icons/section_albums_view/fifth.png" alt="ava" /></a>
+																													<p><a href="#" class="txt_blue"><strong>Olive Guriod</strong></a> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fu, ducimus officiis excepturi </p>
+																													<div class="answer right clearfix">
+																														<span class="left data">14.09.2016</span>
+																														<span class="left answer_word">Answer</span>
+																														<span class="right comment_sum">134</span>
+																														<a href="#" class="like_comment right"><img src="img/icons/section_albums/like.png" alt="like"></a>
+																													</div>
+																												</li>
+																												<li class="clearfix">
+																													<a href="#" class="avatar left"><img class="" src="img/icons/section_albums_view/fifth.png" alt="ava" /></a>
+																													<p><a href="#" class="txt_blue"><strong>James Rodrigues</strong></a> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fu, ducimus officiis excepturi </p>
+																													<div class="answer right clearfix">
+																														<span class="left data">14.09.2016</span>
+																														<span class="left answer_word">Answer</span>
+																														<span class="right comment_sum">134</span>
+																														<a href="#" class="like_comment right"><img src="img/icons/section_albums/like.png" alt="like"></a>
+																													</div>
+																												</li>
+																											</ul>
+																										</div>
+																									<div class="col-xs-12 replies_form">
+																										<div class="row">
+																											<div class="col-xs-1">
+																												<div class="row">
+																													<div class="replies_form_image avatar">
+																														<a href="#"><img src="img/icons/section_albums_view/first_img.jpg" alt="img"></a>
+																													</div>
+																												</div>
+																											</div>
+																											<div class="col-xs-11 replies_form_input">
+																												<textarea placeholder="Write a comment" onfocus="this.placeholder = ''" rows="1"></textarea>
+																											</div>
+																										</div>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																					<div class="post clearfix">
+																						<div class="col-xs-12">
+																							<div class="row">
+																								<div class="post_upper clearfix">
+																									<div class="col-xs-12">
+																										<div class="row">
+																											<div class="col-xs-2 main_avatar">
+																												<div class="avatar">
+																													<a href="#"><img src="img/icons/my_profil/first_img.jpg" alt=""></a>
+																												</div>
+																												<p class="online status">online</p>
+																											</div>
+																											<div class="col-xs-3 col-xs-offset-2">
+																												<div class="row">
+																													<span class="author">Anna Ivanova</span>
+																												</div>
+																											</div>
+																											<div class="col-xs-1">
+																												<a href="#"><img class="share" src="img/icons/my_profil/share.png" alt="img"></a>
+																											</div>
+																											<div class="col-xs-5">
+																												<div class="row">
+																													<div class="published_by clearfix">
+																														<div class="col-xs-2">
+																															<div class="row">
+																																<div class="avatar"><a href="#"><img src="img/icons/my_profil/top_img.png" alt=""></a></div>
+																															</div>
+																														</div>
+																														<div class="col-xs-10">
+																															<div class="row">
+																																<div class="col-xs-12">
+																																	<div class="row">
+																																		<span class="publishd_by_tittle">Elena Vinogradova</span>
+																																	</div>
+																																</div>
+																																<div class="col-xs-12">
+																																	<div class="row">
+																																		<span class="published_data">23.10.2015</span>
+																																	</div>
+																																</div>
+																															</div>
+																														</div>
+																													</div>
+																												</div>
+																											</div>
+																											<div class="col-xs-2 all_share close">
+																												<a href="#"><img src="img/icons/my_profil/close.png" alt="img" data-toggle="tooltip" data-placement="top" title="Delete"></a>
+																											</div>
+																										</div>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																						<div class="col-xs-10 col-xs-offset-2">
+																							<div class="row">
+																								<div class="wall_text clearfix">
+																									<div class="col-xs-12">
+																										<div class="row">
+																											<div class="wall_post_img clearfix">
+																												<div class="col-xs-12">
+																													<div class="row">
+																														<img src="img/icons/my_profil/top_img.png" alt="img">
+																													</div>
+																												</div>
+																											</div>
+																											<div class="wall_post_text clearfix">
+																												<div class="col-xs-12">
+																													<div class="row">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum necessitatibus, amet libero ea sit nisi saepe similique deserunt harum nostrum ipsa, cum nam magnam mollitia adipisci voluptatibus aperiam labore eveniet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quas temporibus sequi necessitatibus repudiandae quo eos aut dolore, asperiores earum?</div>
+																												</div>
+																											</div>
+																										</div>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																						<div class="col-xs-10 col-xs-offset-2">
+																							<div class="row">
+																								<div class="replies">
+																									<div class="col-xs-12">
+																										<div class="row">
+																											<div class="col-xs-8">
+																												<div class="row">
+																													<span>23.12.2015</span>
+																												</div>
+																											</div>
+																											<div class="col-xs-2">
+																												<div class="row">
+																													<a href="#">Share
+																														<img class="like_icon" src="img/icons/my_profil/share-hover.png" alt="img">
+																														<span>25</span></a>
+																												</div>
+																											</div>
+																											<div class="col-xs-2">
+																												<div class="row">
+																													<a href="#">Like
+																														<img class="like_icon" src="img/icons/my_profil/like-hover.png" alt="img">
+																														<span>134</span></a>
+																												</div>
+																											</div>
+																										</div>
+																									</div>
+																									<div class="col-xs-12 replies_form">
+																										<div class="row">
+																											<div class="col-xs-1">
+																												<div class="row">
+																													<div class="replies_form_image avatar">
+																														<a href="#"><img src="img/icons/section_albums_view/first_img.jpg" alt="img"></a>
+																													</div>
+																												</div>
+																											</div>
+																											<div class="col-xs-11 replies_form_input">
+																												<textarea placeholder="Write a comment" onfocus="this.placeholder = ''" rows="1"></textarea>
+																											</div>
+																										</div>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																					</div>	
+																				</div>
+																				
+																				</div>
+																			</div>
+																		</div>
+																		<!-- END: main_wall -->
+																	</div>
+																</div>
+																<!-- END: right side tape -->
+																<!-- END: other tapes -->
+															</div>
+														</div>
+													</div>
+												</div>
+										</div>
+										<!--END: Content wrap-->
+									</section>
+			<!-- //END: Content section-->
+
+			<!-- Right column -->
+		<aside class="right_sidebar right">
+			<a href="#" class="toggle-mnu"><span></span></a>
+			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="headingOne">
+						<h4 class="panel-title">
+							<a class="mnu_but collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+								Popular videos
+							</a>
+						</h4>
+					</div>
+					<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false">
+						<div class="panel-body">
+							<ul class="main_menu">
+								<li><a href="#">Lorem ipsum.</a></li>
+								<li><a href="#">Lorem ipsum.</a></li>
+								<li><a href="#">Lorem ipsum.</a></li>	
+								<li><a href="#">Lorem ipsum.</a></li>
+								<li><a href="#">Lorem ipsum.</a></li>
+								<li><a href="#">Lorem ipsum.</a></li>	
+								<li><a href="#">Lorem ipsum.</a></li>
+								<li><a href="#">Lorem ipsum.</a></li>
+								<li><a href="#">Lorem ipsum.</a></li>	
+								<li><a href="#">Lorem ipsum.</a></li>
+								<li><a href="#">Lorem ipsum.</a></li>
+								<li><a href="#">Lorem ipsum.</a></li>	
+								<li><a href="#">Lorem ipsum.</a></li>
+								<li><a href="#">Lorem ipsum.</a></li>
+								<li><a href="#">Lorem ipsum.</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingTwo">
+								<h4 class="panel-title">
+									<a class="mnu_but collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+										Nearest Events
+									</a>
+								</h4>
+							</div>
+							<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false">
+								<div class="panel-body">
+									<ul class="main_menu">
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>	
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingThree">
+								<h4 class="panel-title">
+									<a class="mnu_but collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+										Popular groups
+									</a>
+								</h4>
+							</div>
+							<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false">
+								<div class="panel-body">
+									<ul class="main_menu">
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>	
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingFoth">
+								<h4 class="panel-title">
+									<a class="mnu_but collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFoth" aria-expanded="false" aria-controls="collapseFoth">
+										Popular apps
+									</a>
+								</h4>
+							</div>
+							<div id="collapseFoth" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFoth" aria-expanded="false">
+								<div class="panel-body">
+									<ul class="main_menu">
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>	
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingFifth">
+								<h4 class="panel-title">
+									<a class="mnu_but collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFifth" aria-expanded="false" aria-controls="collapseFifth">
+										Trade bazaar
+									</a>
+								</h4>
+							</div>
+							<div id="collapseFifth" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFifth" aria-expanded="false">
+								<div class="panel-body">
+									<ul class="main_menu">
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>	
+									</ul>
+								</div>
+							</div>
+						</div>	
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingSixth">
+								<h4 class="panel-title">
+									<a class="mnu_but collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSixth" aria-expanded="false" aria-controls="collapseSixth">
+										Adventures
+									</a>
+								</h4>
+							</div>
+							<div id="collapseSixth" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSixth" aria-expanded="false">
+								<div class="panel-body">
+									<ul class="main_menu">
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>	
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingSeventh">
+								<h4 class="panel-title">
+									<a class="mnu_but collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeventh" aria-expanded="false" aria-controls="collapseSeventh">
+										Business
+									</a>
+								</h4>
+							</div>
+							<div id="collapseSeventh" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeventh" aria-expanded="false">
+								<div class="panel-body">
+									<ul class="main_menu">
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>	
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="friends_panel_main panel panel-default">
+							<div class="panel-heading" role="tab" id="headingEighth">
+								<h4 class="panel-title">
+									<a class="mnu_but arrow_nav collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEighth" aria-expanded="false" aria-controls="collapseEighth">
+									Friends online<img src="img/icons/header/dropdown.png" alt="dropdown">	
+									</a>
+								</h4>
+							</div>
+							<div id="collapseEighth" class="panel-collapse collapse friend_collapse" role="tabpanel" aria-labelledby="headingEighth" aria-expanded="false">
+								<div class="panel-body friends_panel">
+									<label class="search">
+										<input type="text" name="search" placeholder="Search in the list" onfocus="this.placeholder = ''" ><a href="#"><img src="img/icons/right-sidebar/search.png" alt="search"></a>
+									</label>											
+									<div id="carousel" class="carousel slide" data-interval="false">
+										<div class="carousel-inner">
+											<div class="item active">
+												<ul class="online">
+												<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>		
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Loreyfyfgy tgyygyg cdrxdtxtdy ctycftcm ipsum.</a>
+														<p>online</p>
+													</li>
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>
+												</ul>
+											</div>
+											<div class="item">
+												<ul class="online">
+												<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>		
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Loreyfyfgy tgyygyg cdrxdtxtdy ctycftcm ipsum.</a>
+														<p>online</p>
+													</li>
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Loreyfyfgy tgyygyg cdrxdtxtdy ctycftcm ipsum.</a>
+														<p>online</p>
+													</li>
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>
+												</ul>
+											</div>
+											<div class="item">
+												<ul class="online">
+												<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>		
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Loreyfyfgy tgyygyg cdrxdtxtdy ctycftcm ipsum.</a>
+														<p>online</p>
+													</li>
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Loreyfyfgy tgyygyg cdrxdtxtdy ctycftcm ipsum.</a>
+														<p>online</p>
+													</li>
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>
+												</ul>
+											</div>
+										</div>
+									<a class="left carousel-control friend_carousel" href="#carousel" data-slide="prev">
+										<img class="left" src="img/icons/right-sidebar/arrow-left.png" alt="left">
+										<span class="left">previous</span>
+									</a>
+									<a class="right carousel-control" href="#carousel" data-slide="next">
+										<span class="right">next</span>
+										<img class="right" src="img/icons/right-sidebar/arrow-right.png" alt="right">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</aside>
+		</div>
+		<!-- //END: main content area -->
+
+		 <!-- START: Footer -->
+	<footer class="footer">
+	</footer>
+		<!-- //END: Footer -->
+</div>
+
+	
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+
+<!-- Load Scripts -->
+<script src="libs/modernizr/modernizr.js"></script>
+<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+<script src="libs/audioplayer/mediaelement-and-player.min.js"></script>
+<script src="libs/bootstrap/bootstrap.min.js"></script>
+<script src="libs/dropzone/dropzone.js"></script>
+<!-- <script src="libs/Magnific-Popup/jquery.magnific-popup.min.js"></script> -->
+<script src="libs/nicescroll/jquery.nicescroll.min.js"></script>
+<script src="libs/PageScroll2id/PageScroll2id.min.js"></script>
+<script src="libs/plugins-scroll/plugins-scroll.js"></script>
+<script src="libs/owl/owl.carousel.min.js"></script>
+<script src="libs/select2-4.0.2/select2-4.0.2/dist/js/select2.min.js"></script>
+<script src="js/valid.js"></script>
+<script src="libs/fullcalendar-2.6.1/lib/moment.min.js"></script>
+<script src="libs/fullcalendar-2.6.1/fullcalendar.min.js"></script>
+<script src="libs/autoresize/autoresize.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>
+

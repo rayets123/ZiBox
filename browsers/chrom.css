@@ -1,0 +1,109 @@
+input, textarea {
+   outline:none;
+  }
+	.top_line .search_box{
+		position: absolute;
+		right: 0px;
+		bottom: 1px;
+		-webkit-transition: all 0s!important;
+		-o-transition: all 0s!important;
+		transition: all 0s!important;
+	}
+	
+	.top_line .search_box.search_move{
+		left: -250px;
+		top: 0;
+		position: absolute!important;
+		-webkit-transition: all 0s!important;
+		-o-transition: all 0s!important;
+		transition: all 0s!important;
+	}
+		.top_line .top_search input{
+			-webkit-transition: all 0s!important;
+			-o-transition: all 0s!important;
+			transition: all 0s!important;
+		}
+			.top_line .top_search a{
+				-webkit-transition: all 0s!important;
+				-o-transition: all 0s!important;
+				transition: all 0s!important;
+			}
+/*
+.find_friend .search_people{
+					position: absolute;
+					width: 30px;
+					height: 30px;
+					background-color: #eb692b;
+					padding-top: 5px;
+					top: -5px;
+					right: -30px;
+				}*/
+/*.modal-content .search{
+			width: 270px;	
+			position: relative;
+			height: 100%;
+		}
+.modal-content .search .search_box{
+				width: 210px;
+				height: 30px;
+				border: 1px solid #e0e0e0;
+				background-color: #e8e8e8;
+				text-indent: 5px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				color: #7f7f7f;
+			}
+.modal-content .search img{
+				position: absolute;
+				top: 4px;
+				right: 6px;
+				cursor: pointer;
+			}
+.modal-content .modal-footer .clear_history .conversation{
+	width: 280px;
+	padding-top: 7px;
+}*/
+.wrap_all_chat .upper_line .chat_search input {
+  height: 29px;}	
+.modal-content .modal-header .search .search_box {
+  height: 29px;}
+.chat_inside .upper_line .left_nav .drop {
+  top: 44px;
+  right: 6px;
+}
+.wrap_all_chat .upper_line .drop .dropdown-menu {
+  top: 20px;}
+.chat .write_message textarea {
+    position: absolute;
+    top: 2px;
+    border: none;
+    padding-left: 5px;
+    padding-right: 0;
+    width: 440px;
+}
+.wrap_all_chat .upper_line .drop {
+    top: 20px;}
+.modal-content .modal-footer .clear_history {
+  text-align: center;
+	padding: 0;}
+.modal-content .modal-footer .clear_history .conversation, .modal-content .modal-footer .clear_history .history {
+  width: auto;
+	padding: 7px 10px 0 10px;}
+.section_music .my_tracks{
+	width: 200px!important;
+}
+.section_music .my_playlist{
+	width: 170px!important;
+		}
+.main_chat{
+	padding: 0!important;}
+
+body input.form-control {
+   height: 29px!important;}
+.wrap_all .album .dropdown {
+    bottom: 35px;}
+.wrap_all .album .dropdown button:active{
+	padding: 1px;}
+.page_wrap .dropdown {
+  background-color: transparent;}

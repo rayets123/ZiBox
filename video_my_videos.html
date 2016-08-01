@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+	<meta charset='utf-8'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<title>ZiBox my video</title>
+	
+	<meta name="description" content="ZOORONI">
+  <meta name="author" content="ZOORONI">
+ 
+		<!-- Load CSS Compilled without JS -->
+	<noscript>
+		<link rel="stylesheet" href="css/_main.min.css">
+		<link rel="stylesheet" href="libs/bootstrap/bootstrap.css">
+	</noscript>
+
+	<!-- Fonts Loader from _fonts.css (HTML5 LocalStorage) -->
+	<script>!function(){function e(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function t(e){return window.localStorage&&localStorage.font_css_cache&&localStorage.font_css_cache_file===e}function n(){if(window.localStorage&&window.XMLHttpRequest)if(t(o))a(localStorage.font_css_cache);else{var n=new XMLHttpRequest;n.open("GET",o,!0),e(n,"load",function(){4===n.readyState&&(a(n.responseText),localStorage.font_css_cache=n.responseText,localStorage.font_css_cache_file=o)}),n.send()}else{var c=document.createElement("link");c.href=o,c.rel="stylesheet",c.type="text/css",document.getElementsByTagName("head")[0].appendChild(c),document.cookie="font_css_cache"}}function a(e){var t=document.createElement("style");t.innerHTML=e,document.getElementsByTagName("head")[0].appendChild(t)}var o="css/_fonts.min.css";window.localStorage&&localStorage.font_css_cache||document.cookie.indexOf("font_css_cache")>-1?n():e(window,"load",n)}();</script>
+
+	<!-- Load css -->
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-3.3.6-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="libs/select2-4.0.2/select2-4.0.2/dist/css/select2.css">
+	<link href="css/main.css" rel="stylesheet"> 
+	<link href="css/player.css" rel="stylesheet">
+	
+ 
+</head>
+<body>
+<!-- start: popup video -->
+	<div class="modal fade video_popup" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+	<button type="button" class="close close_popup" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		<div class="podrt_descr">
+			<button type="button" class="arrow_popup arrow_popup_left"></button>
+			<button type="button" class="arrow_popup arrow_popup_right"></button>
+			<div class="modal-box-content">
+				<div class="img_wrap left">
+					<video poster="img/icons/my_profil/post_img.png" controls="controls">
+						<source src="video/Chris Daughtry-Supernatural.mp4.mp4" type='video/mp4' />
+					</video>
+				</div>
+				<div class="wrap_right_side clearfix">
+					<div class="album_description right">
+						<div class="top_description">
+							<a href="#" class="user"><img src="img/icons/Popup/ava.png" alt="ava" /></a>
+							<span class="user_name">Anna Ivanova</span>
+							<a href="#" class="album_name">My vacacion in Greece</a>
+							<span class="date">October 3, 2015</span>
+							<div class="dropdown right">
+								<button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+									<img class="drop_arrow" src="img/icons/section_albums_view/arrow.png" alt="dropdown">
+								</button>
+								<ul class="dropdown-menu">
+									<li><a href="#">Add location</a></li>
+									<li><a href="#">Add person</a></li>
+									<li><a href="#">Make profile picture</a></li>
+									<li><a href="#">Make cover photo</a></li>
+									<li><a href="#">Get link</a></li>
+									<li><a href="#">Delete photo</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="bottom_description">
+							<h5>The best vacation I’ve ever had! Lorem ipsum dolor sit a. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate corrupti similique inventore dolor, accusamus illum eveniet quaerat iste ab tempora suscipit tempore perferendis laboriosam odit in dicta cupiditate quia nobis magni, debitis asperiores at autem. Harum adipisci ipsam consequuntur repellat, distinctio odit, sit, temporibus vero doloremque velit tenetur maxime magni.</h5>
+							<ul class="with_friend">
+								<li>With</li>
+								<li><a href="#" class="friend">Garet Bale,</a></li>
+								<li><a href="#" class="friend">James Rodrigues,</a></li>
+								<li><a href="#" class="friend">Tony Kross,</a></li>
+								<li><a href="#" class="friend">Karim Benzema,</a></li>
+								<li>in</li>
+								<li><a href="#" class="place">Athens,</a></li>
+								<li><a href="#" class="place">Greece.</a></li>
+							</ul>
+							<ul class="hashtag">
+								<li><a href="#">#loremsda</a></li>
+								<li><a href="#">#loremd</a></li>
+								<li><a href="#">#loremsdsdsd</a></li>
+								<li><a href="#">#loremsaa</a></li>
+								<li><a href="#">#loremsd</a></li>
+								<li><a href="#">#loremsd</a></li>
+							</ul>
+							<div class="comments">
+								<ul>
+									<li class="clearfix">
+										<a href="#" class="avatar left"><img class="" src="img/icons/section_albums_view/fifth.png" alt="ava" /></a>
+										<p><a href="#" class="txt_blue"><strong>Olive Guriod</strong></a> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fu, ducimus officiis excepturi </p>
+										<div class="answer right clearfix">
+											<span class="left data">14.09.2016</span>
+											<span class="left answer_word">Answer</span>
+											<span class="right comment_sum">134</span>
+											<a href="#" class="like_comment right"><img src="img/icons/section_albums/like.png" alt="like"></a>
+										</div>
+									</li>
+									<li class="clearfix">
+										<a href="#" class="avatar left"><img class="" src="img/icons/section_albums_view/fifth.png" alt="ava" /></a>
+										<p><a href="#" class="txt_blue"><strong>Olive Guriod</strong></a> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fu, ducimus officiis excepturi </p>
+										<div class="answer right clearfix">
+											<span class="left data">14.09.2016</span>
+											<span class="left answer_word">Answer</span>
+											<span class="right comment_sum">134</span>
+											<a href="#" class="like_comment right"><img src="img/icons/section_albums/like.png" alt="like"></a>
+										</div>
+									</li>
+									<li class="clearfix">
+										<a href="#" class="avatar left"><img class="" src="img/icons/section_albums_view/fifth.png" alt="ava" /></a>
+										<p><a href="#" class="txt_blue"><strong>Olive Guriod</strong></a> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fu, ducimus officiis excepturi </p>
+										<div class="answer right clearfix">
+											<span class="left data">14.09.2016</span>
+											<span class="left answer_word">Answer</span>
+											<span class="right comment_sum">134</span>
+											<a href="#" class="like_comment right"><img src="img/icons/section_albums/like.png" alt="like"></a>
+										</div>
+									</li>
+									<li class="clearfix">
+										<a href="#" class="avatar left"><img class="" src="img/icons/section_albums_view/fifth.png" alt="ava" /></a>
+										<p><a href="#" class="txt_blue"><strong>James Rodrigues</strong></a> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fu, ducimus officiis excepturi </p>
+										<div class="answer right clearfix">
+											<span class="left data">14.09.2016</span>
+											<span class="left answer_word">Answer</span>
+											<span class="right comment_sum">134</span>
+											<a href="#" class="like_comment right"><img src="img/icons/section_albums/like.png" alt="like"></a>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end: popup-video -->
+
+	<div class="page_wrap clearfix">
+	<!-- START: page Header -->
+		<header id="header">
+			<div class="top_line default">
+				<div class="center">
+					<div class="logo left">
+						<a href="#">
+							<img class="logo_img" src="img/icons/header/logo_main.png" alt="logo">
+						</a>
+					</div>
+					<div class="menu right">
+						<ul>
+							<li>
+							<a href="#" class="search_box"><img src="img/icons/header/search.png" alt="search">
+							</a>
+							<label class="top_search">
+									<input type="text" name="search" placeholder="Search" onfocus="this.placeholder = ''" >
+								</label>
+							</li>
+							<li>
+								<div class="dropdown">
+									<button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+										<img class="profil_wrap" src="img/icons/section_albums/fifth.png" alt="person">
+										<img class="status" src="img/icons/header/online.png" alt="online" />
+										My profile
+										<img class="drop_arrow" src="img/icons/header/dropdown.png" alt="dropdown">
+									</button>
+									<ul class="dropdown-menu">
+										<li><a href="#">Edit profile</a></li>
+										<li><a href="#">Account Settings</a></li>
+										<li><a href="#">Archive</a></li>
+										<li class="devider"></li>
+										<li class="list_name">Zi Chat status:</li>
+										<li><a href="#"><img src="img/icons/header/online.png" alt="online" /> online</a></li>
+										<li><a href="#"><img src="img/icons/header/none.png" alt="not" /> do not disturb</a></li>
+										<li><a href="#"><img src="img/icons/header/away.png" alt="away" /> away</a></li>
+										<li><a href="#"><img src="img/icons/header/invisible.png" alt="invisible" /> invisible</a></li>
+									</ul>
+								</div>
+							</li>	
+							<li class="menu_links help"><a href="#">Help</a></li>
+							<li class="menu_links"><a href="#">Log out</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- //END: page Header -->
+
+		<!-- START: Media nav left -->
+		<nav id="media-nav">
+			<ul class="media">
+				<li><button class="music player"><img src="img/icons/audioplayer/note-light.png" alt="music"></button></li>
+				<li><button class="music"><img src="img/icons/audioplayer/video-light.png" alt="video"></button></li>
+				<li><button class="music"><img src="img/icons/audioplayer/chat-light.png" alt="chat"></button></li>
+				<li ><button class="music"><img src="img/icons/audioplayer/bell-light.png" alt="bell"></button></li>
+			</ul>
+			<ul class="audio-list">
+				<li class="open-close"></li>
+				<li class="main_track audio-player">
+					<img src="img/icons/audioplayer/prev.png" alt="prev">
+					<img class="next_song" src="img/icons/audioplayer/next.png" alt="pause">
+					<a href="#"><h5 title="Lorem ipsum dolor sit amet, consectetur." class="play_title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, est.</h5></a>
+					<audio id="audio-player">
+						<source src="audio/Mind_Vortex_Alive.mp3" type="audio/mp3">
+						</audio>
+						<div class="dropdown left">
+							<button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+								<img src="img/icons/audioplayer/arrow.png" alt="dropdown">
+							</button>
+							<ul class="dropdown-menu">
+								<li><a href="#">Repeat this track</a></li>
+								<li><a href="#">Mix audiotracks</a></li>
+								<li><a href="#">Show similar tracks</a></li>
+								<li><a href="#">Send to a friend</a></li>
+							</ul>
+						</div>
+						<button class="audio_icons icon"><img src="img/icons/audioplayer/favorite.png" alt="favorite"></button>
+						<button class="audio_icons favorit"><img src="img/icons/audioplayer/icon.png" alt="icon"></button>
+						<button class="audio_icons download"><img src="img/icons/audioplayer/download.png" alt="download"></button>
+					</li>
+					<li class="container_music">
+						<ul class="play_list_all clearfix">
+								<li class="audio-player playlist_tracks">
+									<img src="img/icons/audioplayer/play.png" alt="play">
+									<a href="#"><h5 title="Lorem ipsum dolor sit amet, consectetur.">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, quaerat?</h5></a>
+									<span>00:00</span>
+									<audio>
+										<source src="audio/Mind_Vortex_Alive.mp3" type="audio/mp3">
+									</audio>
+								</li>
+								<li class="audio-player playlist_tracks">
+								<img src="img/icons/audioplayer/play.png" alt="play">
+								<a href="#"><h5 title="Lorem ipsum dolor sit amet, consectetur.">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, quaerat?</h5></a>
+								<span>00:00</span>
+									<audio>
+										<source src="audio/Mind_Vortex_Alive.mp3" type="audio/mp3">
+									</audio>
+								</li>
+								<li class="audio-player playlist_tracks">
+									<img src="img/icons/audioplayer/play.png" alt="play">
+									<a href="#"><h5 title="Lorem ipsum dolor sit amet, consectetur.">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, quaerat?</h5></a>
+									<span>00:00</span>
+									<audio>
+										<source src="audio/Mind_Vortex_Alive.mp3" type="audio/mp3">
+									</audio>
+								</li>
+								<li class="audio-player playlist_tracks">
+									<img src="img/icons/audioplayer/play.png" alt="play">
+									<a href="#"><h5 title="Lorem ipsum dolor sit amet, consectetur.">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, quaerat?</h5></a>
+									<span>00:00</span>
+									<audio>
+										<source src="audio/Mind_Vortex_Alive.mp3" type="audio/mp3">
+									</audio>
+								</li>
+								<li class="audio-player playlist_tracks">
+									<img src="img/icons/audioplayer/play.png" alt="play">
+									<a href="#"><h5 title="Lorem ipsum dolor sit amet, consectetur.">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, quaerat?</h5></a>
+									<span>00:00</span>
+									<audio>
+										<source src="audio/Mind_Vortex_Alive.mp3" type="audio/mp3">
+									</audio>
+								</li>
+								<li class="audio-player playlist_tracks">
+									<img src="img/icons/audioplayer/play.png" alt="play">
+									<a href="#"><h5 title="Lorem ipsum dolor sit amet, consectetur.">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, quaerat?</h5></a>
+									<span>00:00</span>
+									<audio>
+										<source src="audio/Mind_Vortex_Alive.mp3" type="audio/mp3">
+									</audio>
+								</li>
+								<li class="audio-player playlist_tracks">
+									<img src="img/icons/audioplayer/play.png" alt="play">
+									<a href="#"><h5 title="Lorem ipsum dolor sit amet, consectetur.">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, quaerat?</h5></a>
+									<span>00:00</span>
+									<audio>
+										<source src="audio/Mind_Vortex_Alive.mp3" type="audio/mp3">
+									</audio>
+								</li>
+								<li class="audio-player playlist_tracks">
+									<img src="img/icons/audioplayer/play.png" alt="play">
+									<a href="#"><h5 title="Lorem ipsum dolor sit amet, consectetur.">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, quaerat?</h5></a>
+									<span>00:00</span>
+									<audio>
+										<source src="audio/Mind_Vortex_Alive.mp3" type="audio/mp3">
+									</audio>
+								</li>
+								<li class="audio-player playlist_tracks">
+									<img src="img/icons/audioplayer/play.png" alt="play">
+									<a href="#"><h5 title="Lorem ipsum dolor sit amet, consectetur.">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, quaerat?</h5></a>
+									<span>00:00</span>
+									<audio>
+										<source src="audio/Mind_Vortex_Alive.mp3" type="audio/mp3">
+									</audio>
+								</li>
+								<li class="audio-player playlist_tracks">
+									<img src="img/icons/audioplayer/play.png" alt="play">
+									<a href="#"><h5 title="Lorem ipsum dolor sit amet, consectetur.">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, quaerat?</h5></a>
+									<span>00:00</span>
+									<audio>
+										<source src="audio/Mind_Vortex_Alive.mp3" type="audio/mp3">
+									</audio>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<!-- //END: Media nav left -->
+
+		<!-- START: main content area -->
+		<div class="content_container clearfix">
+			 <!-- START: Left column -->
+			<aside class="left_sidebar left">
+				<nav>
+					<ul class="left_menu">
+						<li><a href="#">
+								<img src="img/icons/left-sidebar/bell1.png" alt="bell">
+								<span class="news">243</span>
+								My notifications
+							</a></li>
+						<li><a href="#">
+								<img src="img/icons/left-sidebar/mail.png" alt="bell">
+								Zi Chat
+							</a></li>
+						<li class="open_friends"><a href="#">
+								<img src="img/icons/left-sidebar/person.png" alt="person">
+								<span class="news">16</span>
+								My friends
+								</a>
+								<ul class="friends_toggle">
+									<li><a href="index.html">All friends</a></li>
+									<li><a href="#">Friends online</a></li>
+									<li><a href="#">Friend reqests</a></li>
+							</ul>
+						</li>
+						<li><a href="#">
+								<img src="img/icons/left-sidebar/2_person.png" alt="2_person">
+								<span class="news">16</span>
+								My groups
+							</a></li>
+						<li><a href="photos_main.html">
+								<img src="img/icons/left-sidebar/camera.png" alt="photos">
+								My photos
+							</a></li>
+						<li><a href="#">
+								<img src="img/icons/left-sidebar/note.png" alt="music">
+								My music
+							</a></li>
+						<li class="active-link"><a href="#">
+								<img src="img/icons/left-sidebar/video.png" alt="videos">
+								My videos
+							</a></li>
+						<li><a href="#">
+								<img src="img/icons/left-sidebar/playstation.png" alt="apps">
+								My apps
+							</a></li>
+						<li><a href="#">
+								<img src="img/icons/left-sidebar/hands.png" alt="trade">
+								My trade bazaar
+							</a></li>
+						<li><a href="#">
+								<img src="img/icons/left-sidebar/earth.png" alt="advanture">
+								My adventures
+							</a></li>
+						<li><a href="#">
+								<img src="img/icons/left-sidebar/calendar.png" alt="events">
+								My events
+							</a></li>
+						<li><a href="#">
+								<img src="img/icons/left-sidebar/diagram.png" alt="business">
+								My Business
+							</a></li>
+						<li><a href="#">
+								<img src="img/icons/left-sidebar/eye.png" alt="sneak a peak">
+								Sneak a Peak
+							</a></li>
+					</ul>
+				</nav>
+					<h3 class="message-title">Last messages</h3>
+					<ul class="messages">
+						<li><a href="#"><img src="img/icons/left-sidebar/first-message.svg" alt="messages"></a>Lorem ipsum dolor sit amet. 
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, aliquam.</li>
+						<li><a href="#"><img src="img/icons/left-sidebar/second-message.png" alt="messages"></a>Lorem ipsum dolor sit amet.</li>
+						<li><a href="#"><img src="img/icons/left-sidebar/third-message.png" alt="messages"></a>Lorem ipsum dolor sit amet.</li>
+						<li><a href="#"><img src="img/icons/left-sidebar/first-message.png" alt="messages"></a>Lorem ipsum dolor sit amet.</li>
+						<li><a href="#"><img src="img/icons/left-sidebar/first-message.svg" alt="messages"></a>Lorem ipsum dolor sit amet.</li>
+						<li><a href="#"><img src="img/icons/left-sidebar/first-message.svg" alt="messages"></a>Lorem ipsum dolor sit amet.</li>
+					</ul>
+			</aside>
+			<!-- //END: Left column -->
+
+			<!-- START: Content section -->
+			<section class="main_container left">
+
+			<!-- Content top navbar -->
+				<div id="content-top-nav">
+					<nav class="navbar navbar-default">
+						<div class="container-fluid">
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul class="nav navbar-nav">
+									<li class="first active"><a href="#">MY VIDEO</a></li>
+									<li class="create add_video">
+										<a href="#">ADD NEW VIDEO <span></span></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+				</div>
+
+				<!-- Content wrap-->
+				<div class="wrap_all clearfix">
+					<div class="wrap_photos clearfix popup-gallery">
+
+							<!-- если нет видео -->
+						<div class="no_video hidden">
+							<img src="img/icons/music/no_viedo.png" alt="">
+							<p class="text-uppercase">no videos to show</p>
+						</div>
+						<!--...-->
+
+						<div class="album_photo item left">
+							<div class="name_album">
+								<a href="#"><h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, a.</h4></a>
+								<button class="close"><span aria-hidden="true">×</span></button>
+							</div>
+							<div class="img_wrap view_photo" data-key="0">
+								<a href="#" class="popup_content">
+									<video poster="http://ic.maxabout.us/celebrities/other/atif-aslam/Atif_Aslam_301012_23.jpg">
+										<source src="video/Chris Daughtry-Supernatural.mp4.mp4">
+										</video>
+									</a>
+									<div class="hidden">
+										<div class="podrt_descr">
+											
+										</div>
+									</div>
+									<div class="hover_photo">
+										<div class="comment right">
+											<a href="javascript: void(0);"><img src="img/icons/section_albums/comment.png" alt="comment"></a><span>0</span>
+										</div>
+										<div class="like right">
+											<a href="#" class="likeVideo"><img src="img/icons/section_albums/like.png" alt="like"></a><span class="likesCountNumber">0</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="album_photo item left">
+								<div class="name_album">
+									<a href="#"><h4>Lorem ipsum dolor sit amet.</h4></a>
+									<button class="close"><span aria-hidden="true">×</span></button>
+								</div>
+								<div class="img_wrap view_photo" data-key="0">
+									<a href="#" class="popup_content">
+									<video poster="img/icons/section_albums_view/fifth.png">
+											<source src="video/Chris Daughtry-Supernatural.mp4.mp4">
+											</video>
+										</a>
+										<div class="hidden">
+											<div class="podrt_descr">
+												
+											</div>
+										</div>
+										<div class="hover_photo">
+											<div class="comment right">
+												<a href="javascript: void(0);"><img src="img/icons/section_albums/comment.png" alt="comment"></a><span>0</span>
+											</div>
+											<div class="like right">
+												<a href="#" class="likeVideo"><img src="img/icons/section_albums/like.png" alt="like"></a><span class="likesCountNumber">0</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								
+
+						</div>
+					<!-- <div class="popup-gallery-video wrap_video clearfix">
+						<div class="col-xs-12">
+							<div class="row">
+								<div class="col-xs-4">
+									<div class="row">
+										<div class="log item video_container clearfix">
+											<div class="col-xs-12">
+												<div class="wrap_log clearfix">
+													<div class="col-xs-12">
+														<div class="row">
+															<div class="img_wrap clearfix">
+																<a href="#"><img src="img/icons/my_profil/post_img.png" alt=""></a>
+															</div>
+															<a href="#" class="popup_content_video play_video"><img src="img/icons/my_profil/video_play.png" alt="img"></a>
+														</div>
+													</div>
+													<div class="col-xs-12">
+														<div class="row">
+															<div class="info_log clearfix">
+																<div class="col-xs-12">
+																	<a href="#" class="popup_content_video"><h4>My vacation in Greece</h4></a>						
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								
+								
+							</div>
+						</div>
+					</div> -->
+
+				</div>	
+			</section>
+			<!-- //END: Content section-->
+
+
+			<!-- Right column -->
+		<aside class="right_sidebar right">
+			<a href="#" class="toggle-mnu"><span></span></a>
+			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="headingOne">
+						<h4 class="panel-title">
+							<a class="mnu_but collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+								Popular videos
+							</a>
+						</h4>
+					</div>
+					<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false">
+						<div class="panel-body">
+							<ul class="main_menu">
+								<li><a href="#">Lorem ipsum.</a></li>
+								<li><a href="#">Lorem ipsum.</a></li>
+								<li><a href="#">Lorem ipsum.</a></li>	
+								<li><a href="#">Lorem ipsum.</a></li>
+								<li><a href="#">Lorem ipsum.</a></li>
+								<li><a href="#">Lorem ipsum.</a></li>	
+								<li><a href="#">Lorem ipsum.</a></li>
+								<li><a href="#">Lorem ipsum.</a></li>
+								<li><a href="#">Lorem ipsum.</a></li>	
+								<li><a href="#">Lorem ipsum.</a></li>
+								<li><a href="#">Lorem ipsum.</a></li>
+								<li><a href="#">Lorem ipsum.</a></li>	
+								<li><a href="#">Lorem ipsum.</a></li>
+								<li><a href="#">Lorem ipsum.</a></li>
+								<li><a href="#">Lorem ipsum.</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingTwo">
+								<h4 class="panel-title">
+									<a class="mnu_but collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+										Nearest Events
+									</a>
+								</h4>
+							</div>
+							<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false">
+								<div class="panel-body">
+									<ul class="main_menu">
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>	
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingThree">
+								<h4 class="panel-title">
+									<a class="mnu_but collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+										Popular groups
+									</a>
+								</h4>
+							</div>
+							<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false">
+								<div class="panel-body">
+									<ul class="main_menu">
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>	
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingFoth">
+								<h4 class="panel-title">
+									<a class="mnu_but collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFoth" aria-expanded="false" aria-controls="collapseFoth">
+										Popular apps
+									</a>
+								</h4>
+							</div>
+							<div id="collapseFoth" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFoth" aria-expanded="false">
+								<div class="panel-body">
+									<ul class="main_menu">
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>	
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingFifth">
+								<h4 class="panel-title">
+									<a class="mnu_but collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFifth" aria-expanded="false" aria-controls="collapseFifth">
+										Trade bazaar
+									</a>
+								</h4>
+							</div>
+							<div id="collapseFifth" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFifth" aria-expanded="false">
+								<div class="panel-body">
+									<ul class="main_menu">
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>	
+									</ul>
+								</div>
+							</div>
+						</div>	
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingSixth">
+								<h4 class="panel-title">
+									<a class="mnu_but collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSixth" aria-expanded="false" aria-controls="collapseSixth">
+										Adventures
+									</a>
+								</h4>
+							</div>
+							<div id="collapseSixth" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSixth" aria-expanded="false">
+								<div class="panel-body">
+									<ul class="main_menu">
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>	
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingSeventh">
+								<h4 class="panel-title">
+									<a class="mnu_but collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeventh" aria-expanded="false" aria-controls="collapseSeventh">
+										Business
+									</a>
+								</h4>
+							</div>
+							<div id="collapseSeventh" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeventh" aria-expanded="false">
+								<div class="panel-body">
+									<ul class="main_menu">
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>
+										<li><a href="#">Lorem ipsum.</a></li>	
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="friends_panel_main panel panel-default">
+							<div class="panel-heading" role="tab" id="headingEighth">
+								<h4 class="panel-title">
+									<a class="mnu_but arrow_nav collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEighth" aria-expanded="false" aria-controls="collapseEighth">
+									Friends online<img src="img/icons/header/dropdown.png" alt="dropdown">	
+									</a>
+								</h4>
+							</div>
+							<div id="collapseEighth" class="panel-collapse collapse friend_collapse" role="tabpanel" aria-labelledby="headingEighth" aria-expanded="false">
+								<div class="panel-body friends_panel">
+									<label class="search">
+										<input type="text" name="search" placeholder="Search in the list" onfocus="this.placeholder = ''" ><a href="#"><img src="img/icons/right-sidebar/search.png" alt="search"></a>
+									</label>											
+									<div id="carousel" class="carousel slide" data-interval="false">
+										<div class="carousel-inner">
+											<div class="item active">
+												<ul class="online">		
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>	
+												</ul>
+											</div>
+											<div class="item">
+												<ul class="online">		
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>
+												</ul>
+											</div>
+											<div class="item">
+												<ul class="online">		
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>
+													<li>
+														<a href="#"><img src="img/icons/right-sidebar/ava.png" alt="avatar">Lorem ipsum.</a>
+														<p>online</p>
+													</li>
+												</ul>
+											</div>
+										</div>
+									<a class="left carousel-control friend_carousel" href="#carousel" data-slide="prev">
+										<img class="left" src="img/icons/right-sidebar/arrow-left.png" alt="left">
+										<span class="left">previous</span>
+									</a>
+									<a class="right carousel-control" href="#carousel" data-slide="next">
+										<span class="right">next</span>
+										<img class="right" src="img/icons/right-sidebar/arrow-right.png" alt="right">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</aside>
+		</div>
+		<!-- //END: main content area -->
+
+		 <!-- START: Footer -->
+	<footer class="footer">
+		<a href="#header" class="up">
+			<div class="footer_up">
+				<img src="img/icons/footer/up.png" alt="up">
+			</div>
+			<span>Go up</span>
+		</a>
+	</footer>
+		<!-- //END: Footer -->
+</div>
+
+	
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+
+<!-- Load Scripts -->
+<script src="libs/modernizr/modernizr.js"></script>
+<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+<script src="libs/audioplayer/mediaelement-and-player.min.js"></script>
+<script src="libs/bootstrap/bootstrap.min.js"></script>
+<script src="libs/dropzone/dropzone.js"></script>
+<script src="libs/Magnific-Popup/jquery.magnific-popup.min.js"></script>
+<script src="libs/nicescroll/jquery.nicescroll.min.js"></script>
+<script src="libs/PageScroll2id/PageScroll2id.min.js"></script>
+<script src="libs/plugins-scroll/plugins-scroll.js"></script>
+<script src="libs/owl/owl.carousel.min.js"></script>
+<script src="libs/audioplayer/mediaelement-and-player.min.js"></script>
+<script src="libs/select2-4.0.2/select2-4.0.2/dist/js/select2.min.js"></script>
+<script src="js/valid.js"></script>
+<script src="libs/fullcalendar-2.6.1/lib/moment.min.js"></script>
+<script src="libs/fullcalendar-2.6.1/fullcalendar.min.js"></script>
+<script src="libs/autoresize/autoresize.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

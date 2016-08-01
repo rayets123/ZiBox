@@ -1,0 +1,438 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--[if lt IE 7 ]>
+<html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>
+<html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>
+<html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru" xml:lang="ru"> <!--<![endif]-->
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="csrf-param" content="_csrf">
+    <meta name="csrf-token" content="b0xla01NZDkhOhQOHg5WXgY2DVsDAVZ0LBkTEgMdNHhcOTAoL3pTfQ==">
+    <title>Zibox Login</title>
+
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-3.3.6-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="libs/select2-4.0.2/select2-4.0.2/dist/css/select2.css">
+	<link href="css/login.css" rel="stylesheet">
+
+
+	</head>
+
+<body>
+<!-- main -->
+<div class="main main_v2 clearfix">
+
+    <!-- main_header -->
+    <nav class="header-navbar navbar navbar-inverse main-header">
+        <div class="container">  
+        	            
+           <div class="navbar-collapse collapse" id="navbar">
+           <ul id="w1" class="navbar-nav nav main_menu"><li><a href="/index.php?r=site%2Fabout">About us</a></li>
+        		<li><a href="/index.php?r=site%2Fadvertising">Advertising</a></li>
+        		<li><a href="/index.php?r=site%2Fprivacy">Privacy</a></li>
+        		<li><a href="/index.php?r=site%2Fterms">Terms of use</a></li>
+        	</ul>  
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ENG <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li class="active"><a href="#">English</a></li>
+                            <li><a href="#">Russian</a></li>
+                            <li><a href="#">Italy</a></li>
+                            <li><a href="#">Germany</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right soc_top">
+                		<li class="facebook"><a href="#" title="Facebook" class="Facebook"><img src="img/icons/login/facebook_small.png" alt="Facebook"></a></li>
+                		<li class="google"><a href="#" title="Google+" class="Google+"><img src="img/icons/login/google_small.png" alt="Google+"></a></li>
+                		<li class="twiter"><a href="#" title="Twitter" class="Twitter"><img src="img/icons/login/twitter_small.png" alt="Twitter"></a></li>
+                </ul>
+
+                <!-- START navbar login form -->
+                
+                <form id="login-form" class="navbar-form navbar-right" action="/index.php?r=site%2Flogin" method="post">
+                	<input type="hidden" name="_csrf" value="b0xla01NZDkhOhQOHg5WXgY2DVsDAVZ0LBkTEgMdNHhcOTAoL3pTfQ==">
+                	<div class="form-group ">
+
+                		<input type="text" id="loginform-username" class="form-control action" name="LoginForm[username]" placeholder="Email Address" data-field="email" data-wrong-value="Email entered incorrect" data-empty-value="Do not enter"  onfocus="this.placeholder = ''">
+                		<p class="help-block help-login"></p>
+                	</div>
+                	<div class="form-group">
+                		<input type="password" id="loginform-password" class="form-control action" name="LoginForm[password]" placeholder="Password" data-field="password" data-wrong-value="Password entered incorrect" data-empty-value="Do not enter"  onfocus="this.placeholder = ''">
+                		<p class="help-block help-login"></p>
+                		<a id="" class="navbar-link forgot" href="/index.php?r=forgot-password%2Frequest">Forgot your password?</a>
+                	</div>
+                	<div class="form-group">
+                		<button type="submit" id="submit_login" class="btn btn-orange text-uppercase" name="login-button"><b>Log in</b></button></div>
+
+                		
+
+                		</form>         
+                		  <!-- //END navbar login form -->
+
+            </div><!--/.navbar-collapse -->
+        </div>
+    </nav>
+    <!-- main_header end -->
+
+    <!-- main_content -->
+    <div class="main_content">
+        <div class="main_content_middle">
+                        
+<div class="loginpage_signup_wrap loginpage_signup_wrap_v2">
+
+    <section class="logo">
+        <a href="#"><img src="img/icons/login/logo_v2.png" class="img-responsive center-block" alt="logo"></a>
+    </section>
+    <div id="msg" class="alert alert-success alert-thin" style="display: none"></div>
+    <div class="loginpage_form loginpage_form_v2">
+
+    	<form id="signup-form" class="signup_form main_form form-vertical" action="/index.php?r=site%2Flogin" method="post">
+    		
+    		<div class="row">
+    			<div class="col-sm-6">
+    				<div class="form-group">
+    					<input type="text" class="form-control action" name="Users[first_name]" placeholder="First name" onfocus="this.placeholder = ''" data-field="first-name" data-wrong-value="First name entered incorrect" data-empty-value="Do not enter">
+    					<div class="help-block"></div>
+    				</div> 
+    			</div>
+    			<div class="col-sm-6">
+    				<div class="form-group">
+    					<input type="text" class="form-control action" name="Users[last_name]" placeholder="Last name" onfocus="this.placeholder = ''" data-field="last-name" data-wrong-value="Last name entered incorrect" data-empty-value="Do not enter">
+    					<div class="help-block"></div>
+    				</div> 
+    			</div>
+    		</div>
+    		<div class="form-group has-feedback">
+    			<input type="text" class="form-control action" name="Users[username]" placeholder="Your Email Address"  onfocus="this.placeholder = ''" data-field="email" data-wrong-value="E-mail entered incorrect" data-empty-value="Do not enter">
+    			<span class="form-control-feedback" aria-hidden="true">*</span>
+    			<div class="help-block"></div>
+    		</div>
+    		<div class="form-group has-feedback">
+    			<input type="password" class="form-control action" name="Users[password]" placeholder="Password" onfocus="this.placeholder = ''" data-field="password" data-wrong-value="Password should be within A-Za-z0-9" data-empty-value="Do not enter">
+    			<span class="form-control-feedback" aria-hidden="true">*</span>
+    			<div class="help-block"></div>
+    		</div>
+    		<div class="form-group has-feedback">
+    			<input type="password" class="form-control action" placeholder="Repeat password" onfocus="this.placeholder = ''" name="Users[password2]" data-field="password-match" data-empty-value="Do not enter" data-wrong-value="Password should be within A-Za-z0-9" data-wrong-match="Password do not match">
+    			<span class="form-control-feedback" aria-hidden="true">*</span>
+    			<div class="help-block"></div>
+    		</div>
+
+    				<!-- START birthday row -->
+    				<div class="form-group text-right">
+    					<p style="width:23%; float:left; padding:0.5em 0em 0em 0em;"><strong>BirthDay:</strong></p>
+    					<select name="" class="select" id="date" style="width:22%;">
+    						<option value="" selected>Day</option>
+    						<option value="1"> 1</option>
+    						<option value="2"> 2</option>                                 
+    						<option value="3"> 3</option>                                  
+    						<option value="4"> 4</option>                              
+    						<option value="5"> 5</option>                                  
+    						<option value="6"> 6</option>                                   
+    						<option value="7"> 7</option>                                  
+    						<option value="8"> 8</option>                                   
+    						<option value="9"> 9</option>                                  
+    						<option value="10"> 10</option>                                
+    						<option value="11"> 11</option>                                 
+    						<option value="12"> 12</option>                                 
+    						<option value="13"> 13</option>                                 
+    						<option value="14"> 14</option>                                   
+    						<option value="15"> 15</option>                                
+    						<option value="16"> 16</option>                               
+    						<option value="17"> 17</option>                                
+    						<option value="18"> 18</option>                               
+    						<option value="19"> 19</option>                                 
+    						<option value="20"> 20</option>                                 
+    						<option value="21"> 21</option>                                 
+    						<option value="22"> 22</option>                                 
+    						<option value="23"> 23</option>                               
+    						<option value="24"> 24</option>                           
+    						<option value="25"> 25</option>                     
+    						<option value="26"> 26</option>                     
+    						<option value="27"> 27</option>                  
+    						<option value="28"> 28</option>                                
+    						<option value="29"> 29</option>                               
+    						<option value="30"> 30</option>                          
+    						<option value="31"> 31</option>
+    					</select>
+    					<select id="month" class="select" style="width:28%;">
+    						<option value="1">January</option>
+    						<option value="2">February</option>
+    						<option value="3">March</option>
+    						<option value="4" selected="selected">April</option>
+    						<option value="5">May</option>
+    						<option value="6">June</option>
+    						<option value="7">July</option>
+    						<option value="8">August</option>
+    						<option value="9">September</option>
+    						<option value="10">October</option>
+    						<option value="11">November</option>
+    						<option value="12">December</option>
+    					</select>            
+    					<select id="year" class="select" style="width:23%;">
+    					<option value="" selected>Year</option>
+    					<option value='1950'>1950</option>
+
+    					<option value='1951'>1951</option>
+
+    					<option value='1952'>1952</option>
+
+    					<option value='1953'>1953</option>
+
+    					<option value='1954'>1954</option>
+
+    					<option value='1955'>1955</option>
+
+    					<option value='1956'>1956</option>
+
+    					<option value='1957'>1957</option>
+
+    					<option value='1958'>1958</option>
+
+    					<option value='1959'>1959</option>
+
+    					<option value='1960'>1960</option>
+
+    					<option value='1961'>1961</option>
+
+    					<option value='1962'>1962</option>
+
+    					<option value='1963'>1963</option>
+
+    					<option value='1964'>1964</option>
+
+    					<option value='1965'>1965</option>
+
+    					<option value='1966'>1966</option>
+
+    					<option value='1967'>1967</option>
+
+    					<option value='1968'>1968</option>
+
+    					<option value='1969'>1969</option>
+
+    					<option value='1970'>1970</option>
+
+    					<option value='1971'>1971</option>
+
+    					<option value='1972'>1972</option>
+
+    					<option value='1973'>1973</option>
+
+    					<option value='1974'>1974</option>
+
+    					<option value='1975'>1975</option>
+
+    					<option value='1976'>1976</option>
+
+    					<option value='1977'>1977</option>
+
+    					<option value='1978'>1978</option>
+
+    					<option value='1979'>1979</option>
+
+    					<option value='1980'>1980</option>
+
+    					<option value='1981'>1981</option>
+
+    					<option value='1982'>1982</option>
+
+    					<option value='1983'>1983</option>
+
+    					<option value='1984'>1984</option>
+
+    					<option value='1985'>1985</option>
+
+    					<option value='1986'>1986</option>
+
+    					<option value='1987'>1987</option>
+
+    					<option value='1988'>1988</option>
+
+    					<option value='1989'>1989</option>
+
+    					<option value='1990'>1990</option>
+
+    					<option value='1991'>1991</option>
+
+    					<option value='1992'>1992</option>
+
+    					<option value='1993'>1993</option>
+
+    					<option value='1994'>1994</option>
+
+    					<option value='1995'>1995</option>
+
+    					<option value='1996'>1996</option>
+
+    					<option value='1997'>1997</option>
+
+    					<option value='1998'>1998</option>
+
+    					<option value='1999'>1999</option>
+
+    					<option value='2000'>2000</option>
+
+    					<option value='2001'>2001</option>
+
+    					<option value='2002'>2002</option>
+
+    					<option value='2003'>2003</option>
+
+    					<option value='2004'>2004</option>
+
+    					<option value='2005'>2005</option>
+
+    					<option value='2006'>2006</option>
+
+    					<option value='2007'>2007</option>
+
+    					<option value='2008'>2008</option>
+
+    					<option value='2009'>2009</option>
+
+    					<option value='2010'>2010</option>
+
+    					<option value='2011'>2011</option>
+
+    					<option value='2012'>2012</option>
+
+    					<option value='2013'>2013</option>
+
+    					<option value='2014'>2014</option>
+
+    					<option value='2015'>2015</option>
+
+    					<option value='2016'>2016</option>
+
+    				</select>
+    			</div>
+    			<!-- //END birthday row -->
+						<div class="form-group">
+							<select class="country_select">
+								<option selected>Country</option>
+						  <optgroup label="Alaskan/Hawaiian Time Zone">
+						    <option value="AK">Alaska</option>
+						    <option value="HI">Hawaii</option>
+						  </optgroup>
+						  <optgroup label="Pacific Time Zone">
+						    <option value="CA">California</option>
+						    <option value="NV">Nevada</option>
+						    <option value="OR">Oregon</option>
+						    <option value="WA">Washington</option>
+						  </optgroup>
+						  <optgroup label="Mountain Time Zone">
+						    <option value="AZ">Arizona</option>
+						    <option value="CO">Colorado</option>
+						    <option value="ID">Idaho</option>
+						    <option value="MT">Montana</option>
+						    <option value="NE">Nebraska</option>
+						    <option value="NM">New Mexico</option>
+						    <option value="ND">North Dakota</option>
+						    <option value="UT">Utah</option>
+						    <option value="WY">Wyoming</option>
+						  </optgroup>
+						  <optgroup label="Central Time Zone">
+						    <option value="AL">Alabama</option>
+						    <option value="AR">Arkansas</option>
+						    <option value="IL">Illinois</option>
+						    <option value="IA">Iowa</option>
+						    <option value="KS">Kansas</option>
+						    <option value="KY">Kentucky</option>
+						    <option value="LA">Louisiana</option>
+						    <option value="MN">Minnesota</option>
+						    <option value="MS">Mississippi</option>
+						    <option value="MO">Missouri</option>
+						    <option value="OK">Oklahoma</option>
+						    <option value="SD">South Dakota</option>
+						    <option value="TX">Texas</option>
+						    <option value="TN">Tennessee</option>
+						    <option value="WI">Wisconsin</option>
+						  </optgroup>
+						  <optgroup label="Eastern Time Zone">
+						    <option value="CT">Connecticut</option>
+						    <option value="DE">Delaware</option>
+						    <option value="FL">Florida</option>
+						    <option value="GA">Georgia</option>
+						    <option value="IN">Indiana</option>
+						    <option value="ME">Maine</option>
+						    <option value="MD">Maryland</option>
+						    <option value="MA">Massachusetts</option>
+						    <option value="MI">Michigan</option>
+						    <option value="NH">New Hampshire</option>
+						    <option value="NJ">New Jersey</option>
+						    <option value="NY">New York</option>
+						    <option value="NC">North Carolina</option>
+						    <option value="OH">Ohio</option>
+						    <option value="PA">Pennsylvania</option>
+						    <option value="RI">Rhode Island</option>
+						    <option value="SC">South Carolina</option>
+						    <option value="VT">Vermont</option>
+						    <option value="VA">Virginia</option>
+						    <option value="WV">West Virginia</option>
+						  </optgroup>
+						</select>
+						</div>
+						<div class="form-group">
+							<div class="col-xs-8 col-xs-offset-3">
+								<div class="form-group field-users-gender">
+									<input type="hidden" name="Users[gender]" value="">
+									<div id="users-gender">
+									<label class="radio-inline"><input type="radio" name="Users[gender]" value="male"> Male</label>
+									<label class="radio-inline"><input type="radio" name="Users[gender]" value="female"> Female</label>
+									<div class="help-block"></div>
+								</div>
+								</div>
+							</div>  
+						</div>
+						<div class="form-group clearfix">
+							<div class="col-sm-12">
+								<button type="submit" id="submit" class="btn btn-green btn-100">SIGN UP</button>       
+							</div>
+						</div>
+    		</form>
+    		<div class="col-xs-12 clearfix">
+    			<section class="soc soc_v2">
+    				<p>Sign up in with:</p>
+    				<ul class="clearfix">
+    					<li class="facebook"><a href="#" title="Facebook" class="Facebook"><img src="img/icons/login/soc_facebook.png" alt="Facebook"></a></li>
+    					<li class="google"><a href="#" title="Google+" class="Google+"><img src="img/icons/login/soc_google.png" alt="Google+"></a></li>
+    					<li class="twiter"><a href="#" title="Twitter" class="Twitter"><img src="img/icons/login/soc_twitter.png" alt="Twitter"></a></li>
+    				</ul>
+    			</section>
+    		</div>    
+       </div>
+			</div>
+    </div>
+  </div>
+    <!-- main_content end -->
+
+  <!-- main_footer -->
+  <footer class="footer footer_v2">
+  	<nav class="navbar">
+  		<div class="container">
+          <p class="navbar-text copyright">Copyright &copy; <a href="#" class="navbar-link">zibox.com</a>. All rights reserved.</p>
+  			</div>
+  		</nav>
+  	</footer>
+</div>
+<!-- main end -->
+<!-- Load Scripts -->
+<script src="libs/modernizr/modernizr.js"></script>
+<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+<script src="libs/bootstrap/bootstrap.min.js"></script>
+<script src="libs/select2-4.0.2/select2-4.0.2/dist/js/select2.min.js"></script>
+<script src="js/valid.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>
+
